@@ -1,0 +1,21 @@
+sky130_ef_ip__biasgen
+
+Bias generator circuit.  This circuit generates an array of
+bias source and sink currents for driving other analog IP.
+
+PINOUT
+-----------------------------------
+avdd	Analog power supply, 3.3V
+avss	Analog (3.3V domain) ground
+dvdd	Digital power supply, 1.8V
+dvss	Digital (1.8V domain) ground
+ena	Master enable (1.8V domain) input
+ena*	Enable (1.8V domain) inputs
+enb*	Disable (1.8V domain) inputs
+ref_in	Reference trim input (3.3V domain, 3.3V nominal)
+sink*	Outputs (sink current to ground from pin)
+source* Outputs (source current from power supply to pin)
+
+Designed by:  Tim Edwards
+Efabless Corporation
+May 23, 2024
