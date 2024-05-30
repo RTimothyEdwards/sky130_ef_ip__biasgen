@@ -19,7 +19,7 @@ T {100nA} 1700 -530 0 0 0.4 0.4 {}
 T {50nA} 2070 -530 0 0 0.4 0.4 {}
 T {Level shifters (1.8V to 3.3V)} -2140 -660 0 0 0.4 0.4 {}
 T {Bias generator back-end} -2190 -780 0 0 0.6 0.6 {}
-T {(Specific back-end used for Chipalooza test chip)} -2190 -730 0 0 0.5 0.5 {}
+T {2.7uA} -740 -30 0 0 0.4 0.4 {}
 N -950 -120 -950 -60 {
 lab=avss}
 N -950 -200 -950 -160 {
@@ -203,7 +203,7 @@ lab=avss}
 N 2280 -340 2280 -60 {
 lab=avss}
 N -1940 30 -1880 30 {
-lab=ena_snk_test1}
+lab=ena_snk_test2}
 N -1800 30 -1750 30 {
 lab=ena_test1_3v3}
 N -1940 -550 -1880 -550 {
@@ -276,16 +276,34 @@ N -1240 -470 -1240 -380 {
 lab=pcasc}
 N -1250 -210 -1250 -160 {
 lab=ena_test1_3v3}
-N -1330 -140 -1250 -140 {
+N -1270 -450 -440 -450 {
+lab=pbias}
+N -430 -60 2280 -60 {
+lab=avss}
+N -580 -120 -580 -60 {
+lab=avss}
+N -580 -200 -580 -160 {
+lab=snk_test2}
+N -880 -210 -880 -160 {
+lab=ena_test2_3v3}
+N -880 -140 -880 -80 {
 lab=nbias}
-N -1270 -450 -440 -450 {}
-N -430 -60 2280 -60 {}
+N -1250 -80 -880 -80 {
+lab=nbias}
+N -1250 -140 -1250 -80 {
+lab=nbias}
+N -1340 -80 -1250 -80 {
+lab=nbias}
+N -1940 -30 -1880 -30 {
+lab=ena_snk_test1}
+N -1800 -30 -1750 -30 {
+lab=ena_test1_3v3}
 C {devices/iopin.sym} -1330 -60 0 1 {name=p39 lab=avss}
 C {devices/iopin.sym} -1340 -490 0 1 {name=p42 lab=avdd}
 C {devices/lab_wire.sym} -1270 -450 0 0 {name=p44 sig_type=std_logic lab=pbias}
 C {devices/lab_wire.sym} -1270 -470 0 0 {name=p45 sig_type=std_logic lab=pcasc}
 C {bias_nstack.sym} -1100 -140 0 0 {name=x18[1:0]}
-C {devices/ipin.sym} -1940 30 0 0 {name=p50 lab=ena_snk_test1}
+C {devices/ipin.sym} -1940 30 0 0 {name=p50 lab=ena_snk_test2}
 C {devices/iopin.sym} -950 -200 0 1 {name=p51 lab=snk_test1}
 C {bias_pstack.sym} -1060 -360 0 0 {name=x16[1:0]}
 C {devices/ipin.sym} -1940 -100 0 0 {name=p52 lab=ena_src_test1}
@@ -335,7 +353,7 @@ C {lsbuflv2hv_1.sym} -1840 -300 0 0 {name=x18 LVPWR=dvdd VGND=dvss VNB=dvss VPB=
 C {lsbuflv2hv_1.sym} -1840 -250 0 0 {name=x19 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ lab=enb}
 C {lsbuflv2hv_1.sym} -1840 -200 0 0 {name=x20 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ lab=enb}
 C {lsbuflv2hv_1.sym} -1840 -100 0 0 {name=x22 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ lab=enb}
-C {devices/lab_pin.sym} -1750 30 0 1 {name=p28 sig_type=std_logic lab=ena_test1_3v3}
+C {devices/lab_pin.sym} -1750 30 0 1 {name=p28 sig_type=std_logic lab=ena_test2_3v3}
 C {devices/lab_pin.sym} -1650 -100 0 1 {name=p29 sig_type=std_logic lab=enb_test1_3v3}
 C {devices/lab_pin.sym} -1650 -200 0 1 {name=p34 sig_type=std_logic lab=enb_1000_1_3v3}
 C {devices/lab_pin.sym} -1650 -250 0 1 {name=p35 sig_type=std_logic lab=enb_600_3v3}
@@ -371,5 +389,12 @@ C {devices/lab_pin.sym} -1300 -670 0 1 {name=p2 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 1940 -2300 0 0 {name=p109 sig_type=std_logic lab=vbg}
 C {devices/ipin.sym} -1340 -470 0 0 {name=p3 lab=pcasc}
 C {devices/ipin.sym} -1340 -450 0 0 {name=p4 lab=pbias}
-C {devices/ipin.sym} -1330 -140 0 0 {name=p5 lab=nbias}
+C {devices/ipin.sym} -1340 -80 0 0 {name=p5 lab=nbias}
 C {devices/lab_pin.sym} -1250 -210 0 1 {name=p6 sig_type=std_logic lab=ena_test1_3v3}
+C {bias_nstack.sym} -730 -140 0 0 {name=x1[54:0]}
+C {devices/iopin.sym} -580 -200 0 1 {name=p7 lab=snk_test2}
+C {devices/noconn.sym} -580 -140 0 1 {name=l1}
+C {devices/lab_pin.sym} -880 -210 0 1 {name=p9 sig_type=std_logic lab=ena_test2_3v3}
+C {devices/ipin.sym} -1940 -30 0 0 {name=p8 lab=ena_snk_test1}
+C {lsbuflv2hv_1.sym} -1840 -30 0 0 {name=x1 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} -1750 -30 0 1 {name=p10 sig_type=std_logic lab=ena_test1_3v3}

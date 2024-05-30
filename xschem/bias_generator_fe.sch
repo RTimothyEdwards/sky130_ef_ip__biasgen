@@ -112,8 +112,6 @@ N -1840 -380 -1790 -380 {
 lab=enb_test0_3v3}
 N -920 -1210 -920 -1160 {
 lab=avdd}
-N -1070 -1150 -1010 -1150 {
-lab=vbg}
 N -920 -1210 -620 -1210 {
 lab=avdd}
 N -1070 -1210 -920 -1210 {
@@ -224,7 +222,14 @@ N -2090 -380 -1920 -380 {
 lab=#net4}
 N -2090 -320 -1790 -320 {
 lab=ena_test0_3v3}
-N -2090 -440 -1790 -440 {}
+N -2090 -440 -1790 -440 {
+lab=ena_3v3}
+N -1290 -1150 -1010 -1150 {
+lab=vbg}
+N -1260 -1150 -1260 -1080 {
+lab=vbg}
+N -1260 -1020 -1260 -770 {}
+N -1290 -770 -1070 -770 {}
 C {bias_nstack.sym} -680 -140 0 0 {name=x2[19:0]}
 C {devices/ipin.sym} -500 -410 0 0 {name=p38 lab=ref_in}
 C {sky130_fd_pr/res_high_po_0p35.sym} -500 -350 0 1 {name=R4
@@ -265,9 +270,9 @@ model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -830 -1040 0 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=8 spiceprefix=X}
-C {devices/ipin.sym} -1070 -1150 0 0 {name=p3 lab=vbg}
+C {devices/ipin.sym} -1290 -1150 0 0 {name=p3 lab=vbg}
 C {devices/lab_pin.sym} -1070 -1210 0 0 {name=p87 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} -1070 -770 0 0 {name=p88 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} -1290 -770 0 0 {name=p88 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} -1070 -950 0 0 {name=p89 sig_type=std_logic lab=nbias}
 C {devices/lab_pin.sym} -570 -1090 0 0 {name=p90 sig_type=std_logic lab=pcasc}
 C {devices/lab_pin.sym} -560 -1070 0 0 {name=p92 sig_type=std_logic lab=enb_vbg_3v3}
@@ -301,3 +306,9 @@ C {devices/opin.sym} 220 -470 0 0 {name=p10 lab=pcasc}
 C {devices/opin.sym} 220 -450 0 0 {name=p11 lab=pbias}
 C {devices/opin.sym} 220 -80 0 0 {name=p12 lab=nbias}
 C {devices/lab_pin.sym} -1790 -440 0 1 {name=p13 sig_type=std_logic lab=ena_3v3}
+C {sky130_fd_pr/diode.sym} -1260 -1050 0 0 {name=D1
+model=diode_pw2nd_05v5
+area=2.025e11
+perim=1.8e6
+spiceprefix=X
+}

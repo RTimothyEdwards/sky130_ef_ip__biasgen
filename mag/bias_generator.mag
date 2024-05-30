@@ -1,25 +1,32 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716925370
-<< error_p >>
-rect 20242 6143 20244 7195
-rect 20036 5937 20450 6143
-rect 20036 5935 21502 5937
-rect 20036 5729 20450 5935
-<< error_s >>
-rect 44269 8352 47212 8386
-rect 41597 8142 49898 8176
-rect 41597 4236 49898 4409
-rect 41597 3870 49898 4043
-rect 41597 278 49898 312
-rect 41597 46 49898 105
+timestamp 1717075507
+<< metal1 >>
+rect 5441 8326 5562 8557
+rect 1072 6185 1472 6253
+rect 1072 4557 1472 4625
+rect 1072 2929 1472 2997
+rect 1072 1301 1472 1369
+<< metal2 >>
+rect 4682 2646 5538 2684
 use bias_generator_be  bias_generator_be_0
-timestamp 1716920177
+timestamp 1717075507
 transform 1 0 45529 0 1 -418
-box 0 0 152006 9467
+box -24 0 149476 9467
 use bias_generator_fe  bias_generator_fe_0
-timestamp 1716925370
+timestamp 1717075507
 transform 1 0 0 0 1 0
-box 1072 0 45966 8863
+box 1072 0 45976 8863
+<< labels >>
+flabel metal1 1072 6185 1472 6253 0 FreeSans 480 0 0 0 ref_sel_vbg
+port 52 nsew
+flabel metal1 1072 4557 1472 4625 0 FreeSans 480 0 0 0 ena
+port 53 nsew
+flabel metal1 1072 2929 1472 2997 0 FreeSans 480 0 0 0 ena_src_test0
+port 54 nsew
+flabel metal1 1072 1301 1472 1369 0 FreeSans 480 0 0 0 ena_snk_test0
+port 55 nsew
+flabel metal1 5441 8326 5562 8557 0 FreeSans 1600 90 0 0 vbg
+port 56 nsew
 << end >>

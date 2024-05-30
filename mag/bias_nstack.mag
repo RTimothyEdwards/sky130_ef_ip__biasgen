@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1714090311
+timestamp 1717035242
+<< checkpaint >>
+rect 2152 592 5038 1954
+rect 2002 -3044 5186 592
 << locali >>
 rect 3392 364 3448 658
 rect 3742 364 3926 658
@@ -66,11 +69,11 @@ timestamp 1714090311
 transform 1 0 3594 0 1 -1226
 box -332 -558 332 558
 use sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P  XM7 paramcells
-timestamp 1714090311
+timestamp 1717035242
 transform 1 0 3594 0 1 -240
 box -332 -558 332 558
 use sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ  XM12 paramcells
-timestamp 1714090311
+timestamp 1717035242
 transform 1 0 3594 0 1 -2212
 box -332 -558 332 558
 << labels >>
