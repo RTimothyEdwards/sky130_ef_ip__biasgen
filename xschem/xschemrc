@@ -295,22 +295,3 @@ lappend tcl_files $PDKPATH/libs.tech/xschem/scripts/sky130_models.tcl
 set SKYWATER_MODELS $PDKPATH/libs.tech/ngspice
 set SKYWATER_STDCELLS $PDKPATH/libs.ref/sky130_fd_sc_hd/spice
 
-# Add Chipalooza symbols pulled in from projects
-# append XSCHEM_LIBRARY_PATH :chipalooza
-# Add symbol for the bandgap from Weiser's MPW7 project
-# append XSCHEM_LIBRARY_PATH :weiser
-
-# Add Chipalooza symbols and schematics pulled in from projects
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_ajc_ip__brownout/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_ajc_ip__overvoltage/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_ajc_ip__por/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_ak_ip__comparator/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_be_ip__lsxo/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_ht_ip__hsxo_cpz1/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_od_ip__tempsensor/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_rodovalho_ip__lpopamp/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_td_ip__opamp_hp/xschem
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_vbl_ip__overvoltage/xschem
-
-# Add symbol for the bandgap from Weiser's MPW7 project
-append XSCHEM_LIBRARY_PATH :../dependencies/sky130_cw_ip/xschem
