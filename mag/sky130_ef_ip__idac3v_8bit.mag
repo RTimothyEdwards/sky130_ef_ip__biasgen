@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1719420811
+use bias_generator_fe  bias_generator_fe_0
+timestamp 1717075507
+transform 1 0 -35 0 1 -1186
+box 1072 0 45976 8863
+use bias_generator_idac_be  bias_generator_idac_be_0
+timestamp 1719420518
+transform 1 0 -89608 0 1 9596
+box 88136 -10736 138547 28868
+<< end >>
