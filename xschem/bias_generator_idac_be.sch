@@ -427,7 +427,6 @@ C {devices/iopin.sym} -1340 -700 0 1 {name=p98 lab=dvdd}
 C {devices/iopin.sym} -1340 -670 0 1 {name=p99 lab=dvss}
 C {devices/lab_pin.sym} -1300 -700 0 1 {name=p1 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} -1300 -670 0 1 {name=p2 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1940 -2300 0 0 {name=p109 sig_type=std_logic lab=vbg}
 C {devices/ipin.sym} -1340 -470 0 0 {name=p3 lab=pcasc}
 C {devices/ipin.sym} -1340 -450 0 0 {name=p4 lab=pbias}
 C {devices/ipin.sym} -1340 -80 0 0 {name=p5 lab=nbias}

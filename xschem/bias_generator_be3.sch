@@ -848,7 +848,6 @@ C {devices/iopin.sym} -1340 -700 0 1 {name=p98 lab=dvdd}
 C {devices/iopin.sym} -1340 -670 0 1 {name=p99 lab=dvss}
 C {devices/lab_pin.sym} -1300 -700 0 1 {name=p1 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} -1300 -670 0 1 {name=p2 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1940 -2300 0 0 {name=p109 sig_type=std_logic lab=vbg}
 C {devices/ipin.sym} -1340 -470 0 0 {name=p3 lab=pcasc}
 C {devices/ipin.sym} -1340 -450 0 0 {name=p4 lab=pbias}
 C {devices/ipin.sym} -1340 -80 0 0 {name=p5 lab=nbias}
@@ -963,7 +962,7 @@ C {devices/lab_pin.sym} -2570 240 0 1 {name=p106 sig_type=std_logic lab=enb_hsxo
 C {devices/lab_pin.sym} -2570 190 0 1 {name=p107 sig_type=std_logic lab=enb_comp_trim_3v3}
 C {devices/lab_pin.sym} -2570 50 0 1 {name=p108 sig_type=std_logic lab=enb_user2_3v3}
 C {devices/lab_pin.sym} -2570 0 0 1 {name=p110 sig_type=std_logic lab=enb_idac_3v3}
-C {devices/lab_pin.sym} -1780 -150 0 1 {name=p111 sig_type=std_logic lab=enb_200_2_3v3}
+C {devices/lab_pin.sym} -1780 -150 0 1 {name=p111 sig_type=std_logic lab=enb_test_3v3}
 C {devices/lab_pin.sym} -2570 -60 0 1 {name=p112 sig_type=std_logic lab=enb_user1_3v3}
 C {devices/lab_pin.sym} -2570 -110 0 1 {name=p113 sig_type=std_logic lab=enb_lsxo_3v3}
 C {sky130_stdcells/inv_2.sym} -2660 -110 0 0 {name=x44 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
