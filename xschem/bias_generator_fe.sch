@@ -228,8 +228,10 @@ N -1290 -1150 -1010 -1150 {
 lab=vbg}
 N -1260 -1150 -1260 -1080 {
 lab=vbg}
-N -1260 -1020 -1260 -770 {}
-N -1290 -770 -1070 -770 {}
+N -1260 -1020 -1260 -770 {
+lab=avss}
+N -1290 -770 -1070 -770 {
+lab=avss}
 C {bias_nstack.sym} -680 -140 0 0 {name=x2[19:0]}
 C {devices/ipin.sym} -500 -410 0 0 {name=p38 lab=ref_in}
 C {sky130_fd_pr/res_high_po_0p35.sym} -500 -350 0 1 {name=R4
@@ -312,3 +314,4 @@ area=2.025e11
 perim=1.8e6
 spiceprefix=X
 }
+C {sky130_stdcells/decap_4.sym} -2060 -220 0 0 {name=x5[5:0] VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }

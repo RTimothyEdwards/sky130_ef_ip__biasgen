@@ -369,8 +369,8 @@ C {devices/iopin.sym} -1330 -60 0 1 {name=p39 lab=avss}
 C {devices/iopin.sym} -1340 -490 0 1 {name=p42 lab=avdd}
 C {devices/lab_wire.sym} -1270 -450 0 0 {name=p44 sig_type=std_logic lab=pbias}
 C {devices/lab_wire.sym} -1270 -470 0 0 {name=p45 sig_type=std_logic lab=pcasc}
-C {bias_nstack.sym} -1100 -140 0 0 {name=x18[1:0]}
-C {bias_pstack.sym} -1060 -360 0 0 {name=x16[1:0]}
+C {bias_nstack.sym} -1100 -140 0 0 {name=x3}
+C {bias_pstack.sym} -1060 -360 0 0 {name=x1}
 C {bias_pstack.sym} -690 -360 0 0 {name=x8}
 C {devices/iopin.sym} -540 -280 0 1 {name=p55 lab=src_out}
 C {bias_pstack.sym} -150 -360 0 0 {name=x4[1:0]}
@@ -474,3 +474,4 @@ C {devices/lab_pin.sym} -1940 -270 0 0 {name=p38 sig_type=std_logic lab=ena[4]}
 C {devices/lab_pin.sym} -1940 -200 0 0 {name=p40 sig_type=std_logic lab=ena[5]}
 C {devices/lab_pin.sym} -1940 -130 0 0 {name=p41 sig_type=std_logic lab=ena[6]}
 C {devices/lab_pin.sym} -1940 -60 0 0 {name=p43 sig_type=std_logic lab=ena[7]}
+C {sky130_stdcells/decap_4.sym} -1750 40 0 0 {name=x8[7:0] VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }

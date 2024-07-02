@@ -363,7 +363,7 @@ lab=snk_750}
 N 160 -80 510 -80 {
 lab=nbias}
 N -2460 -550 -2400 -550 {
-lab=ena_snk_1000}
+lab=ena_snk_750}
 N -2320 -550 -2270 -550 {
 lab=ena_750_3v3}
 C {devices/iopin.sym} -1330 -60 0 1 {name=p39 lab=avss}
@@ -501,3 +501,4 @@ C {devices/noconn.sym} 810 -140 0 1 {name=l1}
 C {devices/ipin.sym} -2460 -550 0 0 {name=p8 lab=ena_snk_750}
 C {lsbuflv2hv_1.sym} -2360 -550 0 0 {name=x1 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
 C {devices/lab_pin.sym} -2270 -550 0 1 {name=p9 sig_type=std_logic lab=ena_750_3v3}
+C {sky130_stdcells/decap_4.sym} -2350 -210 0 0 {name=x3[5:0] VGND=dvdd VNB=dvdd VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
