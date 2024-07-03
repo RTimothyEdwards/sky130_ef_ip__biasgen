@@ -101,7 +101,7 @@ B 5 -162.5 -242.5 -157.5 -237.5 {name=nbias dir=in}
 B 5 -162.5 237.5 -157.5 242.5 {name=en_user1_bias dir=in}
 B 5 147.5 -282.5 152.5 -277.5 {name=avss dir=inout}
 B 5 -162.5 197.5 -157.5 202.5 {name=en_idac_bias dir=in}
-B 5 -162.5 257.5 -157.5 262.5 {name=ena_user2_bias dir=in}
+B 5 -162.5 257.5 -157.5 262.5 {name=en_user2_bias dir=in}
 B 5 -162.5 137.5 -157.5 142.5 {name=en_comp_trim_p dir=in}
 B 5 -162.5 77.5 -157.5 82.5 {name=en_hsxo_trim_p dir=in}
 B 5 -162.5 277.5 -157.5 282.5 {name=en_user2_trim_p dir=in}
@@ -153,7 +153,7 @@ T {nbias} -135 -244 0 0 0.2 0.2 {}
 T {en_user1_bias} -135 236 0 0 0.2 0.2 {}
 T {avss} 125 -284 0 1 0.2 0.2 {}
 T {en_idac_bias} -135 196 0 0 0.2 0.2 {}
-T {ena_user2_bias} -135 256 0 0 0.2 0.2 {}
+T {en_user2_bias} -135 256 0 0 0.2 0.2 {}
 T {en_comp_trim_p} -135 136 0 0 0.2 0.2 {}
 T {en_hsxo_trim_p} -135 76 0 0 0.2 0.2 {}
 T {en_user2_trim_p} -135 276 0 0 0.2 0.2 {}

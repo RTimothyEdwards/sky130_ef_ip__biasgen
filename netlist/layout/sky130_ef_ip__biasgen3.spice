@@ -1,0 +1,1074 @@
+* NGSPICE file created from sky130_ef_ip__biasgen3.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ a_n296_n522# a_n158_n300# a_n100_n388#
++ a_100_n300#
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n522# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RK a_n147_n147# a_n45_n45#
+X0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+.ends
+
+.subckt sky130_fd_pr__nfet_05v0_nvt_QRKT8P a_n296_n522# a_n158_n300# a_n100_n388#
++ a_100_n300#
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n522# sky130_fd_pr__nfet_05v0_nvt ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P a_n296_n522# a_n158_n300# a_n100_n388#
++ a_100_n300#
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n522# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt bias_nstack itail ena nbias avss vcasc
+XXM12 avss avss nbias m1_3726_n2502# sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ
+Xsky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 avss ena sky130_fd_pr__diode_pw2nd_05v5_FT76RK
+XXM6 avss vcasc nbias m1_3726_n2502# sky130_fd_pr__nfet_05v0_nvt_QRKT8P
+XXM7 avss vcasc ena itail sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P
+.ends
+
+.subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RJ a_n147_n147# a_n45_n45#
+X0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_P35QVK a_380_2984# a_5692_n3416# a_n3770_2984#
++ a_3866_2984# a_3202_n3416# a_n1446_n3416# a_n284_n3416# a_n616_2984# a_4696_n3416#
++ a_4198_2984# a_2206_n3416# a_n1114_2984# a_n4102_2984# a_n616_n3416# a_6190_n3416#
++ a_n6592_2984# a_2372_2984# a_n5762_n3416# a_5360_2984# a_214_2984# a_n3604_2984#
++ a_1210_n3416# a_5194_n3416# a_6522_n3416# a_n4766_n3416# a_1874_2984# a_4862_2984#
++ a_4198_n3416# a_5526_n3416# a_5194_2984# a_n6260_n3416# a_878_n3416# a_n3438_2984#
++ a_n2110_2984# a_n6426_2984# a_2206_2984# a_n118_n3416# a_n3770_n3416# a_4696_2984#
++ a_n5264_n3416# a_48_2984# a_4530_n3416# a_n2774_n3416# a_n1612_2984# a_n4600_2984#
++ a_n5928_2984# a_1708_2984# a_6024_n3416# a_n4268_n3416# a_2870_2984# a_3534_n3416#
++ a_712_2984# a_n1778_n3416# a_5028_2984# a_5028_n3416# a_n948_2984# a_2538_n3416#
++ a_6190_2984# a_n1446_2984# a_n3272_n3416# a_n4434_2984# a_n4600_n3416# a_3202_2984#
++ a_n948_n3416# a_5692_2984# a_380_n3416# a_546_2984# a_4032_n3416# a_n2276_n3416#
++ a_n3604_n3416# a_n3936_2984# a_1542_n3416# a_2704_2984# a_3036_n3416# a_712_n3416#
++ a_n2608_n3416# a_n4268_2984# a_3036_2984# a_6024_2984# a_5858_n3416# a_n1280_n3416#
++ a_n6592_n3416# a_n2442_2984# a_n4102_n3416# a_2538_2984# a_n5430_2984# a_2040_n3416#
++ a_5526_2984# a_1210_2984# a_n1612_n3416# a_n5596_n3416# a_4862_n3416# a_n450_n3416#
++ a_n1944_2984# a_n3106_n3416# a_n4932_2984# a_1044_n3416# a_n450_2984# a_3700_2984#
++ a_6356_n3416# a_214_n3416# a_n5928_n3416# a_n6722_n3546# a_3866_n3416# a_n2276_2984#
++ a_n5264_2984# a_1044_2984# a_4032_2984# a_n2110_n3416# a_n6094_n3416# a_n1778_2984#
++ a_n4766_2984# a_5360_n3416# a_n284_2984# a_3534_2984# a_n4932_n3416# a_6522_2984#
++ a_n1114_n3416# a_2870_n3416# a_n5098_n3416# a_n6426_n3416# a_878_2984# a_4364_n3416#
++ a_n5098_2984# a_n3936_n3416# a_n2940_2984# a_1874_n3416# a_3368_n3416# a_n3272_2984#
++ a_3368_2984# a_48_n3416# a_n6260_2984# a_2040_2984# a_6356_2984# a_n5430_n3416#
++ a_n2940_n3416# a_n118_2984# a_n2774_2984# a_n4434_n3416# a_n5762_2984# a_1542_2984#
++ a_2372_n3416# a_4530_2984# a_5858_2984# a_3700_n3416# a_n1944_n3416# a_n3438_n3416#
++ a_n6094_2984# a_n782_n3416# a_1376_n3416# a_n782_2984# a_2704_n3416# a_546_n3416#
++ a_n3106_2984# a_n1280_2984# a_n5596_2984# a_1376_2984# a_1708_n3416# a_4364_2984#
++ a_n2442_n3416# a_n2608_2984#
+X0 a_n3936_2984# a_n3936_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X1 a_n1612_2984# a_n1612_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X2 a_n6592_2984# a_n6592_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X3 a_n4434_2984# a_n4434_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X4 a_48_2984# a_48_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X5 a_2704_2984# a_2704_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X6 a_4862_2984# a_4862_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X7 a_3202_2984# a_3202_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X8 a_5360_2984# a_5360_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X9 a_5526_2984# a_5526_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X10 a_n948_2984# a_n948_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X11 a_n782_2984# a_n782_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X12 a_6024_2984# a_6024_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X13 a_n4932_2984# a_n4932_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X14 a_1376_2984# a_1376_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X15 a_878_2984# a_878_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X16 a_4198_2984# a_4198_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X17 a_n3770_2984# a_n3770_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X18 a_n1446_2984# a_n1446_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X19 a_3700_2984# a_3700_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X20 a_n4268_2984# a_n4268_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X21 a_n2110_2984# a_n2110_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X22 a_1874_2984# a_1874_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X23 a_6522_2984# a_6522_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X24 a_2372_2984# a_2372_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X25 a_2538_2984# a_2538_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X26 a_4696_2984# a_4696_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X27 a_3036_2984# a_3036_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X28 a_5194_2984# a_5194_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X29 a_n1944_2984# a_n1944_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X30 a_n4766_2984# a_n4766_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X31 a_n2608_2984# a_n2608_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X32 a_n2442_2984# a_n2442_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X33 a_214_2984# a_214_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X34 a_n5430_2984# a_n5430_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X35 a_n5264_2984# a_n5264_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X36 a_n3106_2984# a_n3106_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X37 a_2870_2984# a_2870_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X38 a_n1280_2984# a_n1280_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X39 a_1210_2984# a_1210_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X40 a_3534_2984# a_3534_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X41 a_5692_2984# a_5692_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X42 a_5858_2984# a_5858_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X43 a_712_2984# a_712_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X44 a_4032_2984# a_4032_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X45 a_6190_2984# a_6190_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X46 a_6356_2984# a_6356_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X47 a_n5928_2984# a_n5928_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X48 a_n5762_2984# a_n5762_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X49 a_n3604_2984# a_n3604_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X50 a_n118_2984# a_n118_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X51 a_n6426_2984# a_n6426_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X52 a_n4102_2984# a_n4102_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X53 a_n1778_2984# a_n1778_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X54 a_4530_2984# a_4530_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X55 a_n4600_2984# a_n4600_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X56 a_n2276_2984# a_n2276_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X57 a_n5098_2984# a_n5098_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X58 a_n616_2984# a_n616_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X59 a_1044_2984# a_1044_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X60 a_3368_2984# a_3368_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X61 a_546_2984# a_546_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X62 a_n2940_2984# a_n2940_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X63 a_n2774_2984# a_n2774_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X64 a_380_2984# a_380_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X65 a_n5596_2984# a_n5596_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X66 a_n3438_2984# a_n3438_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X67 a_n3272_2984# a_n3272_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X68 a_n1114_2984# a_n1114_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X69 a_n6260_2984# a_n6260_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X70 a_n6094_2984# a_n6094_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X71 a_1708_2984# a_1708_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X72 a_1542_2984# a_1542_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X73 a_2206_2984# a_2206_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X74 a_3866_2984# a_3866_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X75 a_2040_2984# a_2040_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X76 a_4364_2984# a_4364_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X77 a_5028_2984# a_5028_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X78 a_n450_2984# a_n450_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X79 a_n284_2984# a_n284_n3416# a_n6722_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+.ends
+
+.subckt sky130_fd_sc_hvl__inv_2 A VGND VNB VPB VPWR Y
+X0 VPWR A Y VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.21 ps=1.78 w=1.5 l=0.5
+X1 Y A VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.105 pd=1.03 as=0.21375 ps=2.07 w=0.75 l=0.5
+X2 Y A VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.4275 ps=3.57 w=1.5 l=0.5
+X3 VGND A Y VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21375 pd=2.07 as=0.105 ps=1.03 w=0.75 l=0.5
+.ends
+
+.subckt sky130_fd_sc_hvl__lsbuflv2hv_1 A LVPWR VGND VNB VPB VPWR X
+X0 VGND a_404_1133# a_504_1221# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
+X1 a_504_1221# a_404_1133# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
+X2 X a_1711_885# VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.3975 pd=3.53 as=0.24375 ps=1.825 w=1.5 l=0.5
+X3 X a_1711_885# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.121875 ps=1.075 w=0.75 l=0.5
+X4 VGND A a_404_1133# VNB sky130_fd_pr__nfet_01v8 ad=0.1176 pd=1.12 as=0.2478 ps=2.27 w=0.84 l=0.15
+X5 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
+X6 VPWR a_1197_107# a_504_1221# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.2142 pd=1.99 as=0.2142 ps=1.99 w=0.42 l=1
+X7 a_504_1221# a_404_1133# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.3975 pd=3.53 as=0.21 ps=1.78 w=1.5 l=0.5
+X8 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.3975 pd=3.53 as=0.21 ps=1.78 w=1.5 l=0.5
+X9 a_772_151# a_404_1133# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.2478 pd=2.27 as=0.1176 ps=1.12 w=0.84 l=0.15
+X10 a_504_1221# a_404_1133# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.3975 ps=3.53 w=1.5 l=0.5
+X11 VGND a_404_1133# a_504_1221# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
+X12 LVPWR A a_404_1133# LVPWR sky130_fd_pr__pfet_01v8_hvt ad=0.1176 pd=1.12 as=0.2478 ps=2.27 w=0.84 l=0.15
+X13 VGND a_772_151# a_1197_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
+X14 VPWR a_504_1221# a_1711_885# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.24375 pd=1.825 as=0.3975 ps=3.53 w=1.5 l=0.5
+X15 VGND a_504_1221# a_1711_885# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.121875 pd=1.075 as=0.19875 ps=2.03 w=0.75 l=0.5
+X16 VGND a_772_151# a_1197_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
+X17 a_772_151# a_404_1133# LVPWR LVPWR sky130_fd_pr__pfet_01v8_hvt ad=0.2478 pd=2.27 as=0.1176 ps=1.12 w=0.84 l=0.15
+X18 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.3975 ps=3.53 w=1.5 l=0.5
+X19 VPWR a_504_1221# a_1197_107# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.1113 pd=1.37 as=0.1365 ps=1.49 w=0.42 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ a_n158_n300# w_n362_n597# a_n100_n397#
++ a_100_n300#
+X0 a_100_n300# a_n100_n397# a_n158_n300# w_n362_n597# sky130_fd_pr__pfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_H75TTW a_n158_n300# w_n362_n597# a_n100_n397#
++ a_100_n300#
+X0 a_100_n300# a_n100_n397# a_n158_n300# w_n362_n597# sky130_fd_pr__pfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt bias_pstack avss pcasc enb itail vcasc pbias avdd
+XXM13 m1_2150_n1558# avdd pcasc vcasc sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ
+Xsky130_fd_pr__pfet_g5v0d10v5_G8LMTZ_0 itail avdd enb vcasc sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ
+Xsky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 avss enb sky130_fd_pr__diode_pw2nd_05v5_FT76RK
+Xsky130_fd_pr__pfet_g5v0d10v5_H75TTW_0 m1_2150_n1558# avdd pbias avdd sky130_fd_pr__pfet_g5v0d10v5_H75TTW
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_L4QTBM a_3451_2984# a_4447_n3416# a_795_2984#
++ a_1957_n3416# a_n5181_n3416# a_n201_2984# a_n2691_n3416# a_2953_2984# a_n2027_2984#
++ a_n4185_n3416# a_n5015_2984# a_n5513_n3416# a_3451_n3416# a_n1695_n3416# a_3285_2984#
++ a_n3189_n3416# a_n1529_2984# a_n4517_n3416# a_n4517_2984# a_2455_n3416# a_297_n3416#
++ a_n2691_2984# a_2787_2984# a_629_2984# a_n35_2984# a_n865_n3416# a_1459_n3416# a_629_n3416#
++ a_n2193_n3416# a_n3521_n3416# a_n3023_2984# a_n5015_n3416# a_3119_2984# a_n1197_n3416#
++ a_n2525_n3416# a_1293_2984# a_4281_2984# a_n4019_n3416# a_n2525_2984# a_n5513_2984#
++ a_n1529_n3416# a_3783_2984# a_4779_n3416# a_n367_n3416# a_n533_2984# a_n3023_n3416#
++ a_n2359_2984# a_131_n3416# a_n1031_2984# a_n5347_2984# a_1127_2984# a_4115_2984#
++ a_n2027_n3416# a_3783_n3416# a_5277_n3416# a_131_2984# a_n4849_n3416# a_n4849_2984#
++ a_n367_2984# a_n3521_2984# a_n5643_n3546# a_2787_n3416# a_3617_2984# a_1791_2984#
++ a_n1031_n3416# a_4281_n3416# a_n3853_n3416# a_1791_n3416# a_n3355_2984# a_n5347_n3416#
++ a_961_n3416# a_2123_2984# a_3285_n3416# a_4613_n3416# a_5111_2984# a_n201_n3416#
++ a_n2857_n3416# a_n2857_2984# a_2289_n3416# a_1625_2984# a_3617_n3416# a_4613_2984#
++ a_n4351_n3416# a_n699_n3416# a_n3189_2984# a_n1861_n3416# a_n865_2984# a_5111_n3416#
++ a_n3355_n3416# a_1293_n3416# a_2621_n3416# a_n1363_2984# a_n4351_2984# a_463_n3416#
++ a_1459_2984# a_4115_n3416# a_4447_2984# a_n2359_n3416# a_463_2984# a_1625_n3416#
++ a_n699_2984# a_n3853_2984# a_3119_n3416# a_3949_2984# a_2621_2984# a_n1197_2984#
++ a_n1363_n3416# a_n4185_2984# a_297_2984# a_2123_n3416# a_n3687_2984# a_2455_2984#
++ a_5443_2984# a_n533_n3416# a_4945_n3416# a_1127_n3416# a_n1861_2984# a_1957_2984#
++ a_3949_n3416# a_4945_2984# a_n35_n3416# a_n4019_2984# a_n4683_n3416# a_961_2984#
++ a_n2193_2984# a_2289_2984# a_n5181_2984# a_5277_2984# a_5443_n3416# a_n3687_n3416#
++ a_2953_n3416# a_n1695_2984# a_n4683_2984# a_795_n3416# a_4779_2984#
+X0 a_n1197_2984# a_n1197_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X1 a_3451_2984# a_3451_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X2 a_3617_2984# a_3617_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X3 a_4115_2984# a_4115_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X4 a_2289_2984# a_2289_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X5 a_n3521_2984# a_n3521_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X6 a_n1695_2984# a_n1695_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X7 a_4613_2984# a_4613_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X8 a_n2359_2984# a_n2359_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X9 a_n2193_2984# a_n2193_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X10 a_5111_2984# a_5111_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X11 a_n533_2984# a_n533_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X12 a_2787_2984# a_2787_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X13 a_1127_2984# a_1127_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X14 a_3285_2984# a_3285_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X15 a_629_2984# a_629_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X16 a_n2857_2984# a_n2857_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X17 a_n2691_2984# a_n2691_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X18 a_463_2984# a_463_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X19 a_n3355_2984# a_n3355_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X20 a_n1031_2984# a_n1031_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X21 a_n4019_2984# a_n4019_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X22 a_n35_2984# a_n35_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X23 a_1625_2984# a_1625_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X24 a_3949_2984# a_3949_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X25 a_2123_2984# a_2123_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X26 a_3783_2984# a_3783_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X27 a_4447_2984# a_4447_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X28 a_961_2984# a_961_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X29 a_4281_2984# a_4281_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X30 a_n367_2984# a_n367_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X31 a_n4517_2984# a_n4517_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X32 a_n3853_2984# a_n3853_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X33 a_n5015_2984# a_n5015_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X34 a_n4351_2984# a_n4351_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X35 a_297_2984# a_297_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X36 a_2621_2984# a_2621_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X37 a_4945_2984# a_4945_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X38 a_n3189_2984# a_n3189_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X39 a_5443_2984# a_5443_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X40 a_n865_2984# a_n865_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X41 a_1293_2984# a_1293_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X42 a_1459_2984# a_1459_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X43 a_n5513_2984# a_n5513_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X44 a_795_2984# a_795_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X45 a_n3687_2984# a_n3687_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X46 a_n1529_2984# a_n1529_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X47 a_n1363_2984# a_n1363_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X48 a_n4185_2984# a_n4185_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X49 a_n2027_2984# a_n2027_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X50 a_1791_2984# a_1791_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X51 a_1957_2984# a_1957_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X52 a_n201_2984# a_n201_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X53 a_2455_2984# a_2455_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X54 a_4779_2984# a_4779_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X55 a_3119_2984# a_3119_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X56 a_5277_2984# a_5277_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X57 a_n1861_2984# a_n1861_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X58 a_n699_2984# a_n699_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X59 a_n4849_2984# a_n4849_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X60 a_n4683_2984# a_n4683_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X61 a_n2525_2984# a_n2525_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X62 a_131_2984# a_131_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X63 a_n5347_2984# a_n5347_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X64 a_n5181_2984# a_n5181_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X65 a_n3023_2984# a_n3023_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+X66 a_2953_2984# a_2953_n3416# a_n5643_n3546# sky130_fd_pr__res_high_po_0p35 l=30
+.ends
+
+.subckt sky130_fd_sc_hvl__decap_4 VGND VNB VPB VPWR
+X0 VGND VPWR VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.4125 ps=4.1 w=0.75 l=1
+X1 VPWR VGND VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.55 ps=5.1 w=1 l=1
+.ends
+
+.subckt sky130_fd_sc_hvl__diode_2 DIODE VGND VNB VPB VPWR
+X0 VNB DIODE sky130_fd_pr__diode_pw2nd_11v0 perim=3.16e+06 area=6.072e+11
+.ends
+
+.subckt sky130_fd_pr__nfet_05v0_nvt_F3TL5C a_100_n200# a_n292_n422# a_n158_n200# a_n100_n288#
+X0 a_100_n200# a_n100_n288# a_n158_n200# a_n292_n422# sky130_fd_pr__nfet_05v0_nvt ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_56WC32 a_100_n200# a_n158_n200# a_n332_n422#
++ a_n100_n288#
+X0 a_100_n200# a_n100_n288# a_n158_n200# a_n332_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_QSDYAY w_n487_n497# a_29_n297# a_n287_n200# a_n229_n297#
++ a_229_n200# a_n29_n200#
+X0 a_n29_n200# a_n229_n297# a_n287_n200# w_n487_n497# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=1
+X1 a_229_n200# a_29_n297# a_n29_n200# w_n487_n497# sky130_fd_pr__pfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_V5WCXY a_n287_n200# a_n487_n288# a_229_n200#
++ a_n545_n200# a_29_n288# a_487_n200# a_n29_n200# a_n229_n288# a_287_n288# a_n679_n422#
+X0 a_487_n200# a_287_n288# a_229_n200# a_n679_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=1
+X1 a_n29_n200# a_n229_n288# a_n287_n200# a_n679_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=1
+X2 a_229_n200# a_29_n288# a_n29_n200# a_n679_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=1
+X3 a_n287_n200# a_n487_n288# a_n545_n200# a_n679_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=1
+.ends
+
+.subckt bias_amp nbias ena inp inn out avss avdd
+Xsky130_fd_pr__nfet_05v0_nvt_F3TL5C_0 m1_5615_3673# avss m1_7291_3557# ena sky130_fd_pr__nfet_05v0_nvt_F3TL5C
+Xsky130_fd_pr__nfet_g5v0d10v5_56WC32_0 m1_7291_3557# avss avss nbias sky130_fd_pr__nfet_g5v0d10v5_56WC32
+Xsky130_fd_pr__pfet_g5v0d10v5_QSDYAY_0 avdd m1_6016_4428# m1_6016_4428# m1_6016_4428#
++ out avdd sky130_fd_pr__pfet_g5v0d10v5_QSDYAY
+Xsky130_fd_pr__nfet_g5v0d10v5_V5WCXY_0 m1_6016_4428# inp out m1_5615_3673# inn m1_5615_3673#
++ m1_5615_3673# inp inn avss sky130_fd_pr__nfet_g5v0d10v5_V5WCXY
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_MQZGVK m3_n686_n2520# c1_n646_n2480#
+X0 c1_n646_n2480# m3_n686_n2520# sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+X1 c1_n646_n2480# m3_n686_n2520# sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+X2 c1_n646_n2480# m3_n686_n2520# sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+X3 c1_n646_n2480# m3_n686_n2520# sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+.ends
+
+.subckt bias_generator_fe snk_test0 src_test0 ref_sel_vbg ena vbg ref_in ena_snk_test0
++ ena_src_test0 dvdd bias_amp_0/out dvss avdd bias_amp_0/nbias bias_pstack_0[9]/pcasc
++ avss
+Xbias_nstack_0[0] snk_test0 ena_test0_3v3 bias_amp_0/nbias avss bias_nstack_0[0]/vcasc
++ bias_nstack
+Xbias_nstack_0[1] snk_test0 ena_test0_3v3 bias_amp_0/nbias avss bias_nstack_0[1]/vcasc
++ bias_nstack
+Xbias_nstack_0[2] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[3] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[4] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[5] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[6] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[7] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[8] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[9] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[10] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[11] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[12] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[13] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[14] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[15] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[16] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[17] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[18] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[19] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[20] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[21] bias_nstack_0[9]/itail ena_3v3 bias_amp_0/nbias avss bias_amp_0/nbias
++ bias_nstack
+Xbias_nstack_0[22] bias_amp_0/out enb_vbg_3v3 bias_amp_0/nbias avss bias_nstack_0[22]/vcasc
++ bias_nstack
+Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 avss vbg sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
+XXR2 m1_26761_7166# m1_31907_766# m1_22445_7166# m1_30081_7166# m1_29583_766# m1_24935_766#
++ m1_25931_766# m1_25765_7166# m1_30911_766# m1_30413_7166# m1_28587_766# m1_25101_7166#
++ m1_22113_7166# m1_25599_766# m1_32571_766# m1_19789_7166# m1_28753_7166# m1_20619_766#
++ m1_31741_7166# m1_26429_7166# m1_22777_7166# m1_27591_766# m1_31575_766# bias_nstack_0[9]/itail
++ m1_21615_766# m1_28089_7166# m1_31077_7166# m1_30579_766# m1_31907_766# m1_31409_7166#
++ m1_19955_766# m1_27259_766# m1_22777_7166# m1_24105_7166# m1_19789_7166# m1_28421_7166#
++ m1_26263_766# m1_22611_766# m1_31077_7166# m1_20951_766# m1_26429_7166# m1_30911_766#
++ m1_23607_766# m1_24769_7166# m1_21781_7166# m1_20453_7166# m1_28089_7166# m1_32239_766#
++ m1_21947_766# m1_29085_7166# m1_29915_766# m1_27093_7166# m1_24603_766# m1_31409_7166#
++ m1_31243_766# m1_25433_7166# m1_28919_766# m1_32405_7166# m1_24769_7166# m1_22943_766#
++ m1_21781_7166# m1_21615_766# m1_29417_7166# m1_25267_766# m1_32073_7166# m1_26595_766#
++ m1_26761_7166# m1_30247_766# m1_23939_766# m1_22611_766# m1_22445_7166# bias_pstack_0[9]/pcasc
++ m1_29085_7166# m1_29251_766# m1_26927_766# m1_23607_766# m1_22113_7166# m1_29417_7166#
++ m1_32405_7166# m1_32239_766# m1_24935_766# ref_in m1_23773_7166# m1_22279_766# m1_28753_7166#
++ m1_20785_7166# m1_28255_766# m1_31741_7166# m1_27425_7166# m1_24603_766# m1_20619_766#
++ m1_31243_766# m1_25931_766# m1_24437_7166# m1_23275_766# m1_21449_7166# m1_27259_766#
++ m1_25765_7166# m1_30081_7166# m1_32571_766# m1_26595_766# m1_20287_766# avss m1_30247_766#
++ m1_24105_7166# m1_21117_7166# m1_27425_7166# m1_30413_7166# m1_24271_766# m1_20287_766#
++ m1_24437_7166# m1_21449_7166# m1_31575_766# m1_26097_7166# m1_29749_7166# m1_21283_766#
++ m1_32737_7166# m1_25267_766# m1_29251_766# m1_21283_766# m1_19955_766# m1_27093_7166#
++ m1_30579_766# m1_21117_7166# m1_22279_766# m1_23441_7166# m1_28255_766# m1_29583_766#
++ m1_23109_7166# m1_29749_7166# m1_26263_766# m1_20121_7166# m1_28421_7166# m1_32737_7166#
++ m1_20951_766# m1_23275_766# m1_26097_7166# m1_23441_7166# m1_21947_766# m1_20453_7166#
++ m1_27757_7166# m1_28587_766# m1_30745_7166# m1_32073_7166# m1_29915_766# m1_24271_766#
++ m1_22943_766# m1_20121_7166# m1_25599_766# m1_27591_766# m1_25433_7166# m1_28919_766#
++ m1_26927_766# m1_23109_7166# m1_25101_7166# m1_20785_7166# m1_27757_7166# bias_pstack_0[9]/pcasc
++ m1_30745_7166# m1_23939_766# m1_23773_7166# sky130_fd_pr__res_high_po_0p35_P35QVK
+Xsky130_fd_sc_hvl__inv_2_2 sky130_fd_sc_hvl__inv_2_2/A dvss dvss avdd avdd enb_test0_3v3
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0] ena_snk_test0 dvdd dvss dvss avdd avdd ena_test0_3v3
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1] ena_src_test0 dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_2/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2] ena dvdd dvss dvss avdd avdd ena_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3] ref_sel_vbg dvdd dvss dvss avdd avdd ena_vbg_3v3
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__inv_2_4 ena_vbg_3v3 dvss dvss avdd avdd enb_vbg_3v3 sky130_fd_sc_hvl__inv_2
+Xbias_pstack_0[0] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[0]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[1] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[1]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[2] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[2]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[3] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[3]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[4] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[4]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[5] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[5]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[6] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[6]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[7] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[7]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[8] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[8]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[9] avss bias_pstack_0[9]/pcasc enb_test0_3v3 src_test0 bias_pstack_0[9]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[10] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[10]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[11] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[11]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[12] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[12]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[13] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[13]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[14] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[14]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[15] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[15]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[16] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[16]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[17] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[17]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[18] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[18]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[19] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[19]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[20] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[20]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[21] avss bias_pstack_0[9]/pcasc enb_vbg_3v3 bias_amp_0/inp bias_pstack_0[21]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xbias_pstack_0[22] avss bias_pstack_0[9]/pcasc ena_vbg_3v3 bias_amp_0/out bias_pstack_0[22]/vcasc
++ bias_amp_0/out avdd bias_pstack
+Xsky130_fd_pr__res_high_po_0p35_L4QTBM_0 m1_17229_7166# m1_18391_766# m1_14573_7166#
++ m1_15735_766# m1_8763_766# m1_13577_7166# m1_11087_766# m1_16897_7166# m1_11917_7166#
++ m1_9759_766# m1_8929_7166# m1_8431_766# m1_17395_766# m1_12083_766# m1_17229_7166#
++ m1_10755_766# m1_12249_7166# m1_9427_766# m1_9261_7166# m1_16399_766# m1_14075_766#
++ m1_11253_7166# m1_16565_7166# m1_14573_7166# m1_13909_7166# m1_13079_766# m1_15403_766#
++ m1_14407_766# m1_11751_766# m1_10423_766# m1_10921_7166# m1_8763_766# m1_16897_7166#
++ m1_12747_766# m1_11419_766# m1_15237_7166# m1_18225_7166# m1_9759_766# m1_11253_7166#
++ bias_amp_0/inp m1_12415_766# m1_17561_7166# m1_18723_766# m1_13411_766# m1_13245_7166#
++ m1_10755_766# m1_11585_7166# m1_14075_766# m1_12913_7166# m1_8597_7166# m1_14905_7166#
++ m1_17893_7166# m1_11751_766# m1_17727_766# m1_19055_766# m1_13909_7166# m1_9095_766#
++ m1_8929_7166# m1_13577_7166# m1_10257_7166# avss m1_16731_766# m1_17561_7166# m1_15569_7166#
++ m1_12747_766# m1_18059_766# m1_10091_766# m1_15735_766# m1_10589_7166# m1_8431_766#
++ m1_14739_766# m1_15901_7166# m1_17063_766# m1_18391_766# m1_18889_7166# m1_13743_766#
++ m1_11087_766# m1_10921_7166# m1_16067_766# m1_15569_7166# m1_17395_766# m1_18557_7166#
++ m1_9427_766# m1_13079_766# m1_10589_7166# m1_12083_766# m1_12913_7166# m1_19055_766#
++ m1_10423_766# m1_15071_766# m1_16399_766# m1_12581_7166# m1_9593_7166# m1_14407_766#
++ m1_15237_7166# m1_18059_766# m1_18225_7166# m1_11419_766# m1_14241_7166# m1_15403_766#
++ m1_13245_7166# m1_9925_7166# m1_17063_766# m1_17893_7166# m1_16565_7166# m1_12581_7166#
++ m1_12415_766# m1_9593_7166# m1_14241_7166# m1_16067_766# m1_10257_7166# m1_16233_7166#
++ m1_19221_7166# m1_13411_766# m1_18723_766# m1_15071_766# m1_11917_7166# m1_15901_7166#
++ m1_17727_766# m1_18889_7166# m1_13743_766# m1_9925_7166# m1_9095_766# m1_14905_7166#
++ m1_11585_7166# m1_16233_7166# m1_8597_7166# m1_19221_7166# avss m1_10091_766# m1_16731_766#
++ m1_12249_7166# m1_9261_7166# m1_14739_766# m1_18557_7166# sky130_fd_pr__res_high_po_0p35_L4QTBM
+Xsky130_fd_sc_hvl__decap_4_11 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+Xsky130_fd_sc_hvl__diode_2_0 ena dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_1 ena_snk_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xbias_amp_0 bias_amp_0/nbias ena_vbg_3v3 bias_amp_0/inp vbg bias_amp_0/out avss avdd
++ bias_amp
+Xsky130_fd_sc_hvl__diode_2_2 ena_src_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_3 ref_sel_vbg dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_pr__cap_mim_m3_1_MQZGVK_0 bias_amp_0/inp bias_amp_0/out sky130_fd_pr__cap_mim_m3_1_MQZGVK
+Xsky130_fd_pr__cap_mim_m3_1_MQZGVK_1 bias_amp_0/inp bias_amp_0/out sky130_fd_pr__cap_mim_m3_1_MQZGVK
+Xsky130_fd_sc_hvl__decap_4_3 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+.ends
+
+.subckt bias_generator_be3 avdd dvss lsxo_src_50 en_hsxo_trim_p en_hsxo_bias en_brnout_bias
++ en_lp1_bias hgbw1_src_100 instr2_src_100 comp_src_400 user_src_50 idac_src_1000
++ en_user2_bias en_user1_bias en_user2_trim_p en_comp_bias en_instr2_trim_p en_comp_trim_p
++ en_instr1_bias en_hgbw2_trim_p en_instr1_trim_p en_hgbw1_bias en_lp2_trim_p en_hgbw1_trim_p
++ brnout_src_200 bias_nstack_0[9]/nbias test_src_500 en_src_test lp1_src_100 en_ov_bias
++ bias_pstack_0[9]/pbias en_hgbw2_bias instr1_src_100 en_lsxo_bias en_lp2_bias en_comp_trim_n
++ user_src_150 en_user2_trim_n hgbw2_src_100 dvdd en_hsxo_trim_n bias_pstack_0[9]/pcasc
++ en_idac_bias en_lp1_trim_p en_instr2_bias hsxo_src_1000 lp2_src_100 en_snk_test
++ ov_src_600 avss
+Xsky130_fd_sc_hvl__inv_2_16 sky130_fd_sc_hvl__inv_2_16/A dvss dvss avdd avdd bias_pstack_0[9]/enb
++ sky130_fd_sc_hvl__inv_2
+Xbias_nstack_0[0] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[0]/vcasc
++ bias_nstack
+Xbias_nstack_0[1] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[1]/vcasc
++ bias_nstack
+Xbias_nstack_0[2] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[2]/vcasc
++ bias_nstack
+Xbias_nstack_0[3] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[3]/vcasc
++ bias_nstack
+Xbias_nstack_0[4] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[4]/vcasc
++ bias_nstack
+Xbias_nstack_0[5] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[5]/vcasc
++ bias_nstack
+Xbias_nstack_0[6] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[6]/vcasc
++ bias_nstack
+Xbias_nstack_0[7] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[7]/vcasc
++ bias_nstack
+Xbias_nstack_0[8] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[8]/vcasc
++ bias_nstack
+Xbias_nstack_0[9] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[9]/vcasc
++ bias_nstack
+Xbias_nstack_0[10] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[10]/vcasc
++ bias_nstack
+Xbias_nstack_0[11] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[11]/vcasc
++ bias_nstack
+Xbias_nstack_0[12] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[12]/vcasc
++ bias_nstack
+Xbias_nstack_0[13] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[13]/vcasc
++ bias_nstack
+Xbias_nstack_0[14] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[14]/vcasc bias_nstack
+Xbias_nstack_0[15] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[15]/vcasc bias_nstack
+Xbias_nstack_0[16] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[16]/vcasc bias_nstack
+Xbias_nstack_0[17] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[17]/vcasc bias_nstack
+Xbias_nstack_0[18] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[18]/vcasc bias_nstack
+Xbias_nstack_0[19] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[19]/vcasc bias_nstack
+Xbias_nstack_0[20] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[20]/vcasc bias_nstack
+Xbias_nstack_0[21] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[21]/vcasc bias_nstack
+Xbias_nstack_0[22] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[22]/vcasc bias_nstack
+Xbias_nstack_0[23] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[23]/vcasc bias_nstack
+Xbias_nstack_0[24] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[24]/vcasc bias_nstack
+Xbias_nstack_0[25] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[25]/vcasc bias_nstack
+Xbias_nstack_0[26] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[26]/vcasc bias_nstack
+Xbias_nstack_0[27] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[27]/vcasc bias_nstack
+Xbias_nstack_0[28] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[28]/vcasc bias_nstack
+Xbias_nstack_0[29] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[29]/vcasc bias_nstack
+Xbias_nstack_0[30] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[30]/vcasc bias_nstack
+Xbias_nstack_0[31] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[31]/vcasc bias_nstack
+Xbias_nstack_0[32] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[32]/vcasc bias_nstack
+Xbias_nstack_0[33] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[33]/vcasc bias_nstack
+Xbias_nstack_0[34] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[34]/vcasc bias_nstack
+Xbias_nstack_0[35] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[35]/vcasc bias_nstack
+Xbias_nstack_0[36] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[36]/vcasc bias_nstack
+Xbias_nstack_0[37] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[37]/vcasc bias_nstack
+Xbias_nstack_0[38] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[38]/vcasc bias_nstack
+Xbias_nstack_0[39] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[39]/vcasc bias_nstack
+Xbias_nstack_0[40] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[40]/vcasc bias_nstack
+Xbias_nstack_0[41] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[41]/vcasc bias_nstack
+Xbias_nstack_0[42] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[42]/vcasc bias_nstack
+Xbias_nstack_0[43] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[43]/vcasc bias_nstack
+Xbias_nstack_0[44] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[44]/vcasc bias_nstack
+Xbias_nstack_0[45] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[45]/vcasc bias_nstack
+Xbias_nstack_0[46] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[46]/vcasc bias_nstack
+Xbias_nstack_0[47] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[47]/vcasc bias_nstack
+Xbias_nstack_0[48] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[48]/vcasc bias_nstack
+Xbias_nstack_0[49] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[49]/vcasc bias_nstack
+Xbias_nstack_0[50] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[50]/vcasc bias_nstack
+Xbias_nstack_0[51] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[51]/vcasc bias_nstack
+Xbias_nstack_0[52] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[52]/vcasc bias_nstack
+Xbias_nstack_0[53] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[53]/vcasc bias_nstack
+Xbias_nstack_0[54] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[54]/vcasc bias_nstack
+Xbias_nstack_0[55] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[55]/vcasc bias_nstack
+Xbias_nstack_0[56] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[56]/vcasc bias_nstack
+Xbias_nstack_0[57] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[57]/vcasc bias_nstack
+Xbias_nstack_0[58] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[58]/vcasc bias_nstack
+Xbias_nstack_0[59] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[59]/vcasc bias_nstack
+Xbias_nstack_0[60] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[60]/vcasc bias_nstack
+Xbias_nstack_0[61] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[61]/vcasc bias_nstack
+Xbias_nstack_0[62] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[62]/vcasc bias_nstack
+Xbias_nstack_0[63] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[63]/vcasc bias_nstack
+Xbias_nstack_0[64] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[64]/vcasc bias_nstack
+Xbias_nstack_0[65] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[65]/vcasc bias_nstack
+Xbias_nstack_0[66] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[66]/vcasc bias_nstack
+Xbias_nstack_0[67] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[67]/vcasc bias_nstack
+Xbias_nstack_0[68] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[68]/vcasc bias_nstack
+Xbias_nstack_0[69] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[69]/vcasc bias_nstack
+Xbias_nstack_0[70] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[70]/vcasc bias_nstack
+Xbias_nstack_0[71] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[71]/vcasc bias_nstack
+Xbias_nstack_0[72] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[72]/vcasc bias_nstack
+Xbias_nstack_0[73] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[73]/vcasc bias_nstack
+Xbias_nstack_0[74] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[74]/vcasc bias_nstack
+Xbias_nstack_0[75] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[75]/vcasc bias_nstack
+Xbias_nstack_0[76] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[76]/vcasc bias_nstack
+Xbias_nstack_0[77] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[77]/vcasc bias_nstack
+Xbias_nstack_0[78] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[78]/vcasc bias_nstack
+Xbias_nstack_0[79] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[79]/vcasc bias_nstack
+Xbias_nstack_0[80] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[80]/vcasc bias_nstack
+Xbias_nstack_0[81] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[81]/vcasc bias_nstack
+Xbias_nstack_0[82] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[82]/vcasc bias_nstack
+Xbias_nstack_0[83] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[83]/vcasc bias_nstack
+Xbias_nstack_0[84] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[84]/vcasc bias_nstack
+Xbias_nstack_0[85] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[85]/vcasc bias_nstack
+Xbias_nstack_0[86] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[86]/vcasc bias_nstack
+Xbias_nstack_0[87] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[87]/vcasc bias_nstack
+Xbias_nstack_0[88] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[88]/vcasc bias_nstack
+Xbias_nstack_0[89] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[89]/vcasc bias_nstack
+Xbias_nstack_0[90] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[90]/vcasc bias_nstack
+Xbias_nstack_0[91] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[91]/vcasc bias_nstack
+Xbias_nstack_0[92] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[92]/vcasc bias_nstack
+Xbias_nstack_0[93] test_src_500 bias_nstack_0[93]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[93]/vcasc bias_nstack
+Xbias_nstack_0[94] user_src_150 bias_nstack_0[95]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[94]/vcasc bias_nstack
+Xbias_nstack_0[95] user_src_150 bias_nstack_0[95]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[95]/vcasc bias_nstack
+Xbias_nstack_0[96] comp_src_400 bias_nstack_0[97]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[96]/vcasc bias_nstack
+Xbias_nstack_0[97] comp_src_400 bias_nstack_0[97]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[97]/vcasc bias_nstack
+Xbias_nstack_0[98] hsxo_src_1000 bias_nstack_0[99]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[98]/vcasc bias_nstack
+Xbias_nstack_0[99] hsxo_src_1000 bias_nstack_0[99]/ena bias_nstack_0[9]/nbias avss
++ bias_nstack_0[99]/vcasc bias_nstack
+Xbias_nstack_0[100] bias_nstack_0[101]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[100]/vcasc
++ bias_nstack
+Xbias_nstack_0[101] bias_nstack_0[101]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[101]/vcasc
++ bias_nstack
+Xsky130_fd_sc_hvl__inv_2_17 sky130_fd_sc_hvl__inv_2_17/A dvss dvss avdd avdd bias_pstack_0[40]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_18 sky130_fd_sc_hvl__inv_2_18/A dvss dvss avdd avdd bias_pstack_0[44]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_19 sky130_fd_sc_hvl__inv_2_19/A dvss dvss avdd avdd bias_pstack_0[20]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_0 sky130_fd_sc_hvl__inv_2_0/A dvss dvss avdd avdd bias_pstack_0[95]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_1 sky130_fd_sc_hvl__inv_2_1/A dvss dvss avdd avdd bias_pstack_0[90]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_20 en_comp_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_2 sky130_fd_sc_hvl__inv_2_2/A dvss dvss avdd avdd bias_pstack_0[80]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_10 en_lp1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_21 en_instr1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|0] en_snk_test dvdd dvss dvss avdd avdd bias_nstack_0[93]/ena
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|0] en_user2_trim_n dvdd dvss dvss avdd avdd bias_nstack_0[95]/ena
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|0] en_comp_trim_n dvdd dvss dvss avdd avdd bias_nstack_0[97]/ena
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|0] en_hsxo_trim_n dvdd dvss dvss avdd avdd bias_nstack_0[99]/ena
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|1] en_lp2_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_0/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|1] en_lp1_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_7/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|1] en_lsxo_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_11/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|1] en_lp1_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_10/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|2] en_hgbw2_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_12/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|2] en_hgbw1_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_1/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|2] en_lp2_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_6/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|2] en_hgbw1_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_5/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|3] en_instr2_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_8/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|3] en_instr1_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_13/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|3] en_hgbw2_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_14/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|3] en_instr1_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_15/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|4] en_ov_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_9/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|4] en_comp_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_4/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|4] en_instr2_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_3/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|4] en_comp_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_2/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|5] en_src_test dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_20/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|5] en_user2_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_23/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|5] en_user1_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_22/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|5] en_user2_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_21/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|6] en_idac_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_16/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|6] en_hsxo_trim_p dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_19/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[2|6] en_brnout_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_18/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|6] en_hsxo_bias dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_17/A
++ sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__inv_2_3 sky130_fd_sc_hvl__inv_2_3/A dvss dvss avdd avdd bias_pstack_0[81]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_11 en_hgbw1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_22 en_hgbw1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_4 sky130_fd_sc_hvl__inv_2_4/A dvss dvss avdd avdd bias_pstack_0[72]/enb
++ sky130_fd_sc_hvl__inv_2
+Xbias_pstack_0[0] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[0]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[1] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[1]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[2] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[2]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[3] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[3]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[4] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[4]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[5] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[5]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[6] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[6]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[7] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[7]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[8] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[8]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[9] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[9]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[10] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[10]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[11] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[11]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[12] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[12]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[13] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[13]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[14] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[14]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[15] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[15]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[16] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[16]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[17] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[17]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[18] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[18]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[19] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
++ bias_pstack_0[19]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[20] avss bias_pstack_0[9]/pcasc bias_pstack_0[20]/enb hsxo_src_1000
++ bias_pstack_0[20]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[21] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[21]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[22] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[22]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[23] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[23]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[24] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[24]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[25] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[25]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[26] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[26]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[27] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[27]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[28] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[28]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[29] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[29]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[30] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[30]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[31] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[31]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[32] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[32]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[33] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[33]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[34] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[34]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[35] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[35]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[36] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[36]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[37] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[37]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[38] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[38]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[39] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[39]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[40] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
++ bias_pstack_0[40]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[41] avss bias_pstack_0[9]/pcasc bias_pstack_0[44]/enb brnout_src_200
++ bias_pstack_0[41]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[42] avss bias_pstack_0[9]/pcasc bias_pstack_0[44]/enb brnout_src_200
++ bias_pstack_0[42]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[43] avss bias_pstack_0[9]/pcasc bias_pstack_0[44]/enb brnout_src_200
++ bias_pstack_0[43]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[44] avss bias_pstack_0[9]/pcasc bias_pstack_0[44]/enb brnout_src_200
++ bias_pstack_0[44]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[45] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[45]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[46] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[46]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[47] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[47]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[48] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[48]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[49] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[49]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[50] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[50]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[51] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[51]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[52] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[52]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[53] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[53]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[54] avss bias_pstack_0[9]/pcasc bias_pstack_0[54]/enb test_src_500
++ bias_pstack_0[54]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[55] avss bias_pstack_0[9]/pcasc bias_pstack_0[55]/enb user_src_150
++ bias_pstack_0[55]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[56] avss bias_pstack_0[9]/pcasc bias_pstack_0[58]/enb user_src_150
++ bias_pstack_0[56]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[57] avss bias_pstack_0[9]/pcasc bias_pstack_0[58]/enb user_src_150
++ bias_pstack_0[57]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[58] avss bias_pstack_0[9]/pcasc bias_pstack_0[58]/enb user_src_150
++ bias_pstack_0[58]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[59] avss bias_pstack_0[9]/pcasc bias_pstack_0[59]/enb user_src_50 bias_pstack_0[59]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[60] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[60]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[61] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[61]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[62] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[62]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[63] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[63]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[64] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[64]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[65] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[65]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[66] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[66]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[67] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[67]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[68] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[68]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[69] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[69]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[70] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[70]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[71] avss bias_pstack_0[9]/pcasc bias_pstack_0[71]/enb ov_src_600 bias_pstack_0[71]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[72] avss bias_pstack_0[9]/pcasc bias_pstack_0[72]/enb comp_src_400
++ bias_pstack_0[72]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[73] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[73]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[74] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[74]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[75] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[75]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[76] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[76]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[77] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[77]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[78] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[78]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[79] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[79]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[80] avss bias_pstack_0[9]/pcasc bias_pstack_0[80]/enb comp_src_400
++ bias_pstack_0[80]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[81] avss bias_pstack_0[9]/pcasc bias_pstack_0[81]/enb instr2_src_100
++ bias_pstack_0[81]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[82] avss bias_pstack_0[9]/pcasc bias_pstack_0[83]/enb instr2_src_100
++ bias_pstack_0[82]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[83] avss bias_pstack_0[9]/pcasc bias_pstack_0[83]/enb instr2_src_100
++ bias_pstack_0[83]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[84] avss bias_pstack_0[9]/pcasc bias_pstack_0[84]/enb instr1_src_100
++ bias_pstack_0[84]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[85] avss bias_pstack_0[9]/pcasc bias_pstack_0[86]/enb instr1_src_100
++ bias_pstack_0[85]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[86] avss bias_pstack_0[9]/pcasc bias_pstack_0[86]/enb instr1_src_100
++ bias_pstack_0[86]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[87] avss bias_pstack_0[9]/pcasc bias_pstack_0[87]/enb hgbw2_src_100
++ bias_pstack_0[87]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[88] avss bias_pstack_0[9]/pcasc bias_pstack_0[89]/enb hgbw2_src_100
++ bias_pstack_0[88]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[89] avss bias_pstack_0[9]/pcasc bias_pstack_0[89]/enb hgbw2_src_100
++ bias_pstack_0[89]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[90] avss bias_pstack_0[9]/pcasc bias_pstack_0[90]/enb hgbw1_src_100
++ bias_pstack_0[90]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[91] avss bias_pstack_0[9]/pcasc bias_pstack_0[92]/enb hgbw1_src_100
++ bias_pstack_0[91]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[92] avss bias_pstack_0[9]/pcasc bias_pstack_0[92]/enb hgbw1_src_100
++ bias_pstack_0[92]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[93] avss bias_pstack_0[9]/pcasc bias_pstack_0[93]/enb lp2_src_100 bias_pstack_0[93]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[94] avss bias_pstack_0[9]/pcasc bias_pstack_0[95]/enb lp2_src_100 bias_pstack_0[94]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[95] avss bias_pstack_0[9]/pcasc bias_pstack_0[95]/enb lp2_src_100 bias_pstack_0[95]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[96] avss bias_pstack_0[9]/pcasc bias_pstack_0[96]/enb lp1_src_100 bias_pstack_0[96]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[97] avss bias_pstack_0[9]/pcasc bias_pstack_0[98]/enb lp1_src_100 bias_pstack_0[97]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[98] avss bias_pstack_0[9]/pcasc bias_pstack_0[98]/enb lp1_src_100 bias_pstack_0[98]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[99] avss bias_pstack_0[9]/pcasc bias_pstack_0[99]/enb lsxo_src_50 bias_pstack_0[99]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[100] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[101]/itail bias_pstack_0[100]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[101] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[101]/itail bias_pstack_0[101]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xsky130_fd_sc_hvl__diode_2_12 en_instr1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_23 en_lp1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_5 sky130_fd_sc_hvl__inv_2_5/A dvss dvss avdd avdd bias_pstack_0[92]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_13 en_comp_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_24 en_lp2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_6 sky130_fd_sc_hvl__inv_2_6/A dvss dvss avdd avdd bias_pstack_0[93]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_14 en_user2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_25 en_hgbw2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_7 sky130_fd_sc_hvl__inv_2_7/A dvss dvss avdd avdd bias_pstack_0[96]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_15 en_lsxo_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_26 en_instr2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_8 sky130_fd_sc_hvl__inv_2_8/A dvss dvss avdd avdd bias_pstack_0[83]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_16 en_hsxo_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_27 en_user1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_9 sky130_fd_sc_hvl__inv_2_9/A dvss dvss avdd avdd bias_pstack_0[71]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_17 en_brnout_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_18 en_hsxo_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_19 en_user2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_0 en_snk_test dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_1 en_idac_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_2 en_src_test dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__decap_4_14 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+Xsky130_fd_sc_hvl__diode_2_3 en_ov_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_4 en_instr2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_5 en_hgbw2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_20 sky130_fd_sc_hvl__inv_2_20/A dvss dvss avdd avdd bias_pstack_0[54]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_6 en_lp2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__decap_4_18 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+Xsky130_fd_sc_hvl__decap_4_0 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+Xsky130_fd_sc_hvl__inv_2_21 sky130_fd_sc_hvl__inv_2_21/A dvss dvss avdd avdd bias_pstack_0[58]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_10 sky130_fd_sc_hvl__inv_2_10/A dvss dvss avdd avdd bias_pstack_0[98]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_7 en_comp_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__decap_4_1 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+Xsky130_fd_sc_hvl__inv_2_22 sky130_fd_sc_hvl__inv_2_22/A dvss dvss avdd avdd bias_pstack_0[59]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_11 sky130_fd_sc_hvl__inv_2_11/A dvss dvss avdd avdd bias_pstack_0[99]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_8 en_user2_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_23 sky130_fd_sc_hvl__inv_2_23/A dvss dvss avdd avdd bias_pstack_0[55]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_12 sky130_fd_sc_hvl__inv_2_12/A dvss dvss avdd avdd bias_pstack_0[89]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_9 en_hsxo_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__inv_2_13 sky130_fd_sc_hvl__inv_2_13/A dvss dvss avdd avdd bias_pstack_0[84]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_14 sky130_fd_sc_hvl__inv_2_14/A dvss dvss avdd avdd bias_pstack_0[87]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_15 sky130_fd_sc_hvl__inv_2_15/A dvss dvss avdd avdd bias_pstack_0[86]/enb
++ sky130_fd_sc_hvl__inv_2
+.ends
+
+.subckt sky130_ef_ip__biasgen3 ena ref_sel_vbg dvdd avdd avss dvss vbg en_snk_test
++ en_user2_trim_n en_comp_trim_n en_hsxo_trim_n en_lp2_bias en_lp1_trim_p en_lsxo_bias
++ en_lp1_bias en_hgbw1_trim_p en_lp2_trim_p en_hgbw1_bias en_instr2_bias en_instr1_trim_p
++ en_hgbw2_trim_p en_instr1_bias en_ov_bias en_comp_trim_p en_instr2_trim_p en_comp_bias
++ en_src_test en_user2_trim_p en_user1_bias en_user2_bias en_idac_bias en_hsxo_trim_p
++ en_brnout_bias en_hsxo_bias en_hgbw2_bias lsxo_src_50 lp1_src_100 lp2_src_100 hgbw1_src_100
++ hgbw2_src_100 instr1_src_100 instr2_src_100 ov_src_600 user_src_50 user_src_150
++ test_src_500 brnout_src_200 hsxo_src_1000 idac_src_1000 ref_in comp_src_400
+Xbias_generator_fe_0 bias_generator_fe_0/snk_test0 bias_generator_fe_0/src_test0 ref_sel_vbg
++ ena vbg ref_in dvss dvss dvdd bias_generator_fe_0/bias_amp_0/out dvss avdd bias_generator_fe_0/bias_amp_0/nbias
++ bias_generator_fe_0/bias_pstack_0[9]/pcasc avss bias_generator_fe
+Xbias_generator_be3_0 avdd dvss lsxo_src_50 en_hsxo_trim_p en_hsxo_bias en_brnout_bias
++ en_lp1_bias hgbw1_src_100 instr2_src_100 comp_src_400 user_src_50 idac_src_1000
++ en_user2_bias en_user1_bias en_user2_trim_p en_comp_bias en_instr2_trim_p en_comp_trim_p
++ en_instr1_bias en_hgbw2_trim_p en_instr1_trim_p en_hgbw1_bias en_lp2_trim_p en_hgbw1_trim_p
++ brnout_src_200 bias_generator_fe_0/bias_amp_0/nbias test_src_500 en_src_test lp1_src_100
++ en_ov_bias bias_generator_fe_0/bias_amp_0/out en_hgbw2_bias instr1_src_100 en_lsxo_bias
++ en_lp2_bias en_comp_trim_n user_src_150 en_user2_trim_n hgbw2_src_100 dvdd en_hsxo_trim_n
++ bias_generator_fe_0/bias_pstack_0[9]/pcasc en_idac_bias en_lp1_trim_p en_instr2_bias
++ hsxo_src_1000 lp2_src_100 en_snk_test ov_src_600 avss bias_generator_be3
+.ends
+

@@ -1,0 +1,701 @@
+** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/sky130_ef_ip__idac3v_8bit.sch
+.subckt sky130_ef_ip__idac3v_8bit ena ref_in vbg ref_sel_vbg dvdd dvss avdd din[7] din[6] din[5] din[4] din[3] din[2] din[1]
++ din[0] avss src_out snk_out
+*.PININFO ena:I din[7:0]:I ref_sel_vbg:I vbg:I ref_in:I src_out:B snk_out:B dvdd:B dvss:B avdd:B avss:B
+x1 avdd ena vbg net4 avss dvdd dvss ref_sel_vbg ref_in dvss net2 net1 net3 net5 dvss bias_generator_fe
+x2 dvdd dvss din[7] din[6] din[5] din[4] din[3] din[2] din[1] din[0] avdd net1 net3 src_out snk_out net2 avss
++ bias_generator_idac_be
+* noconn #net4
+* noconn #net5
+.ends
+
+* expanding   symbol:  bias_generator_fe.sym # of pins=15
+** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sym
+** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sch
+.subckt bias_generator_fe avdd ena vbg src_test0 avss dvdd ena_src_test0 ref_sel_vbg ref_in dvss nbias pcasc pbias snk_test0
++ ena_snk_test0
+*.PININFO ref_in:I avss:B ref_sel_vbg:I avdd:B ena_src_test0:I ena_snk_test0:I src_test0:B snk_test0:B vbg:I ena:I dvdd:B dvss:B
+*+ pcasc:O pbias:O nbias:O
+x2[19] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[18] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[17] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[16] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[15] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[14] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[13] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[12] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[11] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[10] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[9] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[8] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[7] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[6] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[5] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[4] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[3] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[2] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[1] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[0] net1 ena_3v3 nbias nbias avss bias_nstack
+XR4 pcasc ref_in avss sky130_fd_pr__res_high_po_0p35 L=1500 mult=1 m=1
+x4 pbias enb_vbg_3v3 net2 nbias avss bias_nstack
+x2 avdd pbias pcasc net5 ena_vbg_3v3 avss pbias bias_pstack
+x13[9] avdd pbias pcasc net6[9] enb_test0_3v3 avss src_test0 bias_pstack
+x13[8] avdd pbias pcasc net6[8] enb_test0_3v3 avss src_test0 bias_pstack
+x13[7] avdd pbias pcasc net6[7] enb_test0_3v3 avss src_test0 bias_pstack
+x13[6] avdd pbias pcasc net6[6] enb_test0_3v3 avss src_test0 bias_pstack
+x13[5] avdd pbias pcasc net6[5] enb_test0_3v3 avss src_test0 bias_pstack
+x13[4] avdd pbias pcasc net6[4] enb_test0_3v3 avss src_test0 bias_pstack
+x13[3] avdd pbias pcasc net6[3] enb_test0_3v3 avss src_test0 bias_pstack
+x13[2] avdd pbias pcasc net6[2] enb_test0_3v3 avss src_test0 bias_pstack
+x13[1] avdd pbias pcasc net6[1] enb_test0_3v3 avss src_test0 bias_pstack
+x13[0] avdd pbias pcasc net6[0] enb_test0_3v3 avss src_test0 bias_pstack
+x17[1] snk_test0 ena_test0_3v3 net7[1] nbias avss bias_nstack
+x17[0] snk_test0 ena_test0_3v3 net7[0] nbias avss bias_nstack
+x1 ref_sel_vbg dvdd dvss dvss avdd avdd ena_vbg_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x11 ena_snk_test0 dvdd dvss dvss avdd avdd ena_test0_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x23 ena_src_test0 dvdd dvss dvss avdd avdd net4 sky130_fd_sc_hvl__lsbuflv2hv_1
+x24 ena_vbg_3v3 dvss dvss avdd avdd enb_vbg_3v3 sky130_fd_sc_hvl__inv_2
+x35 net4 dvss dvss avdd avdd enb_test0_3v3 sky130_fd_sc_hvl__inv_2
+x3 avdd pbias vbg vfb nbias avss ena_vbg_3v3 bias_amp
+XR1 avss net3 avss sky130_fd_pr__res_high_po_0p35 L=2008 mult=1 m=1
+XC1 pbias vfb sky130_fd_pr__cap_mim_m3_1 W=5 L=5 m=8
+x36 ena dvdd dvss dvss avdd avdd ena_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+* noconn #net2
+* noconn #net7
+* noconn #net6
+XR2 net1 pcasc avss sky130_fd_pr__res_high_po_0p35 L=900 mult=1 m=1
+Vmeas vfb net3 0
+.save i(vmeas)
+x19[11] avdd pbias pcasc net8[11] enb_vbg_3v3 avss vfb bias_pstack
+x19[10] avdd pbias pcasc net8[10] enb_vbg_3v3 avss vfb bias_pstack
+x19[9] avdd pbias pcasc net8[9] enb_vbg_3v3 avss vfb bias_pstack
+x19[8] avdd pbias pcasc net8[8] enb_vbg_3v3 avss vfb bias_pstack
+x19[7] avdd pbias pcasc net8[7] enb_vbg_3v3 avss vfb bias_pstack
+x19[6] avdd pbias pcasc net8[6] enb_vbg_3v3 avss vfb bias_pstack
+x19[5] avdd pbias pcasc net8[5] enb_vbg_3v3 avss vfb bias_pstack
+x19[4] avdd pbias pcasc net8[4] enb_vbg_3v3 avss vfb bias_pstack
+x19[3] avdd pbias pcasc net8[3] enb_vbg_3v3 avss vfb bias_pstack
+x19[2] avdd pbias pcasc net8[2] enb_vbg_3v3 avss vfb bias_pstack
+x19[1] avdd pbias pcasc net8[1] enb_vbg_3v3 avss vfb bias_pstack
+x19[0] avdd pbias pcasc net8[0] enb_vbg_3v3 avss vfb bias_pstack
+* noconn #net8
+* noconn #net5
+XD1 avss vbg sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+x5[1] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x5[0] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x5 ref_sel_vbg dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x6 ena dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x7 ena_src_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x8 ena_snk_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+.ends
+
+
+* expanding   symbol:  bias_generator_idac_be.sym # of pins=10
+** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_idac_be.sym
+** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_idac_be.sch
+.subckt bias_generator_idac_be dvdd dvss ena[7] ena[6] ena[5] ena[4] ena[3] ena[2] ena[1] ena[0] avdd pcasc pbias src_out snk_out
++ nbias avss
+*.PININFO avss:B avdd:B src_out:B ena[7:0]:I dvdd:B dvss:B pcasc:I pbias:I nbias:I snk_out:B
+x3 snk_out avss net1 nbias avss bias_nstack
+x1 avdd pbias pcasc net2 avdd avss src_out bias_pstack
+x8 avdd pbias pcasc net3 enb_bit0 avss src_out bias_pstack
+x4[1] avdd pbias pcasc net4[1] enb_bit1 avss src_out bias_pstack
+x4[0] avdd pbias pcasc net4[0] enb_bit1 avss src_out bias_pstack
+x5[3] avdd pbias pcasc net5[3] enb_bit2 avss src_out bias_pstack
+x5[2] avdd pbias pcasc net5[2] enb_bit2 avss src_out bias_pstack
+x5[1] avdd pbias pcasc net5[1] enb_bit2 avss src_out bias_pstack
+x5[0] avdd pbias pcasc net5[0] enb_bit2 avss src_out bias_pstack
+x6[7] avdd pbias pcasc net6[7] enb_bit3 avss src_out bias_pstack
+x6[6] avdd pbias pcasc net6[6] enb_bit3 avss src_out bias_pstack
+x6[5] avdd pbias pcasc net6[5] enb_bit3 avss src_out bias_pstack
+x6[4] avdd pbias pcasc net6[4] enb_bit3 avss src_out bias_pstack
+x6[3] avdd pbias pcasc net6[3] enb_bit3 avss src_out bias_pstack
+x6[2] avdd pbias pcasc net6[2] enb_bit3 avss src_out bias_pstack
+x6[1] avdd pbias pcasc net6[1] enb_bit3 avss src_out bias_pstack
+x6[0] avdd pbias pcasc net6[0] enb_bit3 avss src_out bias_pstack
+x7[15] avdd pbias pcasc net7[15] enb_bit4 avss src_out bias_pstack
+x7[14] avdd pbias pcasc net7[14] enb_bit4 avss src_out bias_pstack
+x7[13] avdd pbias pcasc net7[13] enb_bit4 avss src_out bias_pstack
+x7[12] avdd pbias pcasc net7[12] enb_bit4 avss src_out bias_pstack
+x7[11] avdd pbias pcasc net7[11] enb_bit4 avss src_out bias_pstack
+x7[10] avdd pbias pcasc net7[10] enb_bit4 avss src_out bias_pstack
+x7[9] avdd pbias pcasc net7[9] enb_bit4 avss src_out bias_pstack
+x7[8] avdd pbias pcasc net7[8] enb_bit4 avss src_out bias_pstack
+x7[7] avdd pbias pcasc net7[7] enb_bit4 avss src_out bias_pstack
+x7[6] avdd pbias pcasc net7[6] enb_bit4 avss src_out bias_pstack
+x7[5] avdd pbias pcasc net7[5] enb_bit4 avss src_out bias_pstack
+x7[4] avdd pbias pcasc net7[4] enb_bit4 avss src_out bias_pstack
+x7[3] avdd pbias pcasc net7[3] enb_bit4 avss src_out bias_pstack
+x7[2] avdd pbias pcasc net7[2] enb_bit4 avss src_out bias_pstack
+x7[1] avdd pbias pcasc net7[1] enb_bit4 avss src_out bias_pstack
+x7[0] avdd pbias pcasc net7[0] enb_bit4 avss src_out bias_pstack
+x11[31] avdd pbias pcasc net8[31] enb_bit5 avss src_out bias_pstack
+x11[30] avdd pbias pcasc net8[30] enb_bit5 avss src_out bias_pstack
+x11[29] avdd pbias pcasc net8[29] enb_bit5 avss src_out bias_pstack
+x11[28] avdd pbias pcasc net8[28] enb_bit5 avss src_out bias_pstack
+x11[27] avdd pbias pcasc net8[27] enb_bit5 avss src_out bias_pstack
+x11[26] avdd pbias pcasc net8[26] enb_bit5 avss src_out bias_pstack
+x11[25] avdd pbias pcasc net8[25] enb_bit5 avss src_out bias_pstack
+x11[24] avdd pbias pcasc net8[24] enb_bit5 avss src_out bias_pstack
+x11[23] avdd pbias pcasc net8[23] enb_bit5 avss src_out bias_pstack
+x11[22] avdd pbias pcasc net8[22] enb_bit5 avss src_out bias_pstack
+x11[21] avdd pbias pcasc net8[21] enb_bit5 avss src_out bias_pstack
+x11[20] avdd pbias pcasc net8[20] enb_bit5 avss src_out bias_pstack
+x11[19] avdd pbias pcasc net8[19] enb_bit5 avss src_out bias_pstack
+x11[18] avdd pbias pcasc net8[18] enb_bit5 avss src_out bias_pstack
+x11[17] avdd pbias pcasc net8[17] enb_bit5 avss src_out bias_pstack
+x11[16] avdd pbias pcasc net8[16] enb_bit5 avss src_out bias_pstack
+x11[15] avdd pbias pcasc net8[15] enb_bit5 avss src_out bias_pstack
+x11[14] avdd pbias pcasc net8[14] enb_bit5 avss src_out bias_pstack
+x11[13] avdd pbias pcasc net8[13] enb_bit5 avss src_out bias_pstack
+x11[12] avdd pbias pcasc net8[12] enb_bit5 avss src_out bias_pstack
+x11[11] avdd pbias pcasc net8[11] enb_bit5 avss src_out bias_pstack
+x11[10] avdd pbias pcasc net8[10] enb_bit5 avss src_out bias_pstack
+x11[9] avdd pbias pcasc net8[9] enb_bit5 avss src_out bias_pstack
+x11[8] avdd pbias pcasc net8[8] enb_bit5 avss src_out bias_pstack
+x11[7] avdd pbias pcasc net8[7] enb_bit5 avss src_out bias_pstack
+x11[6] avdd pbias pcasc net8[6] enb_bit5 avss src_out bias_pstack
+x11[5] avdd pbias pcasc net8[5] enb_bit5 avss src_out bias_pstack
+x11[4] avdd pbias pcasc net8[4] enb_bit5 avss src_out bias_pstack
+x11[3] avdd pbias pcasc net8[3] enb_bit5 avss src_out bias_pstack
+x11[2] avdd pbias pcasc net8[2] enb_bit5 avss src_out bias_pstack
+x11[1] avdd pbias pcasc net8[1] enb_bit5 avss src_out bias_pstack
+x11[0] avdd pbias pcasc net8[0] enb_bit5 avss src_out bias_pstack
+x12[63] avdd pbias pcasc net9[63] enb_bit6 avss src_out bias_pstack
+x12[62] avdd pbias pcasc net9[62] enb_bit6 avss src_out bias_pstack
+x12[61] avdd pbias pcasc net9[61] enb_bit6 avss src_out bias_pstack
+x12[60] avdd pbias pcasc net9[60] enb_bit6 avss src_out bias_pstack
+x12[59] avdd pbias pcasc net9[59] enb_bit6 avss src_out bias_pstack
+x12[58] avdd pbias pcasc net9[58] enb_bit6 avss src_out bias_pstack
+x12[57] avdd pbias pcasc net9[57] enb_bit6 avss src_out bias_pstack
+x12[56] avdd pbias pcasc net9[56] enb_bit6 avss src_out bias_pstack
+x12[55] avdd pbias pcasc net9[55] enb_bit6 avss src_out bias_pstack
+x12[54] avdd pbias pcasc net9[54] enb_bit6 avss src_out bias_pstack
+x12[53] avdd pbias pcasc net9[53] enb_bit6 avss src_out bias_pstack
+x12[52] avdd pbias pcasc net9[52] enb_bit6 avss src_out bias_pstack
+x12[51] avdd pbias pcasc net9[51] enb_bit6 avss src_out bias_pstack
+x12[50] avdd pbias pcasc net9[50] enb_bit6 avss src_out bias_pstack
+x12[49] avdd pbias pcasc net9[49] enb_bit6 avss src_out bias_pstack
+x12[48] avdd pbias pcasc net9[48] enb_bit6 avss src_out bias_pstack
+x12[47] avdd pbias pcasc net9[47] enb_bit6 avss src_out bias_pstack
+x12[46] avdd pbias pcasc net9[46] enb_bit6 avss src_out bias_pstack
+x12[45] avdd pbias pcasc net9[45] enb_bit6 avss src_out bias_pstack
+x12[44] avdd pbias pcasc net9[44] enb_bit6 avss src_out bias_pstack
+x12[43] avdd pbias pcasc net9[43] enb_bit6 avss src_out bias_pstack
+x12[42] avdd pbias pcasc net9[42] enb_bit6 avss src_out bias_pstack
+x12[41] avdd pbias pcasc net9[41] enb_bit6 avss src_out bias_pstack
+x12[40] avdd pbias pcasc net9[40] enb_bit6 avss src_out bias_pstack
+x12[39] avdd pbias pcasc net9[39] enb_bit6 avss src_out bias_pstack
+x12[38] avdd pbias pcasc net9[38] enb_bit6 avss src_out bias_pstack
+x12[37] avdd pbias pcasc net9[37] enb_bit6 avss src_out bias_pstack
+x12[36] avdd pbias pcasc net9[36] enb_bit6 avss src_out bias_pstack
+x12[35] avdd pbias pcasc net9[35] enb_bit6 avss src_out bias_pstack
+x12[34] avdd pbias pcasc net9[34] enb_bit6 avss src_out bias_pstack
+x12[33] avdd pbias pcasc net9[33] enb_bit6 avss src_out bias_pstack
+x12[32] avdd pbias pcasc net9[32] enb_bit6 avss src_out bias_pstack
+x12[31] avdd pbias pcasc net9[31] enb_bit6 avss src_out bias_pstack
+x12[30] avdd pbias pcasc net9[30] enb_bit6 avss src_out bias_pstack
+x12[29] avdd pbias pcasc net9[29] enb_bit6 avss src_out bias_pstack
+x12[28] avdd pbias pcasc net9[28] enb_bit6 avss src_out bias_pstack
+x12[27] avdd pbias pcasc net9[27] enb_bit6 avss src_out bias_pstack
+x12[26] avdd pbias pcasc net9[26] enb_bit6 avss src_out bias_pstack
+x12[25] avdd pbias pcasc net9[25] enb_bit6 avss src_out bias_pstack
+x12[24] avdd pbias pcasc net9[24] enb_bit6 avss src_out bias_pstack
+x12[23] avdd pbias pcasc net9[23] enb_bit6 avss src_out bias_pstack
+x12[22] avdd pbias pcasc net9[22] enb_bit6 avss src_out bias_pstack
+x12[21] avdd pbias pcasc net9[21] enb_bit6 avss src_out bias_pstack
+x12[20] avdd pbias pcasc net9[20] enb_bit6 avss src_out bias_pstack
+x12[19] avdd pbias pcasc net9[19] enb_bit6 avss src_out bias_pstack
+x12[18] avdd pbias pcasc net9[18] enb_bit6 avss src_out bias_pstack
+x12[17] avdd pbias pcasc net9[17] enb_bit6 avss src_out bias_pstack
+x12[16] avdd pbias pcasc net9[16] enb_bit6 avss src_out bias_pstack
+x12[15] avdd pbias pcasc net9[15] enb_bit6 avss src_out bias_pstack
+x12[14] avdd pbias pcasc net9[14] enb_bit6 avss src_out bias_pstack
+x12[13] avdd pbias pcasc net9[13] enb_bit6 avss src_out bias_pstack
+x12[12] avdd pbias pcasc net9[12] enb_bit6 avss src_out bias_pstack
+x12[11] avdd pbias pcasc net9[11] enb_bit6 avss src_out bias_pstack
+x12[10] avdd pbias pcasc net9[10] enb_bit6 avss src_out bias_pstack
+x12[9] avdd pbias pcasc net9[9] enb_bit6 avss src_out bias_pstack
+x12[8] avdd pbias pcasc net9[8] enb_bit6 avss src_out bias_pstack
+x12[7] avdd pbias pcasc net9[7] enb_bit6 avss src_out bias_pstack
+x12[6] avdd pbias pcasc net9[6] enb_bit6 avss src_out bias_pstack
+x12[5] avdd pbias pcasc net9[5] enb_bit6 avss src_out bias_pstack
+x12[4] avdd pbias pcasc net9[4] enb_bit6 avss src_out bias_pstack
+x12[3] avdd pbias pcasc net9[3] enb_bit6 avss src_out bias_pstack
+x12[2] avdd pbias pcasc net9[2] enb_bit6 avss src_out bias_pstack
+x12[1] avdd pbias pcasc net9[1] enb_bit6 avss src_out bias_pstack
+x12[0] avdd pbias pcasc net9[0] enb_bit6 avss src_out bias_pstack
+x1[127] avdd pbias pcasc net10[127] enb_bit7 avss src_out bias_pstack
+x1[126] avdd pbias pcasc net10[126] enb_bit7 avss src_out bias_pstack
+x1[125] avdd pbias pcasc net10[125] enb_bit7 avss src_out bias_pstack
+x1[124] avdd pbias pcasc net10[124] enb_bit7 avss src_out bias_pstack
+x1[123] avdd pbias pcasc net10[123] enb_bit7 avss src_out bias_pstack
+x1[122] avdd pbias pcasc net10[122] enb_bit7 avss src_out bias_pstack
+x1[121] avdd pbias pcasc net10[121] enb_bit7 avss src_out bias_pstack
+x1[120] avdd pbias pcasc net10[120] enb_bit7 avss src_out bias_pstack
+x1[119] avdd pbias pcasc net10[119] enb_bit7 avss src_out bias_pstack
+x1[118] avdd pbias pcasc net10[118] enb_bit7 avss src_out bias_pstack
+x1[117] avdd pbias pcasc net10[117] enb_bit7 avss src_out bias_pstack
+x1[116] avdd pbias pcasc net10[116] enb_bit7 avss src_out bias_pstack
+x1[115] avdd pbias pcasc net10[115] enb_bit7 avss src_out bias_pstack
+x1[114] avdd pbias pcasc net10[114] enb_bit7 avss src_out bias_pstack
+x1[113] avdd pbias pcasc net10[113] enb_bit7 avss src_out bias_pstack
+x1[112] avdd pbias pcasc net10[112] enb_bit7 avss src_out bias_pstack
+x1[111] avdd pbias pcasc net10[111] enb_bit7 avss src_out bias_pstack
+x1[110] avdd pbias pcasc net10[110] enb_bit7 avss src_out bias_pstack
+x1[109] avdd pbias pcasc net10[109] enb_bit7 avss src_out bias_pstack
+x1[108] avdd pbias pcasc net10[108] enb_bit7 avss src_out bias_pstack
+x1[107] avdd pbias pcasc net10[107] enb_bit7 avss src_out bias_pstack
+x1[106] avdd pbias pcasc net10[106] enb_bit7 avss src_out bias_pstack
+x1[105] avdd pbias pcasc net10[105] enb_bit7 avss src_out bias_pstack
+x1[104] avdd pbias pcasc net10[104] enb_bit7 avss src_out bias_pstack
+x1[103] avdd pbias pcasc net10[103] enb_bit7 avss src_out bias_pstack
+x1[102] avdd pbias pcasc net10[102] enb_bit7 avss src_out bias_pstack
+x1[101] avdd pbias pcasc net10[101] enb_bit7 avss src_out bias_pstack
+x1[100] avdd pbias pcasc net10[100] enb_bit7 avss src_out bias_pstack
+x1[99] avdd pbias pcasc net10[99] enb_bit7 avss src_out bias_pstack
+x1[98] avdd pbias pcasc net10[98] enb_bit7 avss src_out bias_pstack
+x1[97] avdd pbias pcasc net10[97] enb_bit7 avss src_out bias_pstack
+x1[96] avdd pbias pcasc net10[96] enb_bit7 avss src_out bias_pstack
+x1[95] avdd pbias pcasc net10[95] enb_bit7 avss src_out bias_pstack
+x1[94] avdd pbias pcasc net10[94] enb_bit7 avss src_out bias_pstack
+x1[93] avdd pbias pcasc net10[93] enb_bit7 avss src_out bias_pstack
+x1[92] avdd pbias pcasc net10[92] enb_bit7 avss src_out bias_pstack
+x1[91] avdd pbias pcasc net10[91] enb_bit7 avss src_out bias_pstack
+x1[90] avdd pbias pcasc net10[90] enb_bit7 avss src_out bias_pstack
+x1[89] avdd pbias pcasc net10[89] enb_bit7 avss src_out bias_pstack
+x1[88] avdd pbias pcasc net10[88] enb_bit7 avss src_out bias_pstack
+x1[87] avdd pbias pcasc net10[87] enb_bit7 avss src_out bias_pstack
+x1[86] avdd pbias pcasc net10[86] enb_bit7 avss src_out bias_pstack
+x1[85] avdd pbias pcasc net10[85] enb_bit7 avss src_out bias_pstack
+x1[84] avdd pbias pcasc net10[84] enb_bit7 avss src_out bias_pstack
+x1[83] avdd pbias pcasc net10[83] enb_bit7 avss src_out bias_pstack
+x1[82] avdd pbias pcasc net10[82] enb_bit7 avss src_out bias_pstack
+x1[81] avdd pbias pcasc net10[81] enb_bit7 avss src_out bias_pstack
+x1[80] avdd pbias pcasc net10[80] enb_bit7 avss src_out bias_pstack
+x1[79] avdd pbias pcasc net10[79] enb_bit7 avss src_out bias_pstack
+x1[78] avdd pbias pcasc net10[78] enb_bit7 avss src_out bias_pstack
+x1[77] avdd pbias pcasc net10[77] enb_bit7 avss src_out bias_pstack
+x1[76] avdd pbias pcasc net10[76] enb_bit7 avss src_out bias_pstack
+x1[75] avdd pbias pcasc net10[75] enb_bit7 avss src_out bias_pstack
+x1[74] avdd pbias pcasc net10[74] enb_bit7 avss src_out bias_pstack
+x1[73] avdd pbias pcasc net10[73] enb_bit7 avss src_out bias_pstack
+x1[72] avdd pbias pcasc net10[72] enb_bit7 avss src_out bias_pstack
+x1[71] avdd pbias pcasc net10[71] enb_bit7 avss src_out bias_pstack
+x1[70] avdd pbias pcasc net10[70] enb_bit7 avss src_out bias_pstack
+x1[69] avdd pbias pcasc net10[69] enb_bit7 avss src_out bias_pstack
+x1[68] avdd pbias pcasc net10[68] enb_bit7 avss src_out bias_pstack
+x1[67] avdd pbias pcasc net10[67] enb_bit7 avss src_out bias_pstack
+x1[66] avdd pbias pcasc net10[66] enb_bit7 avss src_out bias_pstack
+x1[65] avdd pbias pcasc net10[65] enb_bit7 avss src_out bias_pstack
+x1[64] avdd pbias pcasc net10[64] enb_bit7 avss src_out bias_pstack
+x1[63] avdd pbias pcasc net10[63] enb_bit7 avss src_out bias_pstack
+x1[62] avdd pbias pcasc net10[62] enb_bit7 avss src_out bias_pstack
+x1[61] avdd pbias pcasc net10[61] enb_bit7 avss src_out bias_pstack
+x1[60] avdd pbias pcasc net10[60] enb_bit7 avss src_out bias_pstack
+x1[59] avdd pbias pcasc net10[59] enb_bit7 avss src_out bias_pstack
+x1[58] avdd pbias pcasc net10[58] enb_bit7 avss src_out bias_pstack
+x1[57] avdd pbias pcasc net10[57] enb_bit7 avss src_out bias_pstack
+x1[56] avdd pbias pcasc net10[56] enb_bit7 avss src_out bias_pstack
+x1[55] avdd pbias pcasc net10[55] enb_bit7 avss src_out bias_pstack
+x1[54] avdd pbias pcasc net10[54] enb_bit7 avss src_out bias_pstack
+x1[53] avdd pbias pcasc net10[53] enb_bit7 avss src_out bias_pstack
+x1[52] avdd pbias pcasc net10[52] enb_bit7 avss src_out bias_pstack
+x1[51] avdd pbias pcasc net10[51] enb_bit7 avss src_out bias_pstack
+x1[50] avdd pbias pcasc net10[50] enb_bit7 avss src_out bias_pstack
+x1[49] avdd pbias pcasc net10[49] enb_bit7 avss src_out bias_pstack
+x1[48] avdd pbias pcasc net10[48] enb_bit7 avss src_out bias_pstack
+x1[47] avdd pbias pcasc net10[47] enb_bit7 avss src_out bias_pstack
+x1[46] avdd pbias pcasc net10[46] enb_bit7 avss src_out bias_pstack
+x1[45] avdd pbias pcasc net10[45] enb_bit7 avss src_out bias_pstack
+x1[44] avdd pbias pcasc net10[44] enb_bit7 avss src_out bias_pstack
+x1[43] avdd pbias pcasc net10[43] enb_bit7 avss src_out bias_pstack
+x1[42] avdd pbias pcasc net10[42] enb_bit7 avss src_out bias_pstack
+x1[41] avdd pbias pcasc net10[41] enb_bit7 avss src_out bias_pstack
+x1[40] avdd pbias pcasc net10[40] enb_bit7 avss src_out bias_pstack
+x1[39] avdd pbias pcasc net10[39] enb_bit7 avss src_out bias_pstack
+x1[38] avdd pbias pcasc net10[38] enb_bit7 avss src_out bias_pstack
+x1[37] avdd pbias pcasc net10[37] enb_bit7 avss src_out bias_pstack
+x1[36] avdd pbias pcasc net10[36] enb_bit7 avss src_out bias_pstack
+x1[35] avdd pbias pcasc net10[35] enb_bit7 avss src_out bias_pstack
+x1[34] avdd pbias pcasc net10[34] enb_bit7 avss src_out bias_pstack
+x1[33] avdd pbias pcasc net10[33] enb_bit7 avss src_out bias_pstack
+x1[32] avdd pbias pcasc net10[32] enb_bit7 avss src_out bias_pstack
+x1[31] avdd pbias pcasc net10[31] enb_bit7 avss src_out bias_pstack
+x1[30] avdd pbias pcasc net10[30] enb_bit7 avss src_out bias_pstack
+x1[29] avdd pbias pcasc net10[29] enb_bit7 avss src_out bias_pstack
+x1[28] avdd pbias pcasc net10[28] enb_bit7 avss src_out bias_pstack
+x1[27] avdd pbias pcasc net10[27] enb_bit7 avss src_out bias_pstack
+x1[26] avdd pbias pcasc net10[26] enb_bit7 avss src_out bias_pstack
+x1[25] avdd pbias pcasc net10[25] enb_bit7 avss src_out bias_pstack
+x1[24] avdd pbias pcasc net10[24] enb_bit7 avss src_out bias_pstack
+x1[23] avdd pbias pcasc net10[23] enb_bit7 avss src_out bias_pstack
+x1[22] avdd pbias pcasc net10[22] enb_bit7 avss src_out bias_pstack
+x1[21] avdd pbias pcasc net10[21] enb_bit7 avss src_out bias_pstack
+x1[20] avdd pbias pcasc net10[20] enb_bit7 avss src_out bias_pstack
+x1[19] avdd pbias pcasc net10[19] enb_bit7 avss src_out bias_pstack
+x1[18] avdd pbias pcasc net10[18] enb_bit7 avss src_out bias_pstack
+x1[17] avdd pbias pcasc net10[17] enb_bit7 avss src_out bias_pstack
+x1[16] avdd pbias pcasc net10[16] enb_bit7 avss src_out bias_pstack
+x1[15] avdd pbias pcasc net10[15] enb_bit7 avss src_out bias_pstack
+x1[14] avdd pbias pcasc net10[14] enb_bit7 avss src_out bias_pstack
+x1[13] avdd pbias pcasc net10[13] enb_bit7 avss src_out bias_pstack
+x1[12] avdd pbias pcasc net10[12] enb_bit7 avss src_out bias_pstack
+x1[11] avdd pbias pcasc net10[11] enb_bit7 avss src_out bias_pstack
+x1[10] avdd pbias pcasc net10[10] enb_bit7 avss src_out bias_pstack
+x1[9] avdd pbias pcasc net10[9] enb_bit7 avss src_out bias_pstack
+x1[8] avdd pbias pcasc net10[8] enb_bit7 avss src_out bias_pstack
+x1[7] avdd pbias pcasc net10[7] enb_bit7 avss src_out bias_pstack
+x1[6] avdd pbias pcasc net10[6] enb_bit7 avss src_out bias_pstack
+x1[5] avdd pbias pcasc net10[5] enb_bit7 avss src_out bias_pstack
+x1[4] avdd pbias pcasc net10[4] enb_bit7 avss src_out bias_pstack
+x1[3] avdd pbias pcasc net10[3] enb_bit7 avss src_out bias_pstack
+x1[2] avdd pbias pcasc net10[2] enb_bit7 avss src_out bias_pstack
+x1[1] avdd pbias pcasc net10[1] enb_bit7 avss src_out bias_pstack
+x1[0] avdd pbias pcasc net10[0] enb_bit7 avss src_out bias_pstack
+x12 ena[0] dvdd dvss dvss avdd avdd ena_bit0 sky130_fd_sc_hvl__lsbuflv2hv_1
+x14 ena[1] dvdd dvss dvss avdd avdd ena_bit1 sky130_fd_sc_hvl__lsbuflv2hv_1
+x15 ena[2] dvdd dvss dvss avdd avdd ena_bit2 sky130_fd_sc_hvl__lsbuflv2hv_1
+x16 ena[3] dvdd dvss dvss avdd avdd ena_bit3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x17 ena[4] dvdd dvss dvss avdd avdd ena_bit4 sky130_fd_sc_hvl__lsbuflv2hv_1
+x18 ena[5] dvdd dvss dvss avdd avdd ena_bit5 sky130_fd_sc_hvl__lsbuflv2hv_1
+x19 ena[6] dvdd dvss dvss avdd avdd ena_bit6 sky130_fd_sc_hvl__lsbuflv2hv_1
+x20 ena[7] dvdd dvss dvss avdd avdd ena_bit7 sky130_fd_sc_hvl__lsbuflv2hv_1
+x25 ena_bit0 dvss dvss avdd avdd enb_bit0 sky130_fd_sc_hvl__inv_2
+x26 ena_bit1 dvss dvss avdd avdd enb_bit1 sky130_fd_sc_hvl__inv_2
+x27 ena_bit2 dvss dvss avdd avdd enb_bit2 sky130_fd_sc_hvl__inv_2
+x28 ena_bit3 dvss dvss avdd avdd enb_bit3 sky130_fd_sc_hvl__inv_2
+x29 ena_bit4 dvss dvss avdd avdd enb_bit4 sky130_fd_sc_hvl__inv_2
+x30 ena_bit5 dvss dvss avdd avdd enb_bit5 sky130_fd_sc_hvl__inv_2
+x31 ena_bit6 dvss dvss avdd avdd enb_bit6 sky130_fd_sc_hvl__inv_2
+x32 ena_bit7 dvss dvss avdd avdd enb_bit7 sky130_fd_sc_hvl__inv_2
+* noconn #net2
+* noconn #net1
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+* noconn #net7
+* noconn #net8
+* noconn #net9
+* noconn #net10
+x2 snk_out ena_bit0 net11 nbias avss bias_nstack
+* noconn #net11
+x2[1] snk_out ena_bit1 net12[1] nbias avss bias_nstack
+x2[0] snk_out ena_bit1 net12[0] nbias avss bias_nstack
+* noconn #net12
+x3[3] snk_out ena_bit2 net13[3] nbias avss bias_nstack
+x3[2] snk_out ena_bit2 net13[2] nbias avss bias_nstack
+x3[1] snk_out ena_bit2 net13[1] nbias avss bias_nstack
+x3[0] snk_out ena_bit2 net13[0] nbias avss bias_nstack
+* noconn #net13
+x9[7] snk_out ena_bit3 net14[7] nbias avss bias_nstack
+x9[6] snk_out ena_bit3 net14[6] nbias avss bias_nstack
+x9[5] snk_out ena_bit3 net14[5] nbias avss bias_nstack
+x9[4] snk_out ena_bit3 net14[4] nbias avss bias_nstack
+x9[3] snk_out ena_bit3 net14[3] nbias avss bias_nstack
+x9[2] snk_out ena_bit3 net14[2] nbias avss bias_nstack
+x9[1] snk_out ena_bit3 net14[1] nbias avss bias_nstack
+x9[0] snk_out ena_bit3 net14[0] nbias avss bias_nstack
+* noconn #net14
+x10[15] snk_out ena_bit4 net15[15] nbias avss bias_nstack
+x10[14] snk_out ena_bit4 net15[14] nbias avss bias_nstack
+x10[13] snk_out ena_bit4 net15[13] nbias avss bias_nstack
+x10[12] snk_out ena_bit4 net15[12] nbias avss bias_nstack
+x10[11] snk_out ena_bit4 net15[11] nbias avss bias_nstack
+x10[10] snk_out ena_bit4 net15[10] nbias avss bias_nstack
+x10[9] snk_out ena_bit4 net15[9] nbias avss bias_nstack
+x10[8] snk_out ena_bit4 net15[8] nbias avss bias_nstack
+x10[7] snk_out ena_bit4 net15[7] nbias avss bias_nstack
+x10[6] snk_out ena_bit4 net15[6] nbias avss bias_nstack
+x10[5] snk_out ena_bit4 net15[5] nbias avss bias_nstack
+x10[4] snk_out ena_bit4 net15[4] nbias avss bias_nstack
+x10[3] snk_out ena_bit4 net15[3] nbias avss bias_nstack
+x10[2] snk_out ena_bit4 net15[2] nbias avss bias_nstack
+x10[1] snk_out ena_bit4 net15[1] nbias avss bias_nstack
+x10[0] snk_out ena_bit4 net15[0] nbias avss bias_nstack
+* noconn #net15
+x13[31] snk_out ena_bit5 net16[31] nbias avss bias_nstack
+x13[30] snk_out ena_bit5 net16[30] nbias avss bias_nstack
+x13[29] snk_out ena_bit5 net16[29] nbias avss bias_nstack
+x13[28] snk_out ena_bit5 net16[28] nbias avss bias_nstack
+x13[27] snk_out ena_bit5 net16[27] nbias avss bias_nstack
+x13[26] snk_out ena_bit5 net16[26] nbias avss bias_nstack
+x13[25] snk_out ena_bit5 net16[25] nbias avss bias_nstack
+x13[24] snk_out ena_bit5 net16[24] nbias avss bias_nstack
+x13[23] snk_out ena_bit5 net16[23] nbias avss bias_nstack
+x13[22] snk_out ena_bit5 net16[22] nbias avss bias_nstack
+x13[21] snk_out ena_bit5 net16[21] nbias avss bias_nstack
+x13[20] snk_out ena_bit5 net16[20] nbias avss bias_nstack
+x13[19] snk_out ena_bit5 net16[19] nbias avss bias_nstack
+x13[18] snk_out ena_bit5 net16[18] nbias avss bias_nstack
+x13[17] snk_out ena_bit5 net16[17] nbias avss bias_nstack
+x13[16] snk_out ena_bit5 net16[16] nbias avss bias_nstack
+x13[15] snk_out ena_bit5 net16[15] nbias avss bias_nstack
+x13[14] snk_out ena_bit5 net16[14] nbias avss bias_nstack
+x13[13] snk_out ena_bit5 net16[13] nbias avss bias_nstack
+x13[12] snk_out ena_bit5 net16[12] nbias avss bias_nstack
+x13[11] snk_out ena_bit5 net16[11] nbias avss bias_nstack
+x13[10] snk_out ena_bit5 net16[10] nbias avss bias_nstack
+x13[9] snk_out ena_bit5 net16[9] nbias avss bias_nstack
+x13[8] snk_out ena_bit5 net16[8] nbias avss bias_nstack
+x13[7] snk_out ena_bit5 net16[7] nbias avss bias_nstack
+x13[6] snk_out ena_bit5 net16[6] nbias avss bias_nstack
+x13[5] snk_out ena_bit5 net16[5] nbias avss bias_nstack
+x13[4] snk_out ena_bit5 net16[4] nbias avss bias_nstack
+x13[3] snk_out ena_bit5 net16[3] nbias avss bias_nstack
+x13[2] snk_out ena_bit5 net16[2] nbias avss bias_nstack
+x13[1] snk_out ena_bit5 net16[1] nbias avss bias_nstack
+x13[0] snk_out ena_bit5 net16[0] nbias avss bias_nstack
+* noconn #net16
+x14[63] snk_out ena_bit6 net17[63] nbias avss bias_nstack
+x14[62] snk_out ena_bit6 net17[62] nbias avss bias_nstack
+x14[61] snk_out ena_bit6 net17[61] nbias avss bias_nstack
+x14[60] snk_out ena_bit6 net17[60] nbias avss bias_nstack
+x14[59] snk_out ena_bit6 net17[59] nbias avss bias_nstack
+x14[58] snk_out ena_bit6 net17[58] nbias avss bias_nstack
+x14[57] snk_out ena_bit6 net17[57] nbias avss bias_nstack
+x14[56] snk_out ena_bit6 net17[56] nbias avss bias_nstack
+x14[55] snk_out ena_bit6 net17[55] nbias avss bias_nstack
+x14[54] snk_out ena_bit6 net17[54] nbias avss bias_nstack
+x14[53] snk_out ena_bit6 net17[53] nbias avss bias_nstack
+x14[52] snk_out ena_bit6 net17[52] nbias avss bias_nstack
+x14[51] snk_out ena_bit6 net17[51] nbias avss bias_nstack
+x14[50] snk_out ena_bit6 net17[50] nbias avss bias_nstack
+x14[49] snk_out ena_bit6 net17[49] nbias avss bias_nstack
+x14[48] snk_out ena_bit6 net17[48] nbias avss bias_nstack
+x14[47] snk_out ena_bit6 net17[47] nbias avss bias_nstack
+x14[46] snk_out ena_bit6 net17[46] nbias avss bias_nstack
+x14[45] snk_out ena_bit6 net17[45] nbias avss bias_nstack
+x14[44] snk_out ena_bit6 net17[44] nbias avss bias_nstack
+x14[43] snk_out ena_bit6 net17[43] nbias avss bias_nstack
+x14[42] snk_out ena_bit6 net17[42] nbias avss bias_nstack
+x14[41] snk_out ena_bit6 net17[41] nbias avss bias_nstack
+x14[40] snk_out ena_bit6 net17[40] nbias avss bias_nstack
+x14[39] snk_out ena_bit6 net17[39] nbias avss bias_nstack
+x14[38] snk_out ena_bit6 net17[38] nbias avss bias_nstack
+x14[37] snk_out ena_bit6 net17[37] nbias avss bias_nstack
+x14[36] snk_out ena_bit6 net17[36] nbias avss bias_nstack
+x14[35] snk_out ena_bit6 net17[35] nbias avss bias_nstack
+x14[34] snk_out ena_bit6 net17[34] nbias avss bias_nstack
+x14[33] snk_out ena_bit6 net17[33] nbias avss bias_nstack
+x14[32] snk_out ena_bit6 net17[32] nbias avss bias_nstack
+x14[31] snk_out ena_bit6 net17[31] nbias avss bias_nstack
+x14[30] snk_out ena_bit6 net17[30] nbias avss bias_nstack
+x14[29] snk_out ena_bit6 net17[29] nbias avss bias_nstack
+x14[28] snk_out ena_bit6 net17[28] nbias avss bias_nstack
+x14[27] snk_out ena_bit6 net17[27] nbias avss bias_nstack
+x14[26] snk_out ena_bit6 net17[26] nbias avss bias_nstack
+x14[25] snk_out ena_bit6 net17[25] nbias avss bias_nstack
+x14[24] snk_out ena_bit6 net17[24] nbias avss bias_nstack
+x14[23] snk_out ena_bit6 net17[23] nbias avss bias_nstack
+x14[22] snk_out ena_bit6 net17[22] nbias avss bias_nstack
+x14[21] snk_out ena_bit6 net17[21] nbias avss bias_nstack
+x14[20] snk_out ena_bit6 net17[20] nbias avss bias_nstack
+x14[19] snk_out ena_bit6 net17[19] nbias avss bias_nstack
+x14[18] snk_out ena_bit6 net17[18] nbias avss bias_nstack
+x14[17] snk_out ena_bit6 net17[17] nbias avss bias_nstack
+x14[16] snk_out ena_bit6 net17[16] nbias avss bias_nstack
+x14[15] snk_out ena_bit6 net17[15] nbias avss bias_nstack
+x14[14] snk_out ena_bit6 net17[14] nbias avss bias_nstack
+x14[13] snk_out ena_bit6 net17[13] nbias avss bias_nstack
+x14[12] snk_out ena_bit6 net17[12] nbias avss bias_nstack
+x14[11] snk_out ena_bit6 net17[11] nbias avss bias_nstack
+x14[10] snk_out ena_bit6 net17[10] nbias avss bias_nstack
+x14[9] snk_out ena_bit6 net17[9] nbias avss bias_nstack
+x14[8] snk_out ena_bit6 net17[8] nbias avss bias_nstack
+x14[7] snk_out ena_bit6 net17[7] nbias avss bias_nstack
+x14[6] snk_out ena_bit6 net17[6] nbias avss bias_nstack
+x14[5] snk_out ena_bit6 net17[5] nbias avss bias_nstack
+x14[4] snk_out ena_bit6 net17[4] nbias avss bias_nstack
+x14[3] snk_out ena_bit6 net17[3] nbias avss bias_nstack
+x14[2] snk_out ena_bit6 net17[2] nbias avss bias_nstack
+x14[1] snk_out ena_bit6 net17[1] nbias avss bias_nstack
+x14[0] snk_out ena_bit6 net17[0] nbias avss bias_nstack
+* noconn #net17
+x15[127] snk_out ena_bit7 net18[127] nbias avss bias_nstack
+x15[126] snk_out ena_bit7 net18[126] nbias avss bias_nstack
+x15[125] snk_out ena_bit7 net18[125] nbias avss bias_nstack
+x15[124] snk_out ena_bit7 net18[124] nbias avss bias_nstack
+x15[123] snk_out ena_bit7 net18[123] nbias avss bias_nstack
+x15[122] snk_out ena_bit7 net18[122] nbias avss bias_nstack
+x15[121] snk_out ena_bit7 net18[121] nbias avss bias_nstack
+x15[120] snk_out ena_bit7 net18[120] nbias avss bias_nstack
+x15[119] snk_out ena_bit7 net18[119] nbias avss bias_nstack
+x15[118] snk_out ena_bit7 net18[118] nbias avss bias_nstack
+x15[117] snk_out ena_bit7 net18[117] nbias avss bias_nstack
+x15[116] snk_out ena_bit7 net18[116] nbias avss bias_nstack
+x15[115] snk_out ena_bit7 net18[115] nbias avss bias_nstack
+x15[114] snk_out ena_bit7 net18[114] nbias avss bias_nstack
+x15[113] snk_out ena_bit7 net18[113] nbias avss bias_nstack
+x15[112] snk_out ena_bit7 net18[112] nbias avss bias_nstack
+x15[111] snk_out ena_bit7 net18[111] nbias avss bias_nstack
+x15[110] snk_out ena_bit7 net18[110] nbias avss bias_nstack
+x15[109] snk_out ena_bit7 net18[109] nbias avss bias_nstack
+x15[108] snk_out ena_bit7 net18[108] nbias avss bias_nstack
+x15[107] snk_out ena_bit7 net18[107] nbias avss bias_nstack
+x15[106] snk_out ena_bit7 net18[106] nbias avss bias_nstack
+x15[105] snk_out ena_bit7 net18[105] nbias avss bias_nstack
+x15[104] snk_out ena_bit7 net18[104] nbias avss bias_nstack
+x15[103] snk_out ena_bit7 net18[103] nbias avss bias_nstack
+x15[102] snk_out ena_bit7 net18[102] nbias avss bias_nstack
+x15[101] snk_out ena_bit7 net18[101] nbias avss bias_nstack
+x15[100] snk_out ena_bit7 net18[100] nbias avss bias_nstack
+x15[99] snk_out ena_bit7 net18[99] nbias avss bias_nstack
+x15[98] snk_out ena_bit7 net18[98] nbias avss bias_nstack
+x15[97] snk_out ena_bit7 net18[97] nbias avss bias_nstack
+x15[96] snk_out ena_bit7 net18[96] nbias avss bias_nstack
+x15[95] snk_out ena_bit7 net18[95] nbias avss bias_nstack
+x15[94] snk_out ena_bit7 net18[94] nbias avss bias_nstack
+x15[93] snk_out ena_bit7 net18[93] nbias avss bias_nstack
+x15[92] snk_out ena_bit7 net18[92] nbias avss bias_nstack
+x15[91] snk_out ena_bit7 net18[91] nbias avss bias_nstack
+x15[90] snk_out ena_bit7 net18[90] nbias avss bias_nstack
+x15[89] snk_out ena_bit7 net18[89] nbias avss bias_nstack
+x15[88] snk_out ena_bit7 net18[88] nbias avss bias_nstack
+x15[87] snk_out ena_bit7 net18[87] nbias avss bias_nstack
+x15[86] snk_out ena_bit7 net18[86] nbias avss bias_nstack
+x15[85] snk_out ena_bit7 net18[85] nbias avss bias_nstack
+x15[84] snk_out ena_bit7 net18[84] nbias avss bias_nstack
+x15[83] snk_out ena_bit7 net18[83] nbias avss bias_nstack
+x15[82] snk_out ena_bit7 net18[82] nbias avss bias_nstack
+x15[81] snk_out ena_bit7 net18[81] nbias avss bias_nstack
+x15[80] snk_out ena_bit7 net18[80] nbias avss bias_nstack
+x15[79] snk_out ena_bit7 net18[79] nbias avss bias_nstack
+x15[78] snk_out ena_bit7 net18[78] nbias avss bias_nstack
+x15[77] snk_out ena_bit7 net18[77] nbias avss bias_nstack
+x15[76] snk_out ena_bit7 net18[76] nbias avss bias_nstack
+x15[75] snk_out ena_bit7 net18[75] nbias avss bias_nstack
+x15[74] snk_out ena_bit7 net18[74] nbias avss bias_nstack
+x15[73] snk_out ena_bit7 net18[73] nbias avss bias_nstack
+x15[72] snk_out ena_bit7 net18[72] nbias avss bias_nstack
+x15[71] snk_out ena_bit7 net18[71] nbias avss bias_nstack
+x15[70] snk_out ena_bit7 net18[70] nbias avss bias_nstack
+x15[69] snk_out ena_bit7 net18[69] nbias avss bias_nstack
+x15[68] snk_out ena_bit7 net18[68] nbias avss bias_nstack
+x15[67] snk_out ena_bit7 net18[67] nbias avss bias_nstack
+x15[66] snk_out ena_bit7 net18[66] nbias avss bias_nstack
+x15[65] snk_out ena_bit7 net18[65] nbias avss bias_nstack
+x15[64] snk_out ena_bit7 net18[64] nbias avss bias_nstack
+x15[63] snk_out ena_bit7 net18[63] nbias avss bias_nstack
+x15[62] snk_out ena_bit7 net18[62] nbias avss bias_nstack
+x15[61] snk_out ena_bit7 net18[61] nbias avss bias_nstack
+x15[60] snk_out ena_bit7 net18[60] nbias avss bias_nstack
+x15[59] snk_out ena_bit7 net18[59] nbias avss bias_nstack
+x15[58] snk_out ena_bit7 net18[58] nbias avss bias_nstack
+x15[57] snk_out ena_bit7 net18[57] nbias avss bias_nstack
+x15[56] snk_out ena_bit7 net18[56] nbias avss bias_nstack
+x15[55] snk_out ena_bit7 net18[55] nbias avss bias_nstack
+x15[54] snk_out ena_bit7 net18[54] nbias avss bias_nstack
+x15[53] snk_out ena_bit7 net18[53] nbias avss bias_nstack
+x15[52] snk_out ena_bit7 net18[52] nbias avss bias_nstack
+x15[51] snk_out ena_bit7 net18[51] nbias avss bias_nstack
+x15[50] snk_out ena_bit7 net18[50] nbias avss bias_nstack
+x15[49] snk_out ena_bit7 net18[49] nbias avss bias_nstack
+x15[48] snk_out ena_bit7 net18[48] nbias avss bias_nstack
+x15[47] snk_out ena_bit7 net18[47] nbias avss bias_nstack
+x15[46] snk_out ena_bit7 net18[46] nbias avss bias_nstack
+x15[45] snk_out ena_bit7 net18[45] nbias avss bias_nstack
+x15[44] snk_out ena_bit7 net18[44] nbias avss bias_nstack
+x15[43] snk_out ena_bit7 net18[43] nbias avss bias_nstack
+x15[42] snk_out ena_bit7 net18[42] nbias avss bias_nstack
+x15[41] snk_out ena_bit7 net18[41] nbias avss bias_nstack
+x15[40] snk_out ena_bit7 net18[40] nbias avss bias_nstack
+x15[39] snk_out ena_bit7 net18[39] nbias avss bias_nstack
+x15[38] snk_out ena_bit7 net18[38] nbias avss bias_nstack
+x15[37] snk_out ena_bit7 net18[37] nbias avss bias_nstack
+x15[36] snk_out ena_bit7 net18[36] nbias avss bias_nstack
+x15[35] snk_out ena_bit7 net18[35] nbias avss bias_nstack
+x15[34] snk_out ena_bit7 net18[34] nbias avss bias_nstack
+x15[33] snk_out ena_bit7 net18[33] nbias avss bias_nstack
+x15[32] snk_out ena_bit7 net18[32] nbias avss bias_nstack
+x15[31] snk_out ena_bit7 net18[31] nbias avss bias_nstack
+x15[30] snk_out ena_bit7 net18[30] nbias avss bias_nstack
+x15[29] snk_out ena_bit7 net18[29] nbias avss bias_nstack
+x15[28] snk_out ena_bit7 net18[28] nbias avss bias_nstack
+x15[27] snk_out ena_bit7 net18[27] nbias avss bias_nstack
+x15[26] snk_out ena_bit7 net18[26] nbias avss bias_nstack
+x15[25] snk_out ena_bit7 net18[25] nbias avss bias_nstack
+x15[24] snk_out ena_bit7 net18[24] nbias avss bias_nstack
+x15[23] snk_out ena_bit7 net18[23] nbias avss bias_nstack
+x15[22] snk_out ena_bit7 net18[22] nbias avss bias_nstack
+x15[21] snk_out ena_bit7 net18[21] nbias avss bias_nstack
+x15[20] snk_out ena_bit7 net18[20] nbias avss bias_nstack
+x15[19] snk_out ena_bit7 net18[19] nbias avss bias_nstack
+x15[18] snk_out ena_bit7 net18[18] nbias avss bias_nstack
+x15[17] snk_out ena_bit7 net18[17] nbias avss bias_nstack
+x15[16] snk_out ena_bit7 net18[16] nbias avss bias_nstack
+x15[15] snk_out ena_bit7 net18[15] nbias avss bias_nstack
+x15[14] snk_out ena_bit7 net18[14] nbias avss bias_nstack
+x15[13] snk_out ena_bit7 net18[13] nbias avss bias_nstack
+x15[12] snk_out ena_bit7 net18[12] nbias avss bias_nstack
+x15[11] snk_out ena_bit7 net18[11] nbias avss bias_nstack
+x15[10] snk_out ena_bit7 net18[10] nbias avss bias_nstack
+x15[9] snk_out ena_bit7 net18[9] nbias avss bias_nstack
+x15[8] snk_out ena_bit7 net18[8] nbias avss bias_nstack
+x15[7] snk_out ena_bit7 net18[7] nbias avss bias_nstack
+x15[6] snk_out ena_bit7 net18[6] nbias avss bias_nstack
+x15[5] snk_out ena_bit7 net18[5] nbias avss bias_nstack
+x15[4] snk_out ena_bit7 net18[4] nbias avss bias_nstack
+x15[3] snk_out ena_bit7 net18[3] nbias avss bias_nstack
+x15[2] snk_out ena_bit7 net18[2] nbias avss bias_nstack
+x15[1] snk_out ena_bit7 net18[1] nbias avss bias_nstack
+x15[0] snk_out ena_bit7 net18[0] nbias avss bias_nstack
+* noconn #net18
+x8[7] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[6] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[5] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[4] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[3] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[2] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[1] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x8[0] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x4 ena[0] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x5 ena[1] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x6 ena[2] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x7 ena[3] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x9 ena[4] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x10 ena[5] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x11 ena[6] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x13 ena[7] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+.ends
+
+
+* expanding   symbol:  bias_nstack.sym # of pins=5
+** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_nstack.sym
+** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_nstack.sch
+.subckt bias_nstack itail ena vcasc nbias avss
+*.PININFO avss:B ena:I nbias:I itail:B vcasc:B
+XM3 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM6 vcasc nbias net1 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=3 nf=1 m=1
+XM12 itail ena vcasc avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XD1 avss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+.ends
+
+
+* expanding   symbol:  bias_pstack.sym # of pins=7
+** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_pstack.sym
+** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_pstack.sch
+.subckt bias_pstack avdd pbias pcasc vcasc enb avss itail
+*.PININFO avdd:B itail:B enb:I pcasc:I vcasc:B pbias:I avss:B
+XM13 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM18 itail enb vcasc avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM14 vcasc pcasc net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XD1 avss enb sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+.ends
+
+
+* expanding   symbol:  bias_amp.sym # of pins=7
+** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_amp.sym
+** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_amp.sch
+.subckt bias_amp avdd out inn inp nbias avss ena
+*.PININFO inp:I nbias:I inn:I out:O avdd:B avss:B ena:I
+XM1 net2 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=1
+XM2 out net1 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 m=1
+XM3 net1 net1 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 m=1
+XM4 net1 inp vcom avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4 nf=2 m=1
+XM5 out inn vcom avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4 nf=2 m=1
+XM6 vcom ena net2 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=2 nf=1 m=1
+.ends
+
+.end

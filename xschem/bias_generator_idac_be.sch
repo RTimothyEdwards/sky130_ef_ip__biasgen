@@ -243,8 +243,6 @@ N -540 -120 -540 -60 {
 lab=avss}
 N -540 -200 -540 -160 {
 lab=snk_out}
-N -840 -210 -840 -160 {
-lab=ena_bit0}
 N -840 -140 -840 -80 {
 lab=nbias}
 N -1250 -140 -1250 -80 {
@@ -365,6 +363,32 @@ N -1780 -100 -1780 -60 {
 lab=ena_bit7}
 N -1780 -100 -1650 -100 {
 lab=ena_bit7}
+N -950 -200 -540 -200 {
+lab=snk_out}
+N -950 -280 -540 -280 {
+lab=src_out}
+N -840 -240 -840 -160 {
+lab=ena_bit0}
+N -950 -200 -950 -160 {
+lab=snk_out}
+N -910 -320 -910 -280 {
+lab=src_out}
+N -1680 40 -1650 40 {
+lab=ena[0]}
+N -1680 80 -1650 80 {
+lab=ena[1]}
+N -1680 160 -1650 160 {
+lab=ena[3]}
+N -1680 120 -1650 120 {
+lab=ena[2]}
+N -1320 40 -1290 40 {
+lab=ena[4]}
+N -1320 80 -1290 80 {
+lab=ena[5]}
+N -1320 160 -1290 160 {
+lab=ena[7]}
+N -1320 120 -1290 120 {
+lab=ena[6]}
 C {devices/iopin.sym} -1330 -60 0 1 {name=p39 lab=avss}
 C {devices/iopin.sym} -1340 -490 0 1 {name=p42 lab=avdd}
 C {devices/lab_wire.sym} -1270 -450 0 0 {name=p44 sig_type=std_logic lab=pbias}
@@ -372,7 +396,7 @@ C {devices/lab_wire.sym} -1270 -470 0 0 {name=p45 sig_type=std_logic lab=pcasc}
 C {bias_nstack.sym} -1100 -140 0 0 {name=x3}
 C {bias_pstack.sym} -1060 -360 0 0 {name=x1}
 C {bias_pstack.sym} -690 -360 0 0 {name=x8}
-C {devices/iopin.sym} -540 -280 0 1 {name=p55 lab=src_out}
+C {devices/iopin.sym} -950 -280 0 1 {name=p55 lab=src_out}
 C {bias_pstack.sym} -150 -360 0 0 {name=x4[1:0]}
 C {bias_pstack.sym} 240 -360 0 0 {name=x5[3:0]}
 C {bias_pstack.sym} 620 -360 0 0 {name=x6[7:0]}
@@ -416,13 +440,13 @@ C {sky130_stdcells/inv_2.sym} -1740 -60 0 0 {name=x32 VGND=dvss VNB=dvss VPB=avd
 C {devices/noconn.sym} -910 -360 0 1 {name=l4}
 C {devices/noconn.sym} -950 -140 0 1 {name=l5}
 C {devices/noconn.sym} -540 -360 0 1 {name=l7}
-C {devices/noconn.sym} 0 -360 0 1 {name=l10}
-C {devices/noconn.sym} 390 -360 0 1 {name=l13}
-C {devices/noconn.sym} 770 -360 0 1 {name=l15}
-C {devices/noconn.sym} 1150 -360 0 1 {name=l16}
-C {devices/noconn.sym} 1520 -360 0 1 {name=l17}
-C {devices/noconn.sym} 1890 -360 0 1 {name=l18}
-C {devices/noconn.sym} 2260 -360 0 1 {name=l19}
+C {devices/noconn.sym} 0 -360 0 1 {name=l10[1:0]}
+C {devices/noconn.sym} 390 -360 0 1 {name=l13[3:0]}
+C {devices/noconn.sym} 770 -360 0 1 {name=l15[7:0]}
+C {devices/noconn.sym} 1150 -360 0 1 {name=l16[15:0]}
+C {devices/noconn.sym} 1520 -360 0 1 {name=l17[31:0]}
+C {devices/noconn.sym} 1890 -360 0 1 {name=l18[63:0]}
+C {devices/noconn.sym} 2260 -360 0 1 {name=l19[127:0]}
 C {devices/iopin.sym} -1340 -700 0 1 {name=p98 lab=dvdd}
 C {devices/iopin.sym} -1340 -670 0 1 {name=p99 lab=dvss}
 C {devices/lab_pin.sym} -1300 -700 0 1 {name=p1 sig_type=std_logic lab=dvdd}
@@ -431,32 +455,30 @@ C {devices/ipin.sym} -1340 -470 0 0 {name=p3 lab=pcasc}
 C {devices/ipin.sym} -1340 -450 0 0 {name=p4 lab=pbias}
 C {devices/ipin.sym} -1340 -80 0 0 {name=p5 lab=nbias}
 C {bias_nstack.sym} -690 -140 0 0 {name=x2}
-C {devices/iopin.sym} -540 -200 0 1 {name=p7 lab=snk_out}
+C {devices/iopin.sym} -950 -200 0 1 {name=p7 lab=snk_out}
 C {devices/noconn.sym} -540 -140 0 1 {name=l1}
-C {devices/lab_pin.sym} -840 -210 0 1 {name=p9 sig_type=std_logic lab=ena_bit0}
-C {devices/noconn.sym} -950 -160 0 1 {name=l2}
-C {devices/noconn.sym} -910 -320 0 1 {name=l3}
+C {devices/lab_pin.sym} -840 -240 0 1 {name=p9 sig_type=std_logic lab=ena_bit0}
 C {devices/lab_pin.sym} -330 -240 0 1 {name=p6 sig_type=std_logic lab=ena_bit1}
 C {bias_nstack.sym} -180 -140 0 0 {name=x2[1:0]}
-C {devices/noconn.sym} -30 -140 0 1 {name=l6}
+C {devices/noconn.sym} -30 -140 0 1 {name=l6[1:0]}
 C {devices/lab_pin.sym} 50 -240 0 1 {name=p11 sig_type=std_logic lab=ena_bit2}
 C {bias_nstack.sym} 200 -140 0 0 {name=x3[3:0]}
-C {devices/noconn.sym} 350 -140 0 1 {name=l8}
+C {devices/noconn.sym} 350 -140 0 1 {name=l8[3:0]}
 C {devices/lab_pin.sym} 430 -240 0 1 {name=p12 sig_type=std_logic lab=ena_bit3}
 C {bias_nstack.sym} 580 -140 0 0 {name=x9[7:0]}
-C {devices/noconn.sym} 730 -140 0 1 {name=l9}
+C {devices/noconn.sym} 730 -140 0 1 {name=l9[7:0]}
 C {devices/lab_pin.sym} 820 -240 0 1 {name=p14 sig_type=std_logic lab=ena_bit4}
 C {bias_nstack.sym} 970 -140 0 0 {name=x10[15:0]}
-C {devices/noconn.sym} 1120 -140 0 1 {name=l11}
+C {devices/noconn.sym} 1120 -140 0 1 {name=l11[15:0]}
 C {devices/lab_pin.sym} 1200 -240 0 1 {name=p15 sig_type=std_logic lab=ena_bit5}
 C {bias_nstack.sym} 1350 -140 0 0 {name=x13[31:0]}
-C {devices/noconn.sym} 1500 -140 0 1 {name=l12}
+C {devices/noconn.sym} 1500 -140 0 1 {name=l12[31:0]}
 C {devices/lab_pin.sym} 1570 -240 0 1 {name=p16 sig_type=std_logic lab=ena_bit6}
 C {bias_nstack.sym} 1720 -140 0 0 {name=x14[63:0]}
-C {devices/noconn.sym} 1870 -140 0 1 {name=l14}
+C {devices/noconn.sym} 1870 -140 0 1 {name=l14[63:0]}
 C {devices/lab_pin.sym} 1940 -240 0 1 {name=p18 sig_type=std_logic lab=ena_bit7}
 C {bias_nstack.sym} 2090 -140 0 0 {name=x15[127:0]}
-C {devices/noconn.sym} 2240 -140 0 1 {name=l20}
+C {devices/noconn.sym} 2240 -140 0 1 {name=l20[127:0]}
 C {devices/lab_pin.sym} -1650 -590 0 1 {name=p8 sig_type=std_logic lab=ena_bit0}
 C {devices/lab_pin.sym} -1650 -520 0 1 {name=p10 sig_type=std_logic lab=ena_bit1}
 C {devices/lab_pin.sym} -1650 -450 0 1 {name=p20 sig_type=std_logic lab=ena_bit2}
@@ -473,4 +495,20 @@ C {devices/lab_pin.sym} -1940 -270 0 0 {name=p38 sig_type=std_logic lab=ena[4]}
 C {devices/lab_pin.sym} -1940 -200 0 0 {name=p40 sig_type=std_logic lab=ena[5]}
 C {devices/lab_pin.sym} -1940 -130 0 0 {name=p41 sig_type=std_logic lab=ena[6]}
 C {devices/lab_pin.sym} -1940 -60 0 0 {name=p43 sig_type=std_logic lab=ena[7]}
-C {sky130_stdcells/decap_4.sym} -1750 40 0 0 {name=x8[7:0] VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/decap_4.sym} -1890 40 0 0 {name=x8[7:0] VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1560 40 0 0 {name=x4 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {devices/lab_pin.sym} -1680 40 0 0 {name=p46 sig_type=std_logic lab=ena[0]}
+C {devices/lab_pin.sym} -1680 80 0 0 {name=p47 sig_type=std_logic lab=ena[1]}
+C {devices/lab_pin.sym} -1680 120 0 0 {name=p48 sig_type=std_logic lab=ena[2]}
+C {devices/lab_pin.sym} -1680 160 0 0 {name=p49 sig_type=std_logic lab=ena[3]}
+C {devices/lab_pin.sym} -1320 40 0 0 {name=p50 sig_type=std_logic lab=ena[4]}
+C {devices/lab_pin.sym} -1320 80 0 0 {name=p51 sig_type=std_logic lab=ena[5]}
+C {devices/lab_pin.sym} -1320 120 0 0 {name=p52 sig_type=std_logic lab=ena[6]}
+C {devices/lab_pin.sym} -1320 160 0 0 {name=p53 sig_type=std_logic lab=ena[7]}
+C {sky130_stdcells/diode_2.sym} -1560 80 0 0 {name=x5 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1560 120 0 0 {name=x6 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1560 160 0 0 {name=x7 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1200 40 0 0 {name=x9 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1200 80 0 0 {name=x10 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1200 120 0 0 {name=x11 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/diode_2.sym} -1200 160 0 0 {name=x13 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
