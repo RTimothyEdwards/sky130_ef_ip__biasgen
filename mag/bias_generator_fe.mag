@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1719596014
+timestamp 1719970077
 << error_s >>
 rect 45076 7047 45976 7947
 << dnwell >>
@@ -1077,7 +1077,7 @@ flabel metal2 32539 7935 32539 7935 0 FreeSans 640 0 0 0 enb_vbg_3v3
 flabel metal2 32553 8052 32553 8052 0 FreeSans 640 0 0 0 enb_test0_3v3
 flabel metal2 32634 592 32634 592 0 FreeSans 640 0 0 0 ena_test0_3v3
 flabel space 32658 693 32658 693 0 FreeSans 640 0 0 0 ena_3v3
-flabel metal4 19641 25 19761 381 0 FreeSans 1600 90 0 0 ref_in
+flabel metal3 19641 25 19761 381 0 FreeSans 1600 90 0 0 ref_in
 port 57 nsew
 flabel metal2 32668 85 32668 85 0 FreeSans 640 0 0 0 enb_vbg_3v3
 flabel metal2 32589 8212 32589 8212 0 FreeSans 640 0 0 0 ena_vbg_3v3

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1719429990
+timestamp 1719970051
 << error_s >>
 rect 82746 925 83646 1825
 << dnwell >>
@@ -1911,7 +1911,7 @@ flabel metal2 147063 678 147103 1051 0 FreeSans 400 90 0 0 en_lp2_trim_p
 port 53 nsew
 flabel metal2 146943 678 146983 1051 0 FreeSans 400 90 0 0 en_hgbw1_trim_p
 port 54 nsew
-flabel space 146823 678 146864 1051 0 FreeSans 400 90 0 0 en_hgbw2_bias
+flabel metal2 146823 678 146863 1051 0 FreeSans 400 90 0 0 en_hgbw2_bias
 port 55 nsew
 flabel metal2 144591 678 144631 1053 0 FreeSans 400 90 0 0 en_lp1_bias
 port 22 nsew
