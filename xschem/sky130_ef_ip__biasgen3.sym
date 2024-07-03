@@ -12,7 +12,6 @@ L 4 -130 -330 130 -330 {}
 L 4 -130 330 130 330 {}
 L 4 -130 -330 -130 330 {}
 L 4 130 -330 130 330 {}
-L 4 -150 -320 -130 -320 {}
 L 4 -150 -300 -130 -300 {}
 L 4 -150 -280 -130 -280 {}
 L 4 -150 -260 -130 -260 {}
@@ -64,32 +63,31 @@ L 7 130 -20 150 -20 {}
 L 7 130 0 150 0 {}
 L 7 130 20 150 20 {}
 L 7 130 40 150 40 {}
-B 5 -152.5 -322.5 -147.5 -317.5 {name=ena dir=in}
+B 5 -152.5 -302.5 -147.5 -297.5 {name=ena dir=in}
 B 5 147.5 -322.5 152.5 -317.5 {name=avdd dir=inout}
 B 5 147.5 -302.5 152.5 -297.5 {name=avss dir=inout}
-B 5 -152.5 -302.5 -147.5 -297.5 {name=ref_in dir=in}
+B 5 -152.5 -282.5 -147.5 -277.5 {name=ref_in dir=in}
 B 5 147.5 -282.5 152.5 -277.5 {name=dvdd dir=inout}
-B 5 -152.5 -282.5 -147.5 -277.5 {name=vbg dir=in}
-B 5 -152.5 -262.5 -147.5 -257.5 {name=ref_sel_vbg dir=in}
+B 5 -152.5 -262.5 -147.5 -257.5 {name=vbg dir=in}
+B 5 -152.5 -242.5 -147.5 -237.5 {name=ref_sel_vbg dir=in}
 B 5 147.5 -262.5 152.5 -257.5 {name=dvss dir=inout}
 B 5 147.5 -242.5 152.5 -237.5 {name=lp1_src_100 dir=inout}
-B 5 -152.5 -242.5 -147.5 -237.5 {name=en_lp1_bias dir=in}
-B 5 -152.5 -222.5 -147.5 -217.5 {name=en_lp1_trim_p dir=in}
-B 5 -152.5 -202.5 -147.5 -197.5 {name=en_lp2_bias dir=in}
+B 5 -152.5 -222.5 -147.5 -217.5 {name=en_lp1_bias dir=in}
+B 5 -152.5 -202.5 -147.5 -197.5 {name=en_lp1_trim_p dir=in}
+B 5 -152.5 -182.5 -147.5 -177.5 {name=en_lp2_bias dir=in}
 B 5 147.5 -222.5 152.5 -217.5 {name=lp2_src_100 dir=inout}
-B 5 -152.5 -182.5 -147.5 -177.5 {name=en_lp2_trim_p dir=in}
-B 5 -152.5 -162.5 -147.5 -157.5 {name=en_hgbw1_bias dir=in}
+B 5 -152.5 -162.5 -147.5 -157.5 {name=en_lp2_trim_p dir=in}
+B 5 -152.5 -142.5 -147.5 -137.5 {name=en_hgbw1_bias dir=in}
 B 5 147.5 -202.5 152.5 -197.5 {name=hgbw1_src_100 dir=inout}
-B 5 -152.5 -142.5 -147.5 -137.5 {name=en_hgbw1_trim_p dir=in}
+B 5 -152.5 -122.5 -147.5 -117.5 {name=en_hgbw1_trim_p dir=in}
 B 5 147.5 -182.5 152.5 -177.5 {name=hgbw2_src_100 dir=inout}
-B 5 -152.5 -122.5 -147.5 -117.5 {name=en_hgbw2_bias dir=in}
-B 5 -152.5 -102.5 -147.5 -97.5 {name=en_hgbw2_trim_p dir=in}
+B 5 -152.5 -102.5 -147.5 -97.5 {name=en_hgbw2_bias dir=in}
+B 5 -152.5 -82.5 -147.5 -77.5 {name=en_hgbw2_trim_p dir=in}
 B 5 147.5 -162.5 152.5 -157.5 {name=instr1_src_100 dir=inout}
-B 5 -152.5 -82.5 -147.5 -77.5 {name=en_instr1_bias dir=in}
-B 5 -152.5 -62.5 -147.5 -57.5 {name=en_instr1_trim_p dir=in}
+B 5 -152.5 -62.5 -147.5 -57.5 {name=en_instr1_bias dir=in}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=en_instr1_trim_p dir=in}
 B 5 147.5 -142.5 152.5 -137.5 {name=instr2_src_100 dir=inout}
-B 5 -152.5 -42.5 -147.5 -37.5 {name=en_instr2_bias dir=in}
-B 5 -152.5 -22.5 -147.5 -17.5 {name=en_instr2_trim_p dir=in}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=en_instr2_bias dir=in}
 B 5 -152.5 -2.5 -147.5 2.5 {name=en_instr2_trim_p dir=in}
 B 5 147.5 -122.5 152.5 -117.5 {name=lsxo_src_50 dir=inout}
 B 5 -152.5 17.5 -147.5 22.5 {name=en_lsxo_bias dir=in}
@@ -116,34 +114,33 @@ B 5 -152.5 277.5 -147.5 282.5 {name=en_user2_trim_n dir=in}
 B 5 -152.5 297.5 -147.5 302.5 {name=en_src_test dir=in}
 B 5 147.5 37.5 152.5 42.5 {name=test_src_500 dir=inout}
 B 5 -152.5 317.5 -147.5 322.5 {name=en_snk_test dir=in}
-T {@symname} -97 -326 0 0 0.3 0.3 {}
+T {@symname} -107 -326 0 0 0.3 0.3 {}
 T {@name} 135 -342 0 0 0.2 0.2 {}
-T {ena} -125 -324 0 0 0.2 0.2 {}
+T {ena} -125 -304 0 0 0.2 0.2 {}
 T {avdd} 125 -324 0 1 0.2 0.2 {}
 T {avss} 125 -304 0 1 0.2 0.2 {}
-T {ref_in} -125 -304 0 0 0.2 0.2 {}
+T {ref_in} -125 -284 0 0 0.2 0.2 {}
 T {dvdd} 125 -284 0 1 0.2 0.2 {}
-T {vbg} -125 -284 0 0 0.2 0.2 {}
-T {ref_sel_vbg} -125 -264 0 0 0.2 0.2 {}
+T {vbg} -125 -264 0 0 0.2 0.2 {}
+T {ref_sel_vbg} -125 -244 0 0 0.2 0.2 {}
 T {dvss} 125 -264 0 1 0.2 0.2 {}
 T {lp1_src_100} 125 -244 0 1 0.2 0.2 {}
-T {en_lp1_bias} -125 -244 0 0 0.2 0.2 {}
-T {en_lp1_trim_p} -125 -224 0 0 0.2 0.2 {}
-T {en_lp2_bias} -125 -204 0 0 0.2 0.2 {}
+T {en_lp1_bias} -125 -224 0 0 0.2 0.2 {}
+T {en_lp1_trim_p} -125 -204 0 0 0.2 0.2 {}
+T {en_lp2_bias} -125 -184 0 0 0.2 0.2 {}
 T {lp2_src_100} 125 -224 0 1 0.2 0.2 {}
-T {en_lp2_trim_p} -125 -184 0 0 0.2 0.2 {}
-T {en_hgbw1_bias} -125 -164 0 0 0.2 0.2 {}
+T {en_lp2_trim_p} -125 -164 0 0 0.2 0.2 {}
+T {en_hgbw1_bias} -125 -144 0 0 0.2 0.2 {}
 T {hgbw1_src_100} 125 -204 0 1 0.2 0.2 {}
-T {en_hgbw1_trim_p} -125 -144 0 0 0.2 0.2 {}
+T {en_hgbw1_trim_p} -125 -124 0 0 0.2 0.2 {}
 T {hgbw2_src_100} 125 -184 0 1 0.2 0.2 {}
-T {en_hgbw2_bias} -125 -124 0 0 0.2 0.2 {}
-T {en_hgbw2_trim_p} -125 -104 0 0 0.2 0.2 {}
+T {en_hgbw2_bias} -125 -104 0 0 0.2 0.2 {}
+T {en_hgbw2_trim_p} -125 -84 0 0 0.2 0.2 {}
 T {instr1_src_100} 125 -164 0 1 0.2 0.2 {}
-T {en_instr1_bias} -125 -84 0 0 0.2 0.2 {}
-T {en_instr1_trim_p} -125 -64 0 0 0.2 0.2 {}
+T {en_instr1_bias} -125 -64 0 0 0.2 0.2 {}
+T {en_instr1_trim_p} -125 -44 0 0 0.2 0.2 {}
 T {instr2_src_100} 125 -144 0 1 0.2 0.2 {}
-T {en_instr2_bias} -125 -44 0 0 0.2 0.2 {}
-T {en_instr2_trim_p} -125 -24 0 0 0.2 0.2 {}
+T {en_instr2_bias} -125 -24 0 0 0.2 0.2 {}
 T {en_instr2_trim_p} -125 -4 0 0 0.2 0.2 {}
 T {lsxo_src_50} 125 -124 0 1 0.2 0.2 {}
 T {en_lsxo_bias} -125 16 0 0 0.2 0.2 {}
