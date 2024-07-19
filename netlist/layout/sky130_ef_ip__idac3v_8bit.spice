@@ -494,11 +494,11 @@ Xsky130_fd_pr__cap_mim_m3_1_MQZGVK_1 bias_amp_0/inp bias_amp_0/out sky130_fd_pr_
 Xsky130_fd_sc_hvl__decap_4_3 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 .ends
 
-.subckt bias_generator_idac_be avdd dvdd ena[6] ena[3] ena[2] ena[0] ena[1] ena[5]
-+ ena[4] ena[7] a_135144_n10736# a_89514_n1347# a_89514_7744# dvss bias_nstack_3[3]/itail
-+ bias_pstack_3[3]/itail bias_nstack_3[3]/nbias bias_pstack_3[3]/pcasc bias_pstack_2[9]/itail
-+ bias_pstack_1[9]/itail bias_pstack_0[9]/itail bias_nstack_1[9]/itail bias_nstack_2[9]/itail
-+ bias_nstack_0[9]/itail bias_pstack_3[3]/pbias avss
+.subckt bias_generator_idac_be dvdd ena[6] ena[3] ena[2] ena[0] ena[1] ena[5] ena[4]
++ ena[7] a_135144_n10736# m4_89432_13963# a_89514_n1347# m4_89432_n426# a_89514_7744#
++ dvss bias_nstack_3[3]/itail bias_pstack_3[3]/itail bias_nstack_3[3]/nbias bias_pstack_3[3]/pcasc
++ bias_pstack_1[9]/itail avdd bias_pstack_2[9]/itail bias_pstack_0[9]/itail bias_nstack_1[9]/itail
++ bias_nstack_2[9]/itail bias_nstack_0[9]/itail bias_pstack_3[3]/pbias avss
 Xbias_nstack_0[0] bias_nstack_0[9]/itail ena_bit6 bias_nstack_3[3]/nbias avss bias_nstack_0[0]/vcasc
 + bias_nstack
 Xbias_nstack_0[1] bias_nstack_0[9]/itail ena_bit6 bias_nstack_3[3]/nbias avss bias_nstack_0[1]/vcasc
@@ -1567,9 +1567,9 @@ Xbias_generator_fe_0 bias_generator_fe_0/snk_test0 bias_generator_fe_0/src_test0
 + ref_in dvss dvss dvdd ena ref_sel_vbg dvss bias_generator_fe_0/bias_amp_0/out avdd
 + bias_generator_fe_0/bias_amp_0/nbias avss bias_generator_fe_0/bias_pstack_0[9]/pcasc
 + bias_generator_fe
-Xbias_generator_idac_be_0 avdd dvdd din[6] din[3] din[2] din[0] din[1] din[5] din[4]
-+ din[7] dvss dvss dvss dvss snk_out src_out bias_generator_fe_0/bias_amp_0/nbias
-+ bias_generator_fe_0/bias_pstack_0[9]/pcasc src_out src_out src_out snk_out snk_out
-+ snk_out bias_generator_fe_0/bias_amp_0/out avss bias_generator_idac_be
+Xbias_generator_idac_be_0 dvdd din[6] din[3] din[2] din[0] din[1] din[5] din[4] din[7]
++ dvss dvdd dvss dvdd dvss dvss snk_out src_out bias_generator_fe_0/bias_amp_0/nbias
++ bias_generator_fe_0/bias_pstack_0[9]/pcasc src_out avdd src_out src_out snk_out
++ snk_out snk_out bias_generator_fe_0/bias_amp_0/out avss bias_generator_idac_be
 .ends
 

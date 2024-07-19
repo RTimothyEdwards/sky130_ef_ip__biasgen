@@ -491,7 +491,7 @@ Circuit bias_generator_idac_be contains 544 device instances.
   Class: sky130_fd_sc_hvl__inv_2 instances:   8
   Class: sky130_fd_sc_hvl__decap_4 instances:   8
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
-Circuit contains 551 nets, and 3 disconnected pins.
+Circuit contains 551 nets, and 5 disconnected pins.
 Contents of circuit 2:  Circuit: 'bias_generator_idac_be'
 Circuit bias_generator_idac_be contains 544 device instances.
   Class: sky130_fd_sc_hvl__diode_2 instances:   8
@@ -513,7 +513,7 @@ Circuit bias_generator_idac_be contains 537 device instances.
   Class: sky130_fd_sc_hvl__inv_2 instances:   8
   Class: sky130_fd_sc_hvl__decap_4 instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
-Circuit contains 551 nets, and 3 disconnected pins.
+Circuit contains 551 nets, and 5 disconnected pins.
 Contents of circuit 2:  Circuit: 'bias_generator_idac_be'
 Circuit bias_generator_idac_be contains 537 device instances.
   Class: sky130_fd_sc_hvl__diode_2 instances:   8
