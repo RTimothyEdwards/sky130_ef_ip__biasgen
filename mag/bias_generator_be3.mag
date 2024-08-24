@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1720036686
+timestamp 1724461033
 << error_s >>
 rect 82746 925 83646 1825
 << dnwell >>
@@ -16,13 +16,38 @@ rect 108895 925 108983 947
 rect 82812 8770 83084 8804
 rect 138398 8770 138458 8804
 rect 138424 8744 138458 8770
-rect 139072 8182 139132 8216
+rect 139072 8190 139132 8216
+rect 139067 8182 139132 8190
 rect 157792 8182 157852 8216
-rect 139072 8156 139106 8182
-rect 139072 1252 139106 1278
-rect 157818 8156 157852 8182
-rect 157818 1252 157852 1278
-rect 139072 1218 139132 1252
+rect 139067 8156 157852 8182
+rect 139067 1278 139072 8156
+rect 139106 8098 157818 8156
+rect 139106 7987 139175 8098
+rect 157725 7987 157818 8098
+rect 139106 7953 139429 7987
+rect 157549 7953 157818 7987
+rect 139106 6359 139175 7953
+rect 157725 6359 157818 7953
+rect 139106 6325 139429 6359
+rect 157549 6325 157818 6359
+rect 139106 4731 139175 6325
+rect 157725 4731 157818 6325
+rect 139106 4697 139429 4731
+rect 157549 4697 157818 4731
+rect 139106 3103 139175 4697
+rect 157725 3103 157818 4697
+rect 139106 3069 139429 3103
+rect 157549 3069 157818 3103
+rect 139106 1475 139175 3069
+rect 157725 1475 157818 3069
+rect 139106 1441 139429 1475
+rect 157549 1441 157818 1475
+rect 139106 1322 139175 1441
+rect 157725 1322 157818 1441
+rect 139106 1278 157818 1322
+rect 139067 1252 157852 1278
+rect 139067 1228 139132 1252
+rect 139072 1218 139132 1228
 rect 157792 1218 157852 1252
 rect 138424 498 138458 524
 rect 82812 464 83084 498
@@ -1919,472 +1944,472 @@ timestamp 1717035242
 transform 1 0 80966 0 -1 5026
 box 1986 -3967 2714 388
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139896 0 -1 4714
 box -66 -43 450 897
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_1
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139896 0 -1 7970
 box -66 -43 450 897
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_14
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139896 0 -1 3086
 box -66 -43 450 897
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_18
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139896 0 -1 6342
 box -66 -43 450 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139704 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_1
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155256 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_2
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152664 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_3
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 150072 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_4
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147480 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_5
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144888 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_6
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142296 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_7
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139704 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_8
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139704 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_9
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139704 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_10
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142296 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_11
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144888 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_12
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147480 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_13
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 150072 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_14
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152664 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_15
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142296 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_16
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155256 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_17
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155256 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_18
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155256 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_19
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152664 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_20
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 150072 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_21
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147480 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_22
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144888 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_23
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142296 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_24
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144888 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_25
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147480 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_26
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 150072 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_27
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152664 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 144696 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_1
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 149880 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_2
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 149880 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_3
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147288 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_4
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 144696 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_5
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 149880 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_6
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 144696 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_7
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 144696 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_8
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142104 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_9
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142104 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_10
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142104 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_11
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_12
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142104 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_13
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_14
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 -1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_15
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 -1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_16
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_17
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_18
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 -1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_19
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 139512 0 -1 7970
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_20
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 149880 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_21
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147288 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_22
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147288 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_23
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147288 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_24
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155064 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_25
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155064 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_26
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155064 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_27
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155064 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_28
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152472 0 1 1458
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_29
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152472 0 1 6342
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_30
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152472 0 1 4714
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_1  sky130_fd_sc_hvl__fill_1_31
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152472 0 1 3086
 box -66 -43 162 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139512 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_1
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155064 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_2
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152472 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_3
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 149880 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_4
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147288 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_5
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144696 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_6
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142104 0 1 1458
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_7
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139512 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_8
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139512 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_9
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 139512 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_10
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142104 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_11
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144696 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_12
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147288 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_13
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 149880 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_14
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152472 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_15
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142104 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_16
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155064 0 1 6342
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_17
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155064 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_18
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 155064 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_19
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152472 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_20
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 149880 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_21
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147288 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_22
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144696 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_23
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 142104 0 1 3086
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_24
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 144696 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_25
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 147288 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_26
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 149880 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_27
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 152472 0 1 4714
 box -66 -43 258 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142488 0 -1 3086
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_1
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 145080 0 -1 4714
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_2
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 150264 0 -1 7970
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_3
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 150264 0 -1 6342
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_4
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 150264 0 -1 4714
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_5
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 145080 0 -1 7970
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_6
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 145080 0 -1 6342
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_7
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142488 0 -1 4714
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_8
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147672 0 -1 3086
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_9
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 150264 0 -1 3086
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_10
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142488 0 -1 7970
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_11
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142488 0 -1 6342
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_12
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 145080 0 -1 3086
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_13
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147672 0 -1 4714
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_14
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147672 0 -1 6342
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_15
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 147672 0 -1 7970
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_16
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155448 0 -1 3086
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_17
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155448 0 -1 7970
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_18
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155448 0 -1 6342
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_19
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 155448 0 -1 4714
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_20
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152856 0 -1 3086
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_21
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152856 0 -1 7970
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_22
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152856 0 -1 6342
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_23
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 152856 0 -1 4714
 box -66 -43 546 897
 use sky130_fd_sc_hvl__lsbuflv2hv_1  sky130_fd_sc_hvl__lsbuflv2hv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 array 0 6 -2592 0 3 1628
-timestamp 1715205430
+timestamp 1723858470
 transform -1 0 142008 0 1 1458
 box -66 -43 2178 1671
 << labels >>
