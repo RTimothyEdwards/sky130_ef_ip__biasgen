@@ -1,0 +1,483 @@
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/sky130_ef_ip__biasgen4.sch
+.subckt sky130_ef_ip__biasgen4 ena avdd avss ref_in dvdd vbg ref_sel_vbg dvss lp1_src_100 en_lp1_bias en_lp1_trim_p en_lp2_bias
++ lp2_src_100 en_lp2_trim_p en_hgbw1_bias hgbw1_src_100 en_hgbw1_trim_p hgbw2_src_100 en_hgbw2_bias en_hgbw2_trim_p instr1_src_100
++ en_instr1_bias en_instr1_trim_p instr2_src_100 en_instr2_bias en_instr2_trim_p lsxo_src_50 en_lsxo_bias hsxo_src_1000 en_hsxo_bias
++ en_hsxo_trim_p en_hsxo_trim_n comp_src_400 en_comp_bias en_comp_trim_p en_comp_trim_n ov_src_600 en_ov_bias en_idac_bias idac_src_1000
++ en_brnout_bias brnout_src_200 en_user1_bias user_src_50 en_user2_bias user_src_150 en_user2_trim_p en_user2_trim_n en_src_test test_src_500
++ en_snk_test bandgap_snk_250
+*.PININFO avdd:B avss:B dvdd:B dvss:B lp1_src_100:B lp2_src_100:B hgbw1_src_100:B hgbw2_src_100:B instr1_src_100:B
+*+ instr2_src_100:B lsxo_src_50:B hsxo_src_1000:B comp_src_400:B ov_src_600:B idac_src_1000:B brnout_src_200:B user_src_50:B user_src_150:B
+*+ test_src_500:B ena:I ref_in:I vbg:I ref_sel_vbg:I en_lp1_bias:I en_lp1_trim_p:I en_lp2_bias:I en_lp2_trim_p:I en_hgbw1_bias:I en_hgbw1_trim_p:I
+*+ en_hgbw2_bias:I en_hgbw2_trim_p:I en_instr1_bias:I en_instr2_bias:I en_instr1_trim_p:I en_instr2_trim_p:I en_lsxo_bias:I en_hsxo_bias:I
+*+ en_hsxo_trim_p:I en_hsxo_trim_n:I en_comp_bias:I en_comp_trim_p:I en_comp_trim_n:I en_ov_bias:I en_idac_bias:I en_brnout_bias:I en_user1_bias:I
+*+ en_user2_bias:I en_user2_trim_p:I en_user2_trim_n:I en_src_test:I en_snk_test:I bandgap_snk_250:B
+x1 avdd ena vbg net1 avss dvdd dvss ref_sel_vbg ref_in dvss net5 net4 net3 net2 dvss bias_generator_fe
+* noconn #net1
+* noconn #net2
+x3 dvdd dvss en_hsxo_bias en_comp_trim_n en_ov_bias avdd en_comp_bias net4 en_hsxo_trim_n net3 en_lp1_bias en_user2_trim_n
++ en_lp2_bias en_hgbw1_bias lp1_src_100 test_src_500 lp2_src_100 en_hgbw2_bias user_src_50 idac_src_1000 lsxo_src_50 hsxo_src_1000 comp_src_400
++ hgbw2_src_100 ov_src_600 user_src_150 instr1_src_100 instr2_src_100 hgbw1_src_100 en_instr1_bias en_instr2_bias en_src_test en_lsxo_bias
++ en_snk_test net5 en_user1_bias avss en_idac_bias en_user2_bias en_comp_trim_p en_hsxo_trim_p en_user2_trim_p en_lp1_trim_p en_lp2_trim_p
++ en_hgbw1_trim_p en_hgbw2_trim_p en_instr1_trim_p en_instr2_trim_p brnout_src_200 en_brnout_bias bandgap_snk_250 bias_generator_be4
+.ends
+
+* expanding   symbol:  bias_generator_fe.sym # of pins=15
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sch
+.subckt bias_generator_fe avdd ena vbg src_test0 avss dvdd ena_src_test0 ref_sel_vbg ref_in dvss nbias pcasc pbias snk_test0
++ ena_snk_test0
+*.PININFO ref_in:I avss:B ref_sel_vbg:I avdd:B ena_src_test0:I ena_snk_test0:I src_test0:B snk_test0:B vbg:I ena:I dvdd:B dvss:B
+*+ pcasc:O pbias:O nbias:O
+x2[19] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[18] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[17] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[16] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[15] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[14] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[13] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[12] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[11] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[10] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[9] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[8] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[7] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[6] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[5] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[4] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[3] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[2] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[1] net1 ena_3v3 nbias nbias avss bias_nstack
+x2[0] net1 ena_3v3 nbias nbias avss bias_nstack
+XR4 pcasc ref_in avss sky130_fd_pr__res_high_po_0p35 L=1500 mult=1 m=1
+x4 pbias enb_vbg_3v3 net2 nbias avss bias_nstack
+x2 avdd pbias pcasc net5 ena_vbg_3v3 avss pbias bias_pstack
+x13[9] avdd pbias pcasc net6[9] enb_test0_3v3 avss src_test0 bias_pstack
+x13[8] avdd pbias pcasc net6[8] enb_test0_3v3 avss src_test0 bias_pstack
+x13[7] avdd pbias pcasc net6[7] enb_test0_3v3 avss src_test0 bias_pstack
+x13[6] avdd pbias pcasc net6[6] enb_test0_3v3 avss src_test0 bias_pstack
+x13[5] avdd pbias pcasc net6[5] enb_test0_3v3 avss src_test0 bias_pstack
+x13[4] avdd pbias pcasc net6[4] enb_test0_3v3 avss src_test0 bias_pstack
+x13[3] avdd pbias pcasc net6[3] enb_test0_3v3 avss src_test0 bias_pstack
+x13[2] avdd pbias pcasc net6[2] enb_test0_3v3 avss src_test0 bias_pstack
+x13[1] avdd pbias pcasc net6[1] enb_test0_3v3 avss src_test0 bias_pstack
+x13[0] avdd pbias pcasc net6[0] enb_test0_3v3 avss src_test0 bias_pstack
+x17[1] snk_test0 ena_test0_3v3 net7[1] nbias avss bias_nstack
+x17[0] snk_test0 ena_test0_3v3 net7[0] nbias avss bias_nstack
+x1 ref_sel_vbg dvdd dvss dvss avdd avdd ena_vbg_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x11 ena_snk_test0 dvdd dvss dvss avdd avdd ena_test0_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x23 ena_src_test0 dvdd dvss dvss avdd avdd net4 sky130_fd_sc_hvl__lsbuflv2hv_1
+x24 ena_vbg_3v3 dvss dvss avdd avdd enb_vbg_3v3 sky130_fd_sc_hvl__inv_2
+x35 net4 dvss dvss avdd avdd enb_test0_3v3 sky130_fd_sc_hvl__inv_2
+x3 avdd pbias vbg vfb nbias avss ena_vbg_3v3 bias_amp
+XR1 avss net3 avss sky130_fd_pr__res_high_po_0p35 L=2008 mult=1 m=1
+XC1 pbias vfb sky130_fd_pr__cap_mim_m3_1 W=5 L=5 m=8
+x36 ena dvdd dvss dvss avdd avdd ena_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+* noconn #net2
+* noconn #net7
+* noconn #net6
+XR2 net1 pcasc avss sky130_fd_pr__res_high_po_0p35 L=900 mult=1 m=1
+Vmeas vfb net3 0
+.save i(vmeas)
+x19[11] avdd pbias pcasc net8[11] enb_vbg_3v3 avss vfb bias_pstack
+x19[10] avdd pbias pcasc net8[10] enb_vbg_3v3 avss vfb bias_pstack
+x19[9] avdd pbias pcasc net8[9] enb_vbg_3v3 avss vfb bias_pstack
+x19[8] avdd pbias pcasc net8[8] enb_vbg_3v3 avss vfb bias_pstack
+x19[7] avdd pbias pcasc net8[7] enb_vbg_3v3 avss vfb bias_pstack
+x19[6] avdd pbias pcasc net8[6] enb_vbg_3v3 avss vfb bias_pstack
+x19[5] avdd pbias pcasc net8[5] enb_vbg_3v3 avss vfb bias_pstack
+x19[4] avdd pbias pcasc net8[4] enb_vbg_3v3 avss vfb bias_pstack
+x19[3] avdd pbias pcasc net8[3] enb_vbg_3v3 avss vfb bias_pstack
+x19[2] avdd pbias pcasc net8[2] enb_vbg_3v3 avss vfb bias_pstack
+x19[1] avdd pbias pcasc net8[1] enb_vbg_3v3 avss vfb bias_pstack
+x19[0] avdd pbias pcasc net8[0] enb_vbg_3v3 avss vfb bias_pstack
+* noconn #net8
+* noconn #net5
+XD1 avss vbg sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+x5[1] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x5[0] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x5 ref_sel_vbg dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x6 ena dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x7 ena_src_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x8 ena_snk_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+.ends
+
+
+* expanding   symbol:  bias_generator_be4.sym # of pins=51
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_be4.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_be4.sch
+.subckt bias_generator_be4 dvdd dvss en_hsxo_bias en_comp_trim_n en_ov_bias avdd en_comp_bias pcasc en_hsxo_trim_n pbias
++ en_lp1_bias en_user2_trim_n en_lp2_bias en_hgbw1_bias lp1_src_100 test_src_500 lp2_src_100 en_hgbw2_bias user_src_50 idac_src_1000
++ lsxo_src_50 hsxo_src_1000 comp_src_400 hgbw2_src_100 ov_src_600 user_src_150 instr1_src_100 instr2_src_100 hgbw1_src_100 en_instr1_bias
++ en_instr2_bias en_src_test en_lsxo_bias en_snk_test nbias en_user1_bias avss en_idac_bias en_user2_bias en_comp_trim_p en_hsxo_trim_p
++ en_user2_trim_p en_lp1_trim_p en_lp2_trim_p en_hgbw1_trim_p en_hgbw2_trim_p en_instr1_trim_p en_instr2_trim_p brnout_src_200 en_brnout_bias
++ bandgap_snk_250
+*.PININFO avss:B avdd:B en_hsxo_trim_n:I en_instr2_bias:I hsxo_src_1000:B en_instr1_bias:I en_hgbw2_bias:I ov_src_600:B
+*+ en_hgbw1_bias:I comp_src_400:B en_lp2_bias:I lp1_src_100:B en_lp1_bias:I lp2_src_100:B en_comp_bias:I hgbw1_src_100:B en_ov_bias:I
+*+ hgbw2_src_100:B en_hsxo_bias:I lsxo_src_50:B dvdd:B dvss:B pcasc:I pbias:I nbias:I en_comp_trim_n:I user_src_50:B instr1_src_100:B
+*+ instr2_src_100:B test_src_500:B idac_src_1000:B user_src_150:B en_snk_test:I en_user2_trim_n:I en_user2_trim_p:I en_hsxo_trim_p:I en_comp_trim_p:I
+*+ en_user2_bias:I en_idac_bias:I en_src_test:I en_user1_bias:I en_lsxo_bias:I en_instr2_trim_p:I en_instr1_trim_p:I en_hgbw2_trim_p:I
+*+ en_hgbw1_trim_p:I en_lp2_trim_p:I en_lp1_trim_p:I brnout_src_200:B en_brnout_bias:I bandgap_snk_250:B
+x18[1] net1 avss net27[1] nbias avss bias_nstack
+x18[0] net1 avss net27[0] nbias avss bias_nstack
+x16[1] avdd pbias pcasc net28[1] avdd avss net2 bias_pstack
+x16[0] avdd pbias pcasc net28[0] avdd avss net2 bias_pstack
+x8[19] avdd pbias pcasc net29[19] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[18] avdd pbias pcasc net29[18] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[17] avdd pbias pcasc net29[17] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[16] avdd pbias pcasc net29[16] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[15] avdd pbias pcasc net29[15] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[14] avdd pbias pcasc net29[14] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[13] avdd pbias pcasc net29[13] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[12] avdd pbias pcasc net29[12] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[11] avdd pbias pcasc net29[11] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[10] avdd pbias pcasc net29[10] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[9] avdd pbias pcasc net29[9] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[8] avdd pbias pcasc net29[8] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[7] avdd pbias pcasc net29[7] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[6] avdd pbias pcasc net29[6] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[5] avdd pbias pcasc net29[5] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[4] avdd pbias pcasc net29[4] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[3] avdd pbias pcasc net29[3] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[2] avdd pbias pcasc net29[2] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[1] avdd pbias pcasc net29[1] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x8[0] avdd pbias pcasc net29[0] enb_hsxo_3v3 avss hsxo_src_1000 bias_pstack
+x4[11] avdd pbias pcasc net30[11] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[10] avdd pbias pcasc net30[10] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[9] avdd pbias pcasc net30[9] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[8] avdd pbias pcasc net30[8] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[7] avdd pbias pcasc net30[7] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[6] avdd pbias pcasc net30[6] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[5] avdd pbias pcasc net30[5] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[4] avdd pbias pcasc net30[4] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[3] avdd pbias pcasc net30[3] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[2] avdd pbias pcasc net30[2] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[1] avdd pbias pcasc net30[1] enb_ov_3v3 avss ov_src_600 bias_pstack
+x4[0] avdd pbias pcasc net30[0] enb_ov_3v3 avss ov_src_600 bias_pstack
+x5[7] avdd pbias pcasc net31[7] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[6] avdd pbias pcasc net31[6] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[5] avdd pbias pcasc net31[5] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[4] avdd pbias pcasc net31[4] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[3] avdd pbias pcasc net31[3] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[2] avdd pbias pcasc net31[2] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[1] avdd pbias pcasc net31[1] enb_comp_3v3 avss comp_src_400 bias_pstack
+x5[0] avdd pbias pcasc net31[0] enb_comp_3v3 avss comp_src_400 bias_pstack
+x6[1] avdd pbias pcasc net32[1] enb_lp1_3v3 avss lp1_src_100 bias_pstack
+x6[0] avdd pbias pcasc net32[0] enb_lp1_3v3 avss lp1_src_100 bias_pstack
+x7[1] avdd pbias pcasc net33[1] enb_lp2_3v3 avss lp2_src_100 bias_pstack
+x7[0] avdd pbias pcasc net33[0] enb_lp2_3v3 avss lp2_src_100 bias_pstack
+x11[1] avdd pbias pcasc net34[1] enb_hgbw1_3v3 avss hgbw1_src_100 bias_pstack
+x11[0] avdd pbias pcasc net34[0] enb_hgbw1_3v3 avss hgbw1_src_100 bias_pstack
+x12[1] avdd pbias pcasc net35[1] enb_hgbw2_3v3 avss hgbw2_src_100 bias_pstack
+x12[0] avdd pbias pcasc net35[0] enb_hgbw2_3v3 avss hgbw2_src_100 bias_pstack
+x13 avdd pbias pcasc net36 enb_lsxo_3v3 avss lsxo_src_50 bias_pstack
+x10 en_hsxo_trim_n dvdd dvss dvss avdd avdd ena_hsxo_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x12 en_hsxo_bias dvdd dvss dvss avdd avdd net11 sky130_fd_sc_hvl__lsbuflv2hv_1
+x14 en_ov_bias dvdd dvss dvss avdd avdd net10 sky130_fd_sc_hvl__lsbuflv2hv_1
+x15 en_comp_bias dvdd dvss dvss avdd avdd net9 sky130_fd_sc_hvl__lsbuflv2hv_1
+x16 en_lp1_bias dvdd dvss dvss avdd avdd net8 sky130_fd_sc_hvl__lsbuflv2hv_1
+x17 en_lp2_bias dvdd dvss dvss avdd avdd net7 sky130_fd_sc_hvl__lsbuflv2hv_1
+x18 en_hgbw1_bias dvdd dvss dvss avdd avdd net6 sky130_fd_sc_hvl__lsbuflv2hv_1
+x19 en_hgbw2_bias dvdd dvss dvss avdd avdd net5 sky130_fd_sc_hvl__lsbuflv2hv_1
+x20 en_instr1_bias dvdd dvss dvss avdd avdd net4 sky130_fd_sc_hvl__lsbuflv2hv_1
+x22 en_instr2_bias dvdd dvss dvss avdd avdd net3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x25 net11 dvss dvss avdd avdd enb_hsxo_3v3 sky130_fd_sc_hvl__inv_2
+x26 net10 dvss dvss avdd avdd enb_ov_3v3 sky130_fd_sc_hvl__inv_2
+x27 net9 dvss dvss avdd avdd enb_comp_3v3 sky130_fd_sc_hvl__inv_2
+x28 net8 dvss dvss avdd avdd enb_lp1_3v3 sky130_fd_sc_hvl__inv_2
+x29 net7 dvss dvss avdd avdd enb_lp2_3v3 sky130_fd_sc_hvl__inv_2
+x30 net6 dvss dvss avdd avdd enb_hgbw1_3v3 sky130_fd_sc_hvl__inv_2
+x31 net5 dvss dvss avdd avdd enb_hgbw2_3v3 sky130_fd_sc_hvl__inv_2
+x32 net4 dvss dvss avdd avdd enb_instr1_3v3 sky130_fd_sc_hvl__inv_2
+x34 net3 dvss dvss avdd avdd enb_instr2_3v3 sky130_fd_sc_hvl__inv_2
+* noconn #net28
+* noconn #net27
+* noconn #net29
+* noconn #net30
+* noconn #net31
+* noconn #net32
+* noconn #net33
+* noconn #net34
+* noconn #net35
+* noconn #net36
+x1[1] comp_src_400 ena_comp_3v3 net37[1] nbias avss bias_nstack
+x1[0] comp_src_400 ena_comp_3v3 net37[0] nbias avss bias_nstack
+* noconn #net37
+x1 en_comp_trim_n dvdd dvss dvss avdd avdd ena_comp_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x2 avdd pbias pcasc net38 enb_user1_3v3 avss user_src_50 bias_pstack
+* noconn #net38
+x3[1] avdd pbias pcasc net39[1] enb_instr1_3v3 avss instr1_src_100 bias_pstack
+x3[0] avdd pbias pcasc net39[0] enb_instr1_3v3 avss instr1_src_100 bias_pstack
+* noconn #net39
+x2[1] avdd pbias pcasc net40[1] enb_instr2_3v3 avss instr2_src_100 bias_pstack
+x2[0] avdd pbias pcasc net40[0] enb_instr2_3v3 avss instr2_src_100 bias_pstack
+* noconn #net40
+x9[9] avdd pbias pcasc net41[9] enb_test_3v3 avss test_src_500 bias_pstack
+x9[8] avdd pbias pcasc net41[8] enb_test_3v3 avss test_src_500 bias_pstack
+x9[7] avdd pbias pcasc net41[7] enb_test_3v3 avss test_src_500 bias_pstack
+x9[6] avdd pbias pcasc net41[6] enb_test_3v3 avss test_src_500 bias_pstack
+x9[5] avdd pbias pcasc net41[5] enb_test_3v3 avss test_src_500 bias_pstack
+x9[4] avdd pbias pcasc net41[4] enb_test_3v3 avss test_src_500 bias_pstack
+x9[3] avdd pbias pcasc net41[3] enb_test_3v3 avss test_src_500 bias_pstack
+x9[2] avdd pbias pcasc net41[2] enb_test_3v3 avss test_src_500 bias_pstack
+x9[1] avdd pbias pcasc net41[1] enb_test_3v3 avss test_src_500 bias_pstack
+x9[0] avdd pbias pcasc net41[0] enb_test_3v3 avss test_src_500 bias_pstack
+* noconn #net41
+x10[19] avdd pbias pcasc net42[19] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[18] avdd pbias pcasc net42[18] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[17] avdd pbias pcasc net42[17] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[16] avdd pbias pcasc net42[16] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[15] avdd pbias pcasc net42[15] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[14] avdd pbias pcasc net42[14] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[13] avdd pbias pcasc net42[13] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[12] avdd pbias pcasc net42[12] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[11] avdd pbias pcasc net42[11] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[10] avdd pbias pcasc net42[10] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[9] avdd pbias pcasc net42[9] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[8] avdd pbias pcasc net42[8] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[7] avdd pbias pcasc net42[7] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[6] avdd pbias pcasc net42[6] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[5] avdd pbias pcasc net42[5] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[4] avdd pbias pcasc net42[4] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[3] avdd pbias pcasc net42[3] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[2] avdd pbias pcasc net42[2] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[1] avdd pbias pcasc net42[1] enb_idac_3v3 avss idac_src_1000 bias_pstack
+x10[0] avdd pbias pcasc net42[0] enb_idac_3v3 avss idac_src_1000 bias_pstack
+* noconn #net42
+x13[1] hsxo_src_1000 ena_hsxo_3v3 net43[1] nbias avss bias_nstack
+x13[0] hsxo_src_1000 ena_hsxo_3v3 net43[0] nbias avss bias_nstack
+* noconn #net43
+x14[1] user_src_150 ena_user2_3v3 net44[1] nbias avss bias_nstack
+x14[0] user_src_150 ena_user2_3v3 net44[0] nbias avss bias_nstack
+* noconn #net44
+x15[74] test_src_500 ena_test_3v3 net45[74] nbias avss bias_nstack
+x15[73] test_src_500 ena_test_3v3 net45[73] nbias avss bias_nstack
+x15[72] test_src_500 ena_test_3v3 net45[72] nbias avss bias_nstack
+x15[71] test_src_500 ena_test_3v3 net45[71] nbias avss bias_nstack
+x15[70] test_src_500 ena_test_3v3 net45[70] nbias avss bias_nstack
+x15[69] test_src_500 ena_test_3v3 net45[69] nbias avss bias_nstack
+x15[68] test_src_500 ena_test_3v3 net45[68] nbias avss bias_nstack
+x15[67] test_src_500 ena_test_3v3 net45[67] nbias avss bias_nstack
+x15[66] test_src_500 ena_test_3v3 net45[66] nbias avss bias_nstack
+x15[65] test_src_500 ena_test_3v3 net45[65] nbias avss bias_nstack
+x15[64] test_src_500 ena_test_3v3 net45[64] nbias avss bias_nstack
+x15[63] test_src_500 ena_test_3v3 net45[63] nbias avss bias_nstack
+x15[62] test_src_500 ena_test_3v3 net45[62] nbias avss bias_nstack
+x15[61] test_src_500 ena_test_3v3 net45[61] nbias avss bias_nstack
+x15[60] test_src_500 ena_test_3v3 net45[60] nbias avss bias_nstack
+x15[59] test_src_500 ena_test_3v3 net45[59] nbias avss bias_nstack
+x15[58] test_src_500 ena_test_3v3 net45[58] nbias avss bias_nstack
+x15[57] test_src_500 ena_test_3v3 net45[57] nbias avss bias_nstack
+x15[56] test_src_500 ena_test_3v3 net45[56] nbias avss bias_nstack
+x15[55] test_src_500 ena_test_3v3 net45[55] nbias avss bias_nstack
+x15[54] test_src_500 ena_test_3v3 net45[54] nbias avss bias_nstack
+x15[53] test_src_500 ena_test_3v3 net45[53] nbias avss bias_nstack
+x15[52] test_src_500 ena_test_3v3 net45[52] nbias avss bias_nstack
+x15[51] test_src_500 ena_test_3v3 net45[51] nbias avss bias_nstack
+x15[50] test_src_500 ena_test_3v3 net45[50] nbias avss bias_nstack
+x15[49] test_src_500 ena_test_3v3 net45[49] nbias avss bias_nstack
+x15[48] test_src_500 ena_test_3v3 net45[48] nbias avss bias_nstack
+x15[47] test_src_500 ena_test_3v3 net45[47] nbias avss bias_nstack
+x15[46] test_src_500 ena_test_3v3 net45[46] nbias avss bias_nstack
+x15[45] test_src_500 ena_test_3v3 net45[45] nbias avss bias_nstack
+x15[44] test_src_500 ena_test_3v3 net45[44] nbias avss bias_nstack
+x15[43] test_src_500 ena_test_3v3 net45[43] nbias avss bias_nstack
+x15[42] test_src_500 ena_test_3v3 net45[42] nbias avss bias_nstack
+x15[41] test_src_500 ena_test_3v3 net45[41] nbias avss bias_nstack
+x15[40] test_src_500 ena_test_3v3 net45[40] nbias avss bias_nstack
+x15[39] test_src_500 ena_test_3v3 net45[39] nbias avss bias_nstack
+x15[38] test_src_500 ena_test_3v3 net45[38] nbias avss bias_nstack
+x15[37] test_src_500 ena_test_3v3 net45[37] nbias avss bias_nstack
+x15[36] test_src_500 ena_test_3v3 net45[36] nbias avss bias_nstack
+x15[35] test_src_500 ena_test_3v3 net45[35] nbias avss bias_nstack
+x15[34] test_src_500 ena_test_3v3 net45[34] nbias avss bias_nstack
+x15[33] test_src_500 ena_test_3v3 net45[33] nbias avss bias_nstack
+x15[32] test_src_500 ena_test_3v3 net45[32] nbias avss bias_nstack
+x15[31] test_src_500 ena_test_3v3 net45[31] nbias avss bias_nstack
+x15[30] test_src_500 ena_test_3v3 net45[30] nbias avss bias_nstack
+x15[29] test_src_500 ena_test_3v3 net45[29] nbias avss bias_nstack
+x15[28] test_src_500 ena_test_3v3 net45[28] nbias avss bias_nstack
+x15[27] test_src_500 ena_test_3v3 net45[27] nbias avss bias_nstack
+x15[26] test_src_500 ena_test_3v3 net45[26] nbias avss bias_nstack
+x15[25] test_src_500 ena_test_3v3 net45[25] nbias avss bias_nstack
+x15[24] test_src_500 ena_test_3v3 net45[24] nbias avss bias_nstack
+x15[23] test_src_500 ena_test_3v3 net45[23] nbias avss bias_nstack
+x15[22] test_src_500 ena_test_3v3 net45[22] nbias avss bias_nstack
+x15[21] test_src_500 ena_test_3v3 net45[21] nbias avss bias_nstack
+x15[20] test_src_500 ena_test_3v3 net45[20] nbias avss bias_nstack
+x15[19] test_src_500 ena_test_3v3 net45[19] nbias avss bias_nstack
+x15[18] test_src_500 ena_test_3v3 net45[18] nbias avss bias_nstack
+x15[17] test_src_500 ena_test_3v3 net45[17] nbias avss bias_nstack
+x15[16] test_src_500 ena_test_3v3 net45[16] nbias avss bias_nstack
+x15[15] test_src_500 ena_test_3v3 net45[15] nbias avss bias_nstack
+x15[14] test_src_500 ena_test_3v3 net45[14] nbias avss bias_nstack
+x15[13] test_src_500 ena_test_3v3 net45[13] nbias avss bias_nstack
+x15[12] test_src_500 ena_test_3v3 net45[12] nbias avss bias_nstack
+x15[11] test_src_500 ena_test_3v3 net45[11] nbias avss bias_nstack
+x15[10] test_src_500 ena_test_3v3 net45[10] nbias avss bias_nstack
+x15[9] test_src_500 ena_test_3v3 net45[9] nbias avss bias_nstack
+x15[8] test_src_500 ena_test_3v3 net45[8] nbias avss bias_nstack
+x15[7] test_src_500 ena_test_3v3 net45[7] nbias avss bias_nstack
+x15[6] test_src_500 ena_test_3v3 net45[6] nbias avss bias_nstack
+x15[5] test_src_500 ena_test_3v3 net45[5] nbias avss bias_nstack
+x15[4] test_src_500 ena_test_3v3 net45[4] nbias avss bias_nstack
+x15[3] test_src_500 ena_test_3v3 net45[3] nbias avss bias_nstack
+x15[2] test_src_500 ena_test_3v3 net45[2] nbias avss bias_nstack
+x15[1] test_src_500 ena_test_3v3 net45[1] nbias avss bias_nstack
+x15[0] test_src_500 ena_test_3v3 net45[0] nbias avss bias_nstack
+* noconn #net45
+x17[2] avdd pbias pcasc net46[2] enb_user2_3v3 avss user_src_150 bias_pstack
+x17[1] avdd pbias pcasc net46[1] enb_user2_3v3 avss user_src_150 bias_pstack
+x17[0] avdd pbias pcasc net46[0] enb_user2_3v3 avss user_src_150 bias_pstack
+* noconn #net46
+* noconn #net2
+* noconn #net1
+x3 avdd pbias pcasc net47 enb_comp_trim_3v3 avss comp_src_400 bias_pstack
+* noconn #net47
+x4 avdd pbias pcasc net48 enb_hsxo_trim_3v3 avss hsxo_src_1000 bias_pstack
+* noconn #net48
+x5 avdd pbias pcasc net49 enb_user2_trim_3v3 avss user_src_150 bias_pstack
+* noconn #net49
+x6 avdd pbias pcasc net50 enb_lp1_trim_3v3 avss lp1_src_100 bias_pstack
+* noconn #net50
+x7 avdd pbias pcasc net51 enb_lp2_trim_3v3 avss lp2_src_100 bias_pstack
+* noconn #net51
+x8 avdd pbias pcasc net52 enb_hgbw1_trim_3v3 avss hgbw1_src_100 bias_pstack
+* noconn #net52
+x9 avdd pbias pcasc net53 enb_hgbw2_trim_3v3 avss hgbw2_src_100 bias_pstack
+* noconn #net53
+x11 avdd pbias pcasc net54 enb_instr1_trim_3v3 avss instr1_src_100 bias_pstack
+* noconn #net54
+x21 avdd pbias pcasc net55 enb_instr2_trim_3v3 avss instr2_src_100 bias_pstack
+* noconn #net55
+x24 en_snk_test dvdd dvss dvss avdd avdd ena_test_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x33 en_user2_trim_n dvdd dvss dvss avdd avdd ena_user2_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x35 en_lsxo_bias dvdd dvss dvss avdd avdd net18 sky130_fd_sc_hvl__lsbuflv2hv_1
+x36 en_user1_bias dvdd dvss dvss avdd avdd net17 sky130_fd_sc_hvl__lsbuflv2hv_1
+x37 en_src_test dvdd dvss dvss avdd avdd ena_bandgap_3v3 sky130_fd_sc_hvl__lsbuflv2hv_1
+x38 en_idac_bias dvdd dvss dvss avdd avdd net16 sky130_fd_sc_hvl__lsbuflv2hv_1
+x39 en_user2_bias dvdd dvss dvss avdd avdd net15 sky130_fd_sc_hvl__lsbuflv2hv_1
+x40 en_comp_trim_p dvdd dvss dvss avdd avdd net14 sky130_fd_sc_hvl__lsbuflv2hv_1
+x41 en_hsxo_trim_p dvdd dvss dvss avdd avdd net13 sky130_fd_sc_hvl__lsbuflv2hv_1
+x42 en_user2_trim_p dvdd dvss dvss avdd avdd net12 sky130_fd_sc_hvl__lsbuflv2hv_1
+x44 net18 dvss dvss avdd avdd enb_lsxo_3v3 sky130_fd_sc_hvl__inv_2
+x45 net17 dvss dvss avdd avdd enb_user1_3v3 sky130_fd_sc_hvl__inv_2
+x46 ena_bandgap_3v3 dvss dvss avdd avdd enb_test_3v3 sky130_fd_sc_hvl__inv_2
+x47 net16 dvss dvss avdd avdd enb_idac_3v3 sky130_fd_sc_hvl__inv_2
+x48 net15 dvss dvss avdd avdd enb_user2_3v3 sky130_fd_sc_hvl__inv_2
+x49 net14 dvss dvss avdd avdd enb_comp_trim_3v3 sky130_fd_sc_hvl__inv_2
+x50 net13 dvss dvss avdd avdd enb_hsxo_trim_3v3 sky130_fd_sc_hvl__inv_2
+x51 net12 dvss dvss avdd avdd enb_user2_trim_3v3 sky130_fd_sc_hvl__inv_2
+x53 en_lp1_trim_p dvdd dvss dvss avdd avdd net24 sky130_fd_sc_hvl__lsbuflv2hv_1
+x54 en_lp2_trim_p dvdd dvss dvss avdd avdd net23 sky130_fd_sc_hvl__lsbuflv2hv_1
+x55 en_hgbw1_trim_p dvdd dvss dvss avdd avdd net22 sky130_fd_sc_hvl__lsbuflv2hv_1
+x56 en_hgbw2_trim_p dvdd dvss dvss avdd avdd net21 sky130_fd_sc_hvl__lsbuflv2hv_1
+x57 en_instr1_trim_p dvdd dvss dvss avdd avdd net20 sky130_fd_sc_hvl__lsbuflv2hv_1
+x58 en_instr2_trim_p dvdd dvss dvss avdd avdd net19 sky130_fd_sc_hvl__lsbuflv2hv_1
+x59 net24 dvss dvss avdd avdd enb_lp1_trim_3v3 sky130_fd_sc_hvl__inv_2
+x60 net23 dvss dvss avdd avdd enb_lp2_trim_3v3 sky130_fd_sc_hvl__inv_2
+x61 net22 dvss dvss avdd avdd enb_hgbw1_trim_3v3 sky130_fd_sc_hvl__inv_2
+x62 net21 dvss dvss avdd avdd enb_hgbw2_trim_3v3 sky130_fd_sc_hvl__inv_2
+x63 net20 dvss dvss avdd avdd enb_instr1_trim_3v3 sky130_fd_sc_hvl__inv_2
+x64 net19 dvss dvss avdd avdd enb_instr2_trim_3v3 sky130_fd_sc_hvl__inv_2
+x19[3] avdd pbias pcasc net56[3] enb_brnout_3v3 avss brnout_src_200 bias_pstack
+x19[2] avdd pbias pcasc net56[2] enb_brnout_3v3 avss brnout_src_200 bias_pstack
+x19[1] avdd pbias pcasc net56[1] enb_brnout_3v3 avss brnout_src_200 bias_pstack
+x19[0] avdd pbias pcasc net56[0] enb_brnout_3v3 avss brnout_src_200 bias_pstack
+* noconn #net56
+x65 en_brnout_bias dvdd dvss dvss avdd avdd net25 sky130_fd_sc_hvl__lsbuflv2hv_1
+x66 net25 dvss dvss avdd avdd enb_brnout_3v3 sky130_fd_sc_hvl__inv_2
+x23[3] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x23[2] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x23[1] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x23[0] dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
+x20[13] net26 avss net57[13] nbias avss bias_nstack
+x20[12] net26 avss net57[12] nbias avss bias_nstack
+x20[11] net26 avss net57[11] nbias avss bias_nstack
+x20[10] net26 avss net57[10] nbias avss bias_nstack
+x20[9] net26 avss net57[9] nbias avss bias_nstack
+x20[8] net26 avss net57[8] nbias avss bias_nstack
+x20[7] net26 avss net57[7] nbias avss bias_nstack
+x20[6] net26 avss net57[6] nbias avss bias_nstack
+x20[5] net26 avss net57[5] nbias avss bias_nstack
+x20[4] net26 avss net57[4] nbias avss bias_nstack
+x20[3] net26 avss net57[3] nbias avss bias_nstack
+x20[2] net26 avss net57[2] nbias avss bias_nstack
+x20[1] net26 avss net57[1] nbias avss bias_nstack
+x20[0] net26 avss net57[0] nbias avss bias_nstack
+* noconn #net57
+* noconn #net26
+x23 en_hsxo_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x43 en_ov_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x52 en_comp_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x67 en_lp1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x68 en_lp2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x69 en_hgbw1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x70 en_hgbw2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x71 en_instr1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x72 en_instr2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x73 en_lsxo_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x74 en_user1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x75 en_idac_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x76 en_user2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x77 en_brnout_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x78 en_comp_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x79 en_hsxo_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x80 en_user2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x81 en_lp1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x82 en_lp2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x83 en_hgbw1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x84 en_hgbw2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x85 en_instr1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x86 en_instr2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x87 en_comp_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x88 en_hsxo_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x89 en_user2_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x90 en_src_test dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x91 en_snk_test dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x21[4] bandgap_snk_250 ena_bandgap_3v3 net58[4] nbias avss bias_nstack
+x21[3] bandgap_snk_250 ena_bandgap_3v3 net58[3] nbias avss bias_nstack
+x21[2] bandgap_snk_250 ena_bandgap_3v3 net58[2] nbias avss bias_nstack
+x21[1] bandgap_snk_250 ena_bandgap_3v3 net58[1] nbias avss bias_nstack
+x21[0] bandgap_snk_250 ena_bandgap_3v3 net58[0] nbias avss bias_nstack
+* noconn #net58
+.ends
+
+
+* expanding   symbol:  bias_nstack.sym # of pins=5
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_nstack.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_nstack.sch
+.subckt bias_nstack itail ena vcasc nbias avss
+*.PININFO avss:B ena:I nbias:I itail:B vcasc:B
+XM3 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM6 vcasc nbias net1 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=3 nf=1 m=1
+XM12 itail ena vcasc avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XD1 avss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+.ends
+
+
+* expanding   symbol:  bias_pstack.sym # of pins=7
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_pstack.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_pstack.sch
+.subckt bias_pstack avdd pbias pcasc vcasc enb avss itail
+*.PININFO avdd:B itail:B enb:I pcasc:I vcasc:B pbias:I avss:B
+XM13 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM18 itail enb vcasc avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM14 vcasc pcasc net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XD1 avss enb sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+.ends
+
+
+* expanding   symbol:  bias_amp.sym # of pins=7
+** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_amp.sym
+** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__biasgen/xschem/bias_amp.sch
+.subckt bias_amp avdd out inn inp nbias avss ena
+*.PININFO inp:I nbias:I inn:I out:O avdd:B avss:B ena:I
+XM1 net2 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=1
+XM2 out net1 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 m=1
+XM3 net1 net1 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=2 nf=1 m=1
+XM4 net1 inp vcom avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4 nf=2 m=1
+XM5 out inn vcom avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4 nf=2 m=1
+XM6 vcom ena net2 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=2 nf=1 m=1
+.ends
+
+.end

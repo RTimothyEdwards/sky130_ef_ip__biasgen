@@ -1,0 +1,199 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1731272015
+<< metal1 >>
+rect 4369 8284 4490 8557
+rect 0 6185 648 6253
+rect 0 4557 648 4625
+rect 0 2929 648 2997
+rect 0 2714 110 2929
+rect 0 2464 328 2714
+rect 0 1369 110 2464
+rect 0 1301 648 1369
+rect 100240 734 108018 744
+rect 100240 578 107032 734
+rect 108008 578 108018 734
+rect 100240 568 108018 578
+rect 100240 -38 100416 568
+rect 1274 -48 100416 -38
+rect 1274 -204 1282 -48
+rect 1778 -204 100416 -48
+rect 1274 -214 100416 -204
+<< via1 >>
+rect 107032 578 108008 734
+rect 1282 -204 1778 -48
+<< metal2 >>
+rect 1276 -48 1787 1331
+rect 103326 260 103366 1362
+rect 103450 260 103490 3056
+rect 103566 260 103606 4679
+rect 103686 260 103726 6321
+rect 105918 260 105958 746
+rect 106038 260 106078 746
+rect 106158 260 106198 746
+rect 106278 260 106318 746
+rect 107023 734 108017 888
+rect 107023 578 107032 734
+rect 108008 578 108017 734
+rect 107023 566 108017 578
+rect 108510 260 108550 746
+rect 108630 260 108670 746
+rect 108750 260 108790 746
+rect 108870 260 108910 746
+rect 111102 260 111142 746
+rect 111222 260 111262 746
+rect 111342 260 111382 746
+rect 111462 260 111502 746
+rect 113694 260 113734 746
+rect 113814 260 113854 746
+rect 113934 260 113974 746
+rect 114054 260 114094 746
+rect 116286 260 116326 746
+rect 116406 260 116446 746
+rect 116526 260 116566 746
+rect 116646 260 116686 746
+rect 118878 260 118918 746
+rect 118998 260 119038 746
+rect 119118 260 119158 746
+rect 119238 260 119278 746
+rect 1276 -204 1282 -48
+rect 1778 -204 1787 -48
+rect 1276 -214 1787 -204
+<< metal3 >>
+rect 54118 8549 54476 10836
+rect 64798 9008 65156 10836
+rect 66934 8549 67292 10836
+rect 72808 9519 73166 10836
+rect 74944 9035 75302 10836
+rect 76012 8549 76370 10836
+rect 82420 8549 82778 10836
+rect 87226 8559 87584 10836
+rect 88828 8549 89186 10836
+rect 90430 8549 90788 10836
+rect 92032 8549 92390 10836
+rect 93634 8549 93992 10836
+rect 95236 8549 95594 10836
+rect 96838 8549 97196 10836
+rect 97667 8549 97906 10836
+rect 18569 25 18689 776
+rect 94120 -418 94482 -126
+<< metal4 >>
+rect 26 6104 628 7504
+rect 26 4217 628 5902
+rect 26 2381 628 4066
+rect 26 622 628 2182
+use bias_generator_be4  bias_generator_be4_0
+timestamp 1731272015
+transform 1 0 -38313 0 1 -418
+box 82746 0 157853 11314
+use bias_generator_fe  bias_generator_fe_0
+timestamp 1731271687
+transform 1 0 -1072 0 1 0
+box 1072 0 45976 8863
+<< labels >>
+flabel metal1 0 4557 400 4625 0 FreeSans 480 0 0 0 ena
+port 0 nsew
+flabel metal1 0 6185 400 6253 0 FreeSans 480 0 0 0 ref_sel_vbg
+port 1 nsew
+flabel metal4 26 6104 626 7504 0 FreeSans 3200 90 0 0 dvdd
+port 2 n
+flabel metal4 26 4217 626 5902 0 FreeSans 3200 90 0 0 avdd
+port 3 nsew
+flabel metal4 26 2381 626 4066 0 FreeSans 3200 90 0 0 avss
+port 4 nsew
+flabel metal4 26 622 510 2182 0 FreeSans 3200 90 0 0 dvss
+port 5 nsew
+flabel metal1 4369 8326 4490 8557 0 FreeSans 1600 90 0 0 vbg
+port 6 nsew
+flabel metal2 103326 260 103366 660 0 FreeSans 400 90 0 0 en_snk_test
+port 7 nsew
+flabel metal2 103450 260 103490 635 0 FreeSans 400 90 0 0 en_user2_trim_n
+port 8 nsew
+flabel metal2 103566 260 103606 635 0 FreeSans 400 90 0 0 en_comp_trim_n
+port 9 nsew
+flabel metal2 103686 260 103726 635 0 FreeSans 400 90 0 0 en_hsxo_trim_n
+port 10 nsew
+flabel metal2 105918 260 105958 635 0 FreeSans 400 90 0 0 en_lp2_bias
+port 11 nsew
+flabel metal2 106038 260 106078 635 0 FreeSans 400 90 0 0 en_lp1_trim_p
+port 12 nsew
+flabel metal2 106158 260 106198 635 0 FreeSans 400 90 0 0 en_lsxo_bias
+port 13 nsew
+flabel metal2 106278 260 106318 635 0 FreeSans 400 90 0 0 en_lp1_bias
+port 14 nsew
+flabel metal2 108630 260 108670 633 0 FreeSans 400 90 0 0 en_hgbw1_trim_p
+port 15 nsew
+flabel metal2 108750 260 108790 633 0 FreeSans 400 90 0 0 en_lp2_trim_p
+port 16 nsew
+flabel metal2 108870 260 108910 633 0 FreeSans 400 90 0 0 en_hgbw1_bias
+port 17 nsew
+flabel metal2 111102 260 111142 634 0 FreeSans 400 90 0 0 en_instr2_bias
+port 18 nsew
+flabel metal2 111222 260 111262 634 0 FreeSans 400 90 0 0 en_instr1_trim_p
+port 19 nsew
+flabel metal2 111342 260 111382 634 0 FreeSans 400 90 0 0 en_hgbw2_trim_p
+port 20 nsew
+flabel metal2 111462 260 111502 634 0 FreeSans 400 90 0 0 en_instr1_bias
+port 21 nsew
+flabel metal2 113694 260 113734 634 0 FreeSans 400 90 0 0 en_ov_bias
+port 22 nsew
+flabel metal2 113814 260 113854 634 0 FreeSans 400 90 0 0 en_comp_trim_p
+port 23 nsew
+flabel metal2 113934 260 113974 634 0 FreeSans 400 90 0 0 en_instr2_trim_p
+port 24 nsew
+flabel metal2 114054 260 114094 634 0 FreeSans 400 90 0 0 en_comp_bias
+port 25 nsew
+flabel metal2 116286 260 116326 634 0 FreeSans 400 90 0 0 en_src_test
+port 26 nsew
+flabel metal2 116406 260 116446 634 0 FreeSans 400 90 0 0 en_user2_trim_p
+port 27 nsew
+flabel metal2 116526 260 116566 634 0 FreeSans 400 90 0 0 en_user1_bias
+port 28 nsew
+flabel metal2 116646 260 116686 634 0 FreeSans 400 90 0 0 en_user2_bias
+port 29 nsew
+flabel metal2 118878 260 118918 635 0 FreeSans 400 90 0 0 en_idac_bias
+port 30 nsew
+flabel metal2 118998 260 119038 635 0 FreeSans 400 90 0 0 en_hsxo_trim_p
+port 31 nsew
+flabel metal2 119118 260 119158 635 0 FreeSans 400 90 0 0 en_brnout_bias
+port 32 nsew
+flabel metal2 119238 260 119278 635 0 FreeSans 400 90 0 0 en_hsxo_bias
+port 33 nsew
+flabel metal2 108510 260 108550 633 0 FreeSans 400 90 0 0 en_hgbw2_bias
+port 34 nsew
+flabel metal3 97667 9807 97906 10047 0 FreeSans 1600 90 0 0 lsxo_src_50
+port 35 nsew
+flabel metal3 96838 9807 97196 10047 0 FreeSans 1600 90 0 0 lp1_src_100
+port 36 nsew
+flabel metal3 95236 9807 95594 10047 0 FreeSans 1600 90 0 0 lp2_src_100
+port 37 nsew
+flabel metal3 93634 9807 93992 10047 0 FreeSans 1600 90 0 0 hgbw1_src_100
+port 38 nsew
+flabel metal3 92032 9807 92390 10047 0 FreeSans 1600 90 0 0 hgbw2_src_100
+port 39 nsew
+flabel metal3 90430 9807 90788 10047 0 FreeSans 1600 90 0 0 instr1_src_100
+port 40 nsew
+flabel metal3 88828 9807 89186 10047 0 FreeSans 1600 90 0 0 instr2_src_100
+port 41 nsew
+flabel metal3 82420 9807 82778 10047 0 FreeSans 1600 90 0 0 ov_src_600
+port 42 nsew
+flabel metal3 76012 9807 76370 10047 0 FreeSans 1600 90 0 0 user_src_50
+port 43 nsew
+flabel metal3 74944 9807 75302 10047 0 FreeSans 1600 90 0 0 user_src_150
+port 44 nsew
+flabel metal3 72808 9807 73166 10047 0 FreeSans 1600 90 0 0 test_src_500
+port 45 nsew
+flabel metal3 66934 9807 67292 10047 0 FreeSans 1600 90 0 0 brnout_src_200
+port 46 nsew
+flabel metal3 64798 9807 65156 10047 0 FreeSans 1600 90 0 0 hsxo_src_1000
+port 47 nsew
+flabel metal3 54118 9807 54476 10047 0 FreeSans 1600 90 0 0 idac_src_1000
+port 48 nsew
+flabel metal3 18569 25 18689 381 0 FreeSans 1600 90 0 0 ref_in
+port 49 nsew
+flabel metal3 87226 9807 87584 10047 0 FreeSans 1600 90 0 0 comp_src_400
+port 50 nsew
+flabel metal3 94120 -418 94482 -126 0 FreeSans 1600 90 0 0 bandgap_snk_250
+port 51 nsew
+<< end >>
