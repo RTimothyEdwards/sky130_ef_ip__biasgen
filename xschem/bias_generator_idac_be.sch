@@ -391,8 +391,6 @@ N -1320 120 -1290 120 {
 lab=ena[6]}
 C {devices/iopin.sym} -1330 -60 0 1 {name=p39 lab=avss}
 C {devices/iopin.sym} -1340 -490 0 1 {name=p42 lab=avdd}
-C {devices/lab_wire.sym} -1270 -450 0 0 {name=p44 sig_type=std_logic lab=pbias}
-C {devices/lab_wire.sym} -1270 -470 0 0 {name=p45 sig_type=std_logic lab=pcasc}
 C {bias_nstack.sym} -1100 -140 0 0 {name=x3}
 C {bias_pstack.sym} -1060 -360 0 0 {name=x1}
 C {bias_pstack.sym} -690 -360 0 0 {name=x8}
