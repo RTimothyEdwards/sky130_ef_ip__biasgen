@@ -73,7 +73,6 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/ipin.sym} 100 -330 0 0 {name=p12 lab=enb}
-C {devices/lab_wire.sym} 130 -510 0 0 {name=p16 sig_type=std_logic lab=pbias}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 170 -430 0 0 {name=M14
 W=3
 L=1
@@ -88,7 +87,6 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 130 -430 0 0 {name=p17 sig_type=std_logic lab=pcasc}
 C {devices/ipin.sym} 60 -430 0 0 {name=p1 lab=pcasc}
 C {devices/iopin.sym} 60 -380 0 1 {name=p2 lab=vcasc}
 C {devices/ipin.sym} 60 -510 0 0 {name=p3 lab=pbias}
