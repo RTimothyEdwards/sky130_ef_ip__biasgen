@@ -302,7 +302,7 @@ L=900
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/ammeter.sym} -200 -940 0 1 {name=Vmeas savecurrent=true}
+C {devices/ammeter.sym} -200 -940 0 1 {name=Vmeas savecurrent=true lvs_ignore=short}
 C {bias_pstack.sym} -350 -1070 0 0 {name=x19[11:0]}
 C {devices/lab_pin.sym} -150 -770 0 1 {name=p101 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} -1040 -1020 0 1 {name=p105 sig_type=std_logic lab=vfb}
