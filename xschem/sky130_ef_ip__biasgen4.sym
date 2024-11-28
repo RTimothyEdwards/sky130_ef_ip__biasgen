@@ -92,7 +92,7 @@ B 5 -152.5 -22.5 -147.5 -17.5 {name=en_instr2_bias dir=in}
 B 5 -152.5 -2.5 -147.5 2.5 {name=en_instr2_trim_p dir=in}
 B 5 147.5 -122.5 152.5 -117.5 {name=lsxo_src_50 dir=inout}
 B 5 -152.5 17.5 -147.5 22.5 {name=en_lsxo_bias dir=in}
-B 5 147.5 -102.5 152.5 -97.5 {name=hsxo_src_1000 dir=inout}
+B 5 147.5 -102.5 152.5 -97.5 {name=hsxo_src_100 dir=inout}
 B 5 -152.5 37.5 -147.5 42.5 {name=en_hsxo_bias dir=in}
 B 5 -152.5 57.5 -147.5 62.5 {name=en_hsxo_trim_p dir=in}
 B 5 -152.5 77.5 -147.5 82.5 {name=en_hsxo_trim_n dir=in}
@@ -146,7 +146,7 @@ T {en_instr2_bias} -125 -24 0 0 0.2 0.2 {}
 T {en_instr2_trim_p} -125 -4 0 0 0.2 0.2 {}
 T {lsxo_src_50} 125 -124 0 1 0.2 0.2 {}
 T {en_lsxo_bias} -125 16 0 0 0.2 0.2 {}
-T {hsxo_src_1000} 125 -104 0 1 0.2 0.2 {}
+T {hsxo_src_100} 125 -104 0 1 0.2 0.2 {}
 T {en_hsxo_bias} -125 36 0 0 0.2 0.2 {}
 T {en_hsxo_trim_p} -125 56 0 0 0.2 0.2 {}
 T {en_hsxo_trim_n} -125 76 0 0 0.2 0.2 {}

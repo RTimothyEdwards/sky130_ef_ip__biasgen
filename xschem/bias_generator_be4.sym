@@ -85,7 +85,7 @@ B 5 -162.5 -82.5 -157.5 -77.5 {name=en_hgbw2_bias dir=in}
 B 5 147.5 237.5 152.5 242.5 {name=user_src_50 dir=inout}
 B 5 147.5 197.5 152.5 202.5 {name=idac_src_1000 dir=inout}
 B 5 147.5 37.5 152.5 42.5 {name=lsxo_src_50 dir=inout}
-B 5 147.5 57.5 152.5 62.5 {name=hsxo_src_1000 dir=inout}
+B 5 147.5 57.5 152.5 62.5 {name=hsxo_src_100 dir=inout}
 B 5 147.5 117.5 152.5 122.5 {name=comp_src_400 dir=inout}
 B 5 147.5 -82.5 152.5 -77.5 {name=hgbw2_src_100 dir=inout}
 B 5 147.5 177.5 152.5 182.5 {name=ov_src_600 dir=inout}
@@ -138,7 +138,7 @@ T {en_hgbw2_bias} -135 -84 0 0 0.2 0.2 {}
 T {user_src_50} 125 236 0 1 0.2 0.2 {}
 T {idac_src_1000} 125 196 0 1 0.2 0.2 {}
 T {lsxo_src_50} 125 36 0 1 0.2 0.2 {}
-T {hsxo_src_1000} 125 56 0 1 0.2 0.2 {}
+T {hsxo_src_100} 125 56 0 1 0.2 0.2 {}
 T {comp_src_400} 125 116 0 1 0.2 0.2 {}
 T {hgbw2_src_100} 125 -84 0 1 0.2 0.2 {}
 T {ov_src_600} 125 176 0 1 0.2 0.2 {}

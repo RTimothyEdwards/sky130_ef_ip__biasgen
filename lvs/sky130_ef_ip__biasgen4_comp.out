@@ -324,11 +324,11 @@ sky130_fd_sc_hvl__lsbuflv2hv_1 (28)        |sky130_fd_sc_hvl__lsbuflv2hv_1 (28)
 bias_pstack (102)                          |bias_pstack (102)                          
 sky130_fd_sc_hvl__decap_4 (4->1)           |sky130_fd_sc_hvl__decap_4 (4->1)           
 Number of devices: 285                     |Number of devices: 285                     
-Number of nets: 310                        |Number of nets: 310                        
+Number of nets: 311                        |Number of nets: 311                        
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match with 42 symmetries.
+Netlists match with 44 symmetries.
 
 Subcircuit pins:
 Circuit 1: bias_generator_be4              |Circuit 2: bias_generator_be4              
@@ -337,7 +337,6 @@ ov_src_600                                 |ov_src_600
 brnout_src_200                             |brnout_src_200                             
 idac_src_1000                              |idac_src_1000                              
 dvdd                                       |dvdd                                       
-hsxo_src_1000                              |hsxo_src_1000                              
 comp_src_400                               |comp_src_400                               
 lp1_src_100                                |lp1_src_100                                
 lp2_src_100                                |lp2_src_100                                
@@ -346,6 +345,7 @@ hgbw2_src_100                              |hgbw2_src_100
 instr1_src_100                             |instr1_src_100                             
 instr2_src_100                             |instr2_src_100                             
 user_src_150                               |user_src_150                               
+hsxo_src_100                               |hsxo_src_100                               
 bandgap_snk_250                            |bandgap_snk_250                            
 test_src_500                               |test_src_500                               
 lsxo_src_50                                |lsxo_src_50                                
@@ -362,11 +362,11 @@ en_comp_trim_n                             |en_comp_trim_n
 en_user2_trim_n                            |en_user2_trim_n                            
 en_src_test                                |en_src_test                                
 en_brnout_bias                             |en_brnout_bias                             
-en_hsxo_bias                               |en_hsxo_bias                               
 en_idac_bias                               |en_idac_bias                               
 en_user2_bias                              |en_user2_bias                              
 en_comp_bias                               |en_comp_bias                               
 en_ov_bias                                 |en_ov_bias                                 
+en_hsxo_bias                               |en_hsxo_bias                               
 en_lp1_bias                                |en_lp1_bias                                
 en_lp2_bias                                |en_lp2_bias                                
 en_hgbw1_bias                              |en_hgbw1_bias                              
@@ -473,7 +473,7 @@ en_hgbw2_bias                              |en_hgbw2_bias
 user_src_50                                |user_src_50                                
 idac_src_1000                              |idac_src_1000                              
 lsxo_src_50                                |lsxo_src_50                                
-hsxo_src_1000                              |hsxo_src_1000                              
+hsxo_src_100                               |hsxo_src_100                               
 comp_src_400                               |comp_src_400                               
 hgbw2_src_100                              |hgbw2_src_100                              
 ov_src_600                                 |ov_src_600                                 

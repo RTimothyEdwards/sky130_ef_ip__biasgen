@@ -83,14 +83,14 @@ X1 VPWR VGND VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.55 ps=5
 .ends
 
 .subckt bias_generator_be4 avdd dvss lsxo_src_50 en_hsxo_trim_p en_hsxo_bias en_brnout_bias
-+ en_lp1_bias hgbw1_src_100 instr2_src_100 comp_src_400 user_src_50 idac_src_1000
++ en_lp1_bias hgbw1_src_100 instr2_src_100 comp_src_400 user_src_50 hsxo_src_100 idac_src_1000
 + en_user2_bias en_user1_bias en_user2_trim_p en_comp_bias en_instr2_trim_p en_comp_trim_p
 + en_instr1_bias en_hgbw2_trim_p en_instr1_trim_p en_hgbw1_bias en_lp2_trim_p en_hgbw1_trim_p
 + brnout_src_200 bandgap_snk_250 bias_nstack_0[9]/nbias test_src_500 en_src_test lp1_src_100
 + en_ov_bias bias_pstack_0[9]/pbias en_hgbw2_bias en_lsxo_bias instr1_src_100 en_lp2_bias
 + en_comp_trim_n user_src_150 en_user2_trim_n hgbw2_src_100 dvdd bias_pstack_0[9]/pcasc
-+ en_hsxo_trim_n en_idac_bias en_lp1_trim_p en_instr2_bias hsxo_src_1000 lp2_src_100
-+ en_snk_test ov_src_600 avss
++ en_hsxo_trim_n en_idac_bias en_lp1_trim_p en_instr2_bias lp2_src_100 en_snk_test
++ ov_src_600 avss
 Xsky130_fd_sc_hvl__inv_2_16 sky130_fd_sc_hvl__inv_2_16/A dvss dvss avdd avdd bias_pstack_0[9]/enb
 + sky130_fd_sc_hvl__inv_2
 Xbias_nstack_0[0] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[0]/vcasc
@@ -289,9 +289,9 @@ Xbias_nstack_0[96] comp_src_400 bias_nstack_0[97]/ena bias_nstack_0[9]/nbias avs
 + bias_nstack_0[96]/vcasc bias_nstack
 Xbias_nstack_0[97] comp_src_400 bias_nstack_0[97]/ena bias_nstack_0[9]/nbias avss
 + bias_nstack_0[97]/vcasc bias_nstack
-Xbias_nstack_0[98] hsxo_src_1000 bias_nstack_0[99]/ena bias_nstack_0[9]/nbias avss
+Xbias_nstack_0[98] hsxo_src_100 bias_nstack_0[99]/ena bias_nstack_0[9]/nbias avss
 + bias_nstack_0[98]/vcasc bias_nstack
-Xbias_nstack_0[99] hsxo_src_1000 bias_nstack_0[99]/ena bias_nstack_0[9]/nbias avss
+Xbias_nstack_0[99] hsxo_src_100 bias_nstack_0[99]/ena bias_nstack_0[9]/nbias avss
 + bias_nstack_0[99]/vcasc bias_nstack
 Xbias_nstack_0[100] bias_nstack_0[101]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[100]/vcasc
 + bias_nstack
@@ -301,7 +301,7 @@ Xsky130_fd_sc_hvl__inv_2_17 sky130_fd_sc_hvl__inv_2_17/A dvss dvss avdd avdd bia
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__inv_2_18 sky130_fd_sc_hvl__inv_2_18/A dvss dvss avdd avdd bias_pstack_0[44]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__inv_2_19 sky130_fd_sc_hvl__inv_2_19/A dvss dvss avdd avdd bias_pstack_0[20]/enb
+Xsky130_fd_sc_hvl__inv_2_19 sky130_fd_sc_hvl__inv_2_19/A dvss dvss avdd avdd bias_pstack_0[38]/enb
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__inv_2_0 sky130_fd_sc_hvl__inv_2_0/A dvss dvss avdd avdd bias_pstack_0[95]/enb
 + sky130_fd_sc_hvl__inv_2
@@ -414,47 +414,47 @@ Xbias_pstack_0[18] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_100
 + bias_pstack_0[18]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
 Xbias_pstack_0[19] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000
 + bias_pstack_0[19]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[20] avss bias_pstack_0[9]/pcasc bias_pstack_0[20]/enb hsxo_src_1000
-+ bias_pstack_0[20]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[21] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[21]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[22] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[22]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[23] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[23]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[24] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[24]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[25] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[25]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[26] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[26]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[27] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[27]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[28] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[28]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[29] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[29]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[30] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[30]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[31] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[31]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[32] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[32]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[33] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[33]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[34] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[34]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[35] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[35]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[36] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[36]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[37] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
-+ bias_pstack_0[37]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[38] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
+Xbias_pstack_0[20] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[20]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[21] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[21]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[22] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[22]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[23] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[23]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[24] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[24]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[25] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[25]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[26] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[26]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[27] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[27]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[28] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[28]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[29] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[29]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[30] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[30]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[31] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[31]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[32] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[32]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[33] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[33]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[34] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[34]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[35] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[35]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[36] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[36]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[37] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[37]/itail bias_pstack_0[37]/vcasc
++ bias_pstack_0[9]/pbias avdd bias_pstack
+Xbias_pstack_0[38] avss bias_pstack_0[9]/pcasc bias_pstack_0[38]/enb hsxo_src_100
 + bias_pstack_0[38]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[39] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
+Xbias_pstack_0[39] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_100
 + bias_pstack_0[39]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
-Xbias_pstack_0[40] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_1000
+Xbias_pstack_0[40] avss bias_pstack_0[9]/pcasc bias_pstack_0[40]/enb hsxo_src_100
 + bias_pstack_0[40]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
 Xbias_pstack_0[41] avss bias_pstack_0[9]/pcasc bias_pstack_0[44]/enb brnout_src_200
 + bias_pstack_0[41]/vcasc bias_pstack_0[9]/pbias avdd bias_pstack
@@ -1057,17 +1057,16 @@ Xsky130_fd_sc_hvl__decap_4_3 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 + en_src_test en_user2_trim_p en_user1_bias en_user2_bias en_idac_bias en_hsxo_trim_p
 + en_brnout_bias en_hsxo_bias en_hgbw2_bias lsxo_src_50 lp1_src_100 lp2_src_100 hgbw1_src_100
 + hgbw2_src_100 instr1_src_100 instr2_src_100 ov_src_600 user_src_50 user_src_150
-+ test_src_500 brnout_src_200 hsxo_src_1000 idac_src_1000 ref_in comp_src_400 bandgap_snk_250
++ test_src_500 brnout_src_200 hsxo_src_100 idac_src_1000 ref_in comp_src_400 bandgap_snk_250
 Xbias_generator_be4_0 avdd dvss lsxo_src_50 en_hsxo_trim_p en_hsxo_bias en_brnout_bias
-+ en_lp1_bias hgbw1_src_100 instr2_src_100 comp_src_400 user_src_50 idac_src_1000
++ en_lp1_bias hgbw1_src_100 instr2_src_100 comp_src_400 user_src_50 hsxo_src_100 idac_src_1000
 + en_user2_bias en_user1_bias en_user2_trim_p en_comp_bias en_instr2_trim_p en_comp_trim_p
 + en_instr1_bias en_hgbw2_trim_p en_instr1_trim_p en_hgbw1_bias en_lp2_trim_p en_hgbw1_trim_p
 + brnout_src_200 bandgap_snk_250 bias_generator_fe_0/bias_amp_0/nbias test_src_500
 + en_src_test lp1_src_100 en_ov_bias bias_generator_fe_0/bias_amp_0/out en_hgbw2_bias
 + en_lsxo_bias instr1_src_100 en_lp2_bias en_comp_trim_n user_src_150 en_user2_trim_n
 + hgbw2_src_100 dvdd bias_generator_fe_0/bias_pstack_0[9]/pcasc en_hsxo_trim_n en_idac_bias
-+ en_lp1_trim_p en_instr2_bias hsxo_src_1000 lp2_src_100 en_snk_test ov_src_600 avss
-+ bias_generator_be4
++ en_lp1_trim_p en_instr2_bias lp2_src_100 en_snk_test ov_src_600 avss bias_generator_be4
 Xbias_generator_fe_0 bias_generator_fe_0/snk_test0 bias_generator_fe_0/src_test0 ref_sel_vbg
 + ena vbg ref_in dvss dvss dvdd bias_generator_fe_0/bias_amp_0/out dvss avdd bias_generator_fe_0/bias_amp_0/nbias
 + bias_generator_fe_0/bias_pstack_0[9]/pcasc avss bias_generator_fe

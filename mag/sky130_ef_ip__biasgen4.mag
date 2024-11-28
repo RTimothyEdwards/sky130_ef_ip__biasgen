@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1731272015
+timestamp 1732763842
 << metal1 >>
 rect 4369 8284 4490 8557
 rect 0 6185 648 6253
@@ -84,11 +84,11 @@ rect 26 4217 628 5902
 rect 26 2381 628 4066
 rect 26 622 628 2182
 use bias_generator_be4  bias_generator_be4_0
-timestamp 1731272015
+timestamp 1732763842
 transform 1 0 -38313 0 1 -418
 box 82746 0 157853 11314
 use bias_generator_fe  bias_generator_fe_0
-timestamp 1731271687
+timestamp 1732763811
 transform 1 0 -1072 0 1 0
 box 1072 0 45976 8863
 << labels >>
@@ -186,8 +186,6 @@ flabel metal3 72808 9807 73166 10047 0 FreeSans 1600 90 0 0 test_src_500
 port 45 nsew
 flabel metal3 66934 9807 67292 10047 0 FreeSans 1600 90 0 0 brnout_src_200
 port 46 nsew
-flabel metal3 64798 9807 65156 10047 0 FreeSans 1600 90 0 0 hsxo_src_1000
-port 47 nsew
 flabel metal3 54118 9807 54476 10047 0 FreeSans 1600 90 0 0 idac_src_1000
 port 48 nsew
 flabel metal3 18569 25 18689 381 0 FreeSans 1600 90 0 0 ref_in
@@ -196,4 +194,6 @@ flabel metal3 87226 9807 87584 10047 0 FreeSans 1600 90 0 0 comp_src_400
 port 50 nsew
 flabel metal3 94120 -418 94482 -126 0 FreeSans 1600 90 0 0 bandgap_snk_250
 port 51 nsew
+flabel metal3 64798 9807 65156 10047 0 FreeSans 1600 90 0 0 hsxo_src_100
+port 47 nsew
 << end >>

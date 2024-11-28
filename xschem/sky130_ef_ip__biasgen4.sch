@@ -116,7 +116,7 @@ lab=test_src_500}
 N 910 350 960 350 {
 lab=comp_src_400}
 N 910 290 960 290 {
-lab=hsxo_src_1000}
+lab=hsxo_src_100}
 N 910 270 960 270 {
 lab=lsxo_src_50}
 N 910 230 960 230 {
@@ -149,7 +149,7 @@ C {devices/iopin.sym} 960 150 0 0 {name=p12 lab=hgbw2_src_100}
 C {devices/iopin.sym} 960 190 0 0 {name=p13 lab=instr1_src_100}
 C {devices/iopin.sym} 960 230 0 0 {name=p14 lab=instr2_src_100}
 C {devices/iopin.sym} 960 270 0 0 {name=p15 lab=lsxo_src_50}
-C {devices/iopin.sym} 960 290 0 0 {name=p16 lab=hsxo_src_1000}
+C {devices/iopin.sym} 960 290 0 0 {name=p16 lab=hsxo_src_100}
 C {devices/iopin.sym} 960 350 0 0 {name=p17 lab=comp_src_400}
 C {devices/iopin.sym} 960 410 0 0 {name=p18 lab=ov_src_600}
 C {devices/iopin.sym} 960 430 0 0 {name=p19 lab=idac_src_1000}

@@ -1,4 +1,4 @@
-Netgen 1.5.273 compiled on Sat Oct 19 17:04:39 EDT 2024
+Netgen 1.5.273 compiled on Thu Nov 14 20:49:03 EST 2024
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
@@ -400,7 +400,7 @@ Circuit bias_generator_be4 contains 288 device instances.
   Class: sky130_fd_sc_hvl__inv_2 instances:  24
   Class: sky130_fd_sc_hvl__decap_4 instances:   4
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 310 nets.
+Circuit contains 311 nets.
 Contents of circuit 2:  Circuit: 'bias_generator_be4'
 Circuit bias_generator_be4 contains 288 device instances.
   Class: sky130_fd_sc_hvl__diode_2 instances:  28
@@ -409,7 +409,7 @@ Circuit bias_generator_be4 contains 288 device instances.
   Class: sky130_fd_sc_hvl__inv_2 instances:  24
   Class: sky130_fd_sc_hvl__decap_4 instances:   4
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 310 nets.
+Circuit contains 311 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
@@ -422,7 +422,7 @@ Circuit bias_generator_be4 contains 285 device instances.
   Class: sky130_fd_sc_hvl__inv_2 instances:  24
   Class: sky130_fd_sc_hvl__decap_4 instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 310 nets.
+Circuit contains 311 nets.
 Contents of circuit 2:  Circuit: 'bias_generator_be4'
 Circuit bias_generator_be4 contains 285 device instances.
   Class: sky130_fd_sc_hvl__diode_2 instances:  28
@@ -431,10 +431,10 @@ Circuit bias_generator_be4 contains 285 device instances.
   Class: sky130_fd_sc_hvl__inv_2 instances:  24
   Class: sky130_fd_sc_hvl__decap_4 instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 310 nets.
+Circuit contains 311 nets.
 
 Circuit 1 contains 285 devices, Circuit 2 contains 285 devices.
-Circuit 1 contains 310 nets,    Circuit 2 contains 310 nets.
+Circuit 1 contains 311 nets,    Circuit 2 contains 311 nets.
 
 
 Contents of circuit 1:  Circuit: 'bias_generator_fe'
