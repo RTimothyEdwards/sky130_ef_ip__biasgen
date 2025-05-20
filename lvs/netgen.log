@@ -1,21 +1,21 @@
 Netgen 1.5.292 compiled on Sat Mar 15 21:11:52 EDT 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
-Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_g5v0d10v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_05v0_nvt
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_11v0
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_11v0
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
@@ -39,7 +39,7 @@ Call to undefined subcircuit sky130_fd_pr__res_generic_pd__hv
 Creating placeholder cell definition.
 Call to undefined subcircuit bias_generator_fe
 Creating placeholder cell definition.
-Call to undefined subcircuit bias_generator_be4
+Call to undefined subcircuit bias_generator_idac_be
 Creating placeholder cell definition.
 Call to undefined subcircuit bias_nstack
 Creating placeholder cell definition.
@@ -221,17 +221,34 @@ No property value found for device sky130_fd_pr__cap_mim_m3_1
 No property mult found for device sky130_fd_pr__cap_mim_m3_1
 No property perim found for device sky130_fd_pr__cap_mim_m3_1
 No property mf found for device sky130_fd_pr__cap_mim_m3_1
-Comparison output logged to file sky130_ef_ip__biasgen4_comp.out
-Logging to file "sky130_ef_ip__biasgen4_comp.out" enabled
+Comparison output logged to file sky130_ef_ip__idac3v_8bit_comp.out
+Logging to file "sky130_ef_ip__idac3v_8bit_comp.out" enabled
 Circuit sky130_fd_pr__nfet_g5v0d10v5 contains no devices.
 Circuit sky130_fd_pr__diode_pw2nd_05v5 contains no devices.
 Circuit sky130_fd_pr__nfet_05v0_nvt contains no devices.
 Circuit sky130_fd_pr__pfet_g5v0d10v5 contains no devices.
-Circuit sky130_fd_pr__diode_pw2nd_11v0 contains no devices.
+Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
 Circuit sky130_fd_pr__nfet_01v8 contains no devices.
 Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
-Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
+Circuit sky130_fd_pr__diode_pw2nd_11v0 contains no devices.
 Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'bias_nstack'
+Circuit bias_nstack contains 4 device instances.
+  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
+  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
+  Class: sky130_fd_pr__nfet_05v0_nvt instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'bias_nstack'
+Circuit bias_nstack contains 4 device instances.
+  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
+  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
+  Class: sky130_fd_pr__nfet_05v0_nvt instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__inv_2'
 Circuit sky130_fd_sc_hvl__inv_2 contains 4 device instances.
@@ -260,36 +277,6 @@ Circuit contains 6 nets.
 
 Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
 Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
-
-
-Contents of circuit 1:  Circuit: 'bias_nstack'
-Circuit bias_nstack contains 4 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_pr__nfet_05v0_nvt instances:   1
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'bias_nstack'
-Circuit bias_nstack contains 4 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_pr__nfet_05v0_nvt instances:   1
-Circuit contains 6 nets.
-
-Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
-Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
-
-
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__diode_2'
-Circuit sky130_fd_sc_hvl__diode_2 contains 1 device instances.
-  Class: sky130_fd_pr__diode_pw2nd_11v0 instances:   1
-Circuit contains 2 nets, and 3 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hvl__diode_2'
-Circuit sky130_fd_sc_hvl__diode_2 contains 1 device instances.
-  Class: sky130_fd_pr__diode_pw2nd_11v0 instances:   1
-Circuit contains 2 nets, and 3 disconnected pins.
-
-Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
-Circuit 1 contains 2 nets,    Circuit 2 contains 2 nets.
 
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__lsbuflv2hv_1'
@@ -359,6 +346,19 @@ Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
 Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
 
 
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__diode_2'
+Circuit sky130_fd_sc_hvl__diode_2 contains 1 device instances.
+  Class: sky130_fd_pr__diode_pw2nd_11v0 instances:   1
+Circuit contains 2 nets, and 3 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hvl__diode_2'
+Circuit sky130_fd_sc_hvl__diode_2 contains 1 device instances.
+  Class: sky130_fd_pr__diode_pw2nd_11v0 instances:   1
+Circuit contains 2 nets, and 3 disconnected pins.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 2 nets,    Circuit 2 contains 2 nets.
+
+
 Contents of circuit 1:  Circuit: 'bias_amp'
 Circuit bias_amp contains 8 device instances.
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   5
@@ -390,51 +390,6 @@ Circuit contains 10 nets.
 
 Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
 Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
-
-
-Contents of circuit 1:  Circuit: 'bias_generator_be4'
-Circuit bias_generator_be4 contains 288 device instances.
-  Class: sky130_fd_sc_hvl__diode_2 instances:  28
-  Class: bias_pstack           instances: 102
-  Class: bias_nstack           instances: 102
-  Class: sky130_fd_sc_hvl__inv_2 instances:  24
-  Class: sky130_fd_sc_hvl__decap_4 instances:   4
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 311 nets.
-Contents of circuit 2:  Circuit: 'bias_generator_be4'
-Circuit bias_generator_be4 contains 288 device instances.
-  Class: sky130_fd_sc_hvl__diode_2 instances:  28
-  Class: bias_pstack           instances: 102
-  Class: bias_nstack           instances: 102
-  Class: sky130_fd_sc_hvl__inv_2 instances:  24
-  Class: sky130_fd_sc_hvl__decap_4 instances:   4
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 311 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'bias_generator_be4'
-Circuit bias_generator_be4 contains 285 device instances.
-  Class: sky130_fd_sc_hvl__diode_2 instances:  28
-  Class: bias_pstack           instances: 102
-  Class: bias_nstack           instances: 102
-  Class: sky130_fd_sc_hvl__inv_2 instances:  24
-  Class: sky130_fd_sc_hvl__decap_4 instances:   1
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 311 nets.
-Contents of circuit 2:  Circuit: 'bias_generator_be4'
-Circuit bias_generator_be4 contains 285 device instances.
-  Class: sky130_fd_sc_hvl__diode_2 instances:  28
-  Class: bias_pstack           instances: 102
-  Class: bias_nstack           instances: 102
-  Class: sky130_fd_sc_hvl__inv_2 instances:  24
-  Class: sky130_fd_sc_hvl__decap_4 instances:   1
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:  28
-Circuit contains 311 nets.
-
-Circuit 1 contains 285 devices, Circuit 2 contains 285 devices.
-Circuit 1 contains 311 nets,    Circuit 2 contains 311 nets.
 
 
 Contents of circuit 1:  Circuit: 'bias_generator_fe'
@@ -528,23 +483,82 @@ Circuit 1 contains 63 devices, Circuit 2 contains 63 devices.
 Circuit 1 contains 49 nets,    Circuit 2 contains 49 nets.
 
 
-Contents of circuit 1:  Circuit: 'sky130_ef_ip__biasgen4'
-Circuit sky130_ef_ip__biasgen4 contains 2 device instances.
-  Class: bias_generator_fe     instances:   1
-  Class: bias_generator_be4    instances:   1
-Circuit contains 57 nets.
-Contents of circuit 2:  Circuit: 'sky130_ef_ip__biasgen4'
-Circuit sky130_ef_ip__biasgen4 contains 2 device instances.
-  Class: bias_generator_fe     instances:   1
-  Class: bias_generator_be4    instances:   1
-Circuit contains 57 nets.
+Contents of circuit 1:  Circuit: 'bias_generator_idac_be'
+Circuit bias_generator_idac_be contains 544 device instances.
+  Class: sky130_fd_sc_hvl__diode_2 instances:   8
+  Class: bias_pstack           instances: 256
+  Class: bias_nstack           instances: 256
+  Class: sky130_fd_sc_hvl__inv_2 instances:   8
+  Class: sky130_fd_sc_hvl__decap_4 instances:   8
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
+Circuit contains 551 nets, and 5 disconnected pins.
+Contents of circuit 2:  Circuit: 'bias_generator_idac_be'
+Circuit bias_generator_idac_be contains 544 device instances.
+  Class: sky130_fd_sc_hvl__diode_2 instances:   8
+  Class: bias_pstack           instances: 256
+  Class: bias_nstack           instances: 256
+  Class: sky130_fd_sc_hvl__inv_2 instances:   8
+  Class: sky130_fd_sc_hvl__decap_4 instances:   8
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
+Circuit contains 545 nets.
 
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 57 nets,    Circuit 2 contains 57 nets.
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'bias_generator_idac_be'
+Circuit bias_generator_idac_be contains 537 device instances.
+  Class: sky130_fd_sc_hvl__diode_2 instances:   8
+  Class: bias_pstack           instances: 256
+  Class: bias_nstack           instances: 256
+  Class: sky130_fd_sc_hvl__inv_2 instances:   8
+  Class: sky130_fd_sc_hvl__decap_4 instances:   1
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
+Circuit contains 551 nets, and 5 disconnected pins.
+Contents of circuit 2:  Circuit: 'bias_generator_idac_be'
+Circuit bias_generator_idac_be contains 537 device instances.
+  Class: sky130_fd_sc_hvl__diode_2 instances:   8
+  Class: bias_pstack           instances: 256
+  Class: bias_nstack           instances: 256
+  Class: sky130_fd_sc_hvl__inv_2 instances:   8
+  Class: sky130_fd_sc_hvl__decap_4 instances:   1
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
+Circuit contains 545 nets.
+
+Circuit 1 contains 537 devices, Circuit 2 contains 537 devices.
+Circuit 1 contains 551 nets,    Circuit 2 contains 545 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits bias_generator_idac_be bias_generator_idac_be
+
+Flattening instances of bias_generator_idac_be in file ../netlist/layout/sky130_ef_ip__idac3v_8bit.spice
+Flattening instances of bias_generator_idac_be in file ../netlist/schematic/sky130_ef_ip__idac3v_8bit.spice
+
+Contents of circuit 1:  Circuit: 'sky130_ef_ip__idac3v_8bit'
+Circuit sky130_ef_ip__idac3v_8bit contains 538 device instances.
+  Class: sky130_fd_sc_hvl__diode_2 instances:   8
+  Class: bias_pstack           instances: 256
+  Class: bias_nstack           instances: 256
+  Class: sky130_fd_sc_hvl__inv_2 instances:   8
+  Class: bias_generator_fe     instances:   1
+  Class: sky130_fd_sc_hvl__decap_4 instances:   1
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
+Circuit contains 551 nets.
+Contents of circuit 2:  Circuit: 'sky130_ef_ip__idac3v_8bit'
+Circuit sky130_ef_ip__idac3v_8bit contains 538 device instances.
+  Class: sky130_fd_sc_hvl__diode_2 instances:   8
+  Class: bias_pstack           instances: 256
+  Class: bias_nstack           instances: 256
+  Class: sky130_fd_sc_hvl__inv_2 instances:   8
+  Class: bias_generator_fe     instances:   1
+  Class: sky130_fd_sc_hvl__decap_4 instances:   1
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   8
+Circuit contains 551 nets.
+
+Circuit 1 contains 538 devices, Circuit 2 contains 538 devices.
+Circuit 1 contains 551 nets,    Circuit 2 contains 551 nets.
 
 
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "sky130_ef_ip__biasgen4_comp.out" disabled
+Logging to file "sky130_ef_ip__idac3v_8bit_comp.out" disabled
 LVS Done.

@@ -1,13 +1,13 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1747745073
+timestamp 1747752771
 << locali >>
-rect 1986 -2996 2210 -2702
-rect 2470 -2752 2520 -2702
+rect 1986 -3003 2210 -2709
+rect 2470 -2752 2520 -2709
 rect 2470 -2945 2480 -2752
 rect 2514 -2945 2520 -2752
-rect 2470 -2996 2520 -2945
+rect 2470 -3003 2520 -2945
 << viali >>
 rect 2480 -2945 2514 -2752
 << metal1 >>
@@ -34,8 +34,8 @@ rect 2480 -2360 2544 -887
 rect 2589 -1889 2641 -582
 rect 2593 -2406 2645 -1889
 rect 2593 -2551 2645 -2542
-rect 2470 -2731 2540 -2702
-rect 2470 -2995 2540 -2969
+rect 2470 -2731 2540 -2709
+rect 2470 -3003 2540 -2969
 rect 2330 -3697 2384 -3364
 << via1 >>
 rect 2122 166 2588 244
@@ -76,7 +76,7 @@ rect 2138 -3671 2144 -3439
 rect 2208 -3671 2214 -3439
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RK  sky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 paramcells
 timestamp 1713888873
-transform 1 0 2357 0 1 -2849
+transform 1 0 2357 0 1 -2856
 box -183 -183 183 183
 use sky130_fd_pr__pfet_g5v0d10v5_G8LMTE  sky130_fd_pr__pfet_g5v0d10v5_G8LMTE_0 paramcells
 timestamp 1747745073
