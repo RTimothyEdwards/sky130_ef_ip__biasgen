@@ -7,30 +7,30 @@ X2 Y A VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.4275 ps=3.57 w
 X3 VGND A Y VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21375 pd=2.07 as=0.105 ps=1.03 w=0.75 l=0.5
 .ends
 
-.subckt sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ a_n296_n522# a_n158_n300# a_n100_n388#
+.subckt sky130_fd_pr__nfet_g5v0d10v5_C3WBNC a_n158_n300# a_n296_n477# a_n100_n388#
 + a_100_n300#
-X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n522# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n477# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
 .ends
 
 .subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RK a_n147_n147# a_n45_n45#
 X0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
 .ends
 
-.subckt sky130_fd_pr__nfet_05v0_nvt_QRKT8P a_n296_n522# a_n158_n300# a_n100_n388#
+.subckt sky130_fd_pr__nfet_05v0_nvt_QRKT8A a_n158_n300# a_n296_n477# a_n100_n388#
 + a_100_n300#
-X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n522# sky130_fd_pr__nfet_05v0_nvt ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n477# sky130_fd_pr__nfet_05v0_nvt ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
 .ends
 
-.subckt sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P a_n296_n522# a_n158_n300# a_n100_n388#
+.subckt sky130_fd_pr__nfet_g5v0d10v5_ZMKT8B a_n158_n300# a_n296_n477# a_n100_n388#
 + a_100_n300#
-X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n522# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n296_n477# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
 .ends
 
 .subckt bias_nstack itail ena nbias avss vcasc
-XXM12 avss avss nbias m1_3726_n2502# sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ
+XXM12 avss avss nbias m1_3726_n2502# sky130_fd_pr__nfet_g5v0d10v5_C3WBNC
 Xsky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 avss ena sky130_fd_pr__diode_pw2nd_05v5_FT76RK
-XXM6 avss vcasc nbias m1_3726_n2502# sky130_fd_pr__nfet_05v0_nvt_QRKT8P
-XXM7 avss vcasc ena itail sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P
+XXM6 vcasc avss nbias m1_3726_n2502# sky130_fd_pr__nfet_05v0_nvt_QRKT8A
+XXM7 vcasc avss ena itail sky130_fd_pr__nfet_g5v0d10v5_ZMKT8B
 .ends
 
 .subckt sky130_fd_sc_hvl__diode_2 DIODE VGND VNB VPB VPWR
@@ -41,7 +41,7 @@ X0 VNB DIODE sky130_fd_pr__diode_pw2nd_11v0 perim=3.16e+06 area=6.072e+11
 X0 VGND a_404_1133# a_504_1221# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
 X1 a_504_1221# a_404_1133# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
 X2 X a_1711_885# VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.3975 pd=3.53 as=0.24375 ps=1.825 w=1.5 l=0.5
-X3 X a_1711_885# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.121875 ps=1.075 w=0.75 l=0.5
+X3 X a_1711_885# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.12188 ps=1.075 w=0.75 l=0.5
 X4 VGND A a_404_1133# VNB sky130_fd_pr__nfet_01v8 ad=0.1176 pd=1.12 as=0.2478 ps=2.27 w=0.84 l=0.15
 X5 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
 X6 VPWR a_1197_107# a_504_1221# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.2142 pd=1.99 as=0.2142 ps=1.99 w=0.42 l=1
@@ -53,28 +53,28 @@ X11 a_772_151# a_404_1133# VGND VNB sky130_fd_pr__nfet_01v8 ad=0.2478 pd=2.27 as
 X12 VGND a_772_151# a_1197_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
 X13 LVPWR A a_404_1133# LVPWR sky130_fd_pr__pfet_01v8_hvt ad=0.1176 pd=1.12 as=0.2478 ps=2.27 w=0.84 l=0.15
 X14 VPWR a_504_1221# a_1711_885# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.24375 pd=1.825 as=0.3975 ps=3.53 w=1.5 l=0.5
-X15 VGND a_504_1221# a_1711_885# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.121875 pd=1.075 as=0.19875 ps=2.03 w=0.75 l=0.5
+X15 VGND a_504_1221# a_1711_885# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.12188 pd=1.075 as=0.19875 ps=2.03 w=0.75 l=0.5
 X16 VGND a_772_151# a_1197_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.21 ps=1.78 w=1.5 l=0.5
 X17 a_772_151# a_404_1133# LVPWR LVPWR sky130_fd_pr__pfet_01v8_hvt ad=0.2478 pd=2.27 as=0.1176 ps=1.12 w=0.84 l=0.15
 X18 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.3975 ps=3.53 w=1.5 l=0.5
 X19 VPWR a_504_1221# a_1197_107# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.1113 pd=1.37 as=0.1365 ps=1.49 w=0.42 l=1
 .ends
 
-.subckt sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ a_n158_n300# w_n362_n597# a_n100_n397#
+.subckt sky130_fd_pr__pfet_g5v0d10v5_G8LMTE a_n158_n300# w_n362_n550# a_n100_n397#
 + a_100_n300#
-X0 a_100_n300# a_n100_n397# a_n158_n300# w_n362_n597# sky130_fd_pr__pfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X0 a_100_n300# a_n100_n397# a_n158_n300# w_n362_n550# sky130_fd_pr__pfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
 .ends
 
-.subckt sky130_fd_pr__pfet_g5v0d10v5_H75TTW a_n158_n300# w_n362_n597# a_n100_n397#
+.subckt sky130_fd_pr__pfet_g5v0d10v5_H75TTF a_n158_n300# a_n100_n397# w_n362_n543#
 + a_100_n300#
-X0 a_100_n300# a_n100_n397# a_n158_n300# w_n362_n597# sky130_fd_pr__pfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+X0 a_100_n300# a_n100_n397# a_n158_n300# w_n362_n543# sky130_fd_pr__pfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
 .ends
 
 .subckt bias_pstack avss pcasc enb itail vcasc pbias avdd
-XXM13 m1_2150_n1558# avdd pcasc vcasc sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ
-Xsky130_fd_pr__pfet_g5v0d10v5_G8LMTZ_0 itail avdd enb vcasc sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ
+XXM13 m1_2150_n1478# avdd pcasc vcasc sky130_fd_pr__pfet_g5v0d10v5_G8LMTE
+Xsky130_fd_pr__pfet_g5v0d10v5_H75TTF_0 m1_2150_n1478# pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5_H75TTF
 Xsky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 avss enb sky130_fd_pr__diode_pw2nd_05v5_FT76RK
-Xsky130_fd_pr__pfet_g5v0d10v5_H75TTW_0 m1_2150_n1558# avdd pbias avdd sky130_fd_pr__pfet_g5v0d10v5_H75TTW
+Xsky130_fd_pr__pfet_g5v0d10v5_G8LMTE_0 itail avdd enb vcasc sky130_fd_pr__pfet_g5v0d10v5_G8LMTE
 .ends
 
 .subckt sky130_fd_sc_hvl__decap_4 VGND VNB VPB VPWR
@@ -88,9 +88,8 @@ X1 VPWR VGND VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.55 ps=5
 + en_instr1_bias en_hgbw2_trim_p en_instr1_trim_p en_hgbw1_bias en_lp2_trim_p en_hgbw1_trim_p
 + brnout_src_200 bandgap_snk_250 bias_nstack_0[9]/nbias test_src_500 en_src_test lp1_src_100
 + en_ov_bias bias_pstack_0[9]/pbias en_hgbw2_bias en_lsxo_bias instr1_src_100 en_lp2_bias
-+ en_comp_trim_n user_src_150 en_user2_trim_n hgbw2_src_100 dvdd bias_pstack_0[9]/pcasc
-+ en_hsxo_trim_n en_idac_bias en_lp1_trim_p en_instr2_bias lp2_src_100 en_snk_test
-+ ov_src_600 avss
++ en_comp_trim_n user_src_150 en_user2_trim_n hgbw2_src_100 dvdd en_hsxo_trim_n bias_pstack_0[9]/pcasc
++ en_idac_bias en_lp1_trim_p en_instr2_bias lp2_src_100 en_snk_test ov_src_600 avss
 Xsky130_fd_sc_hvl__inv_2_16 sky130_fd_sc_hvl__inv_2_16/A dvss dvss avdd avdd bias_pstack_0[9]/enb
 + sky130_fd_sc_hvl__inv_2
 Xbias_nstack_0[0] bias_nstack_0[9]/itail avss bias_nstack_0[9]/nbias avss bias_nstack_0[0]/vcasc
@@ -310,8 +309,8 @@ Xsky130_fd_sc_hvl__inv_2_1 sky130_fd_sc_hvl__inv_2_1/A dvss dvss avdd avdd bias_
 Xsky130_fd_sc_hvl__diode_2_20 en_comp_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_2 sky130_fd_sc_hvl__inv_2_2/A dvss dvss avdd avdd bias_pstack_0[80]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_21 en_instr1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__diode_2_10 en_lp1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_21 en_instr1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[0|0] en_snk_test dvdd dvss dvss avdd avdd bias_nstack_0[88]/ena
 + sky130_fd_sc_hvl__lsbuflv2hv_1
 Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[1|0] en_user2_trim_n dvdd dvss dvss avdd avdd bias_nstack_0[95]/ena
@@ -370,10 +369,11 @@ Xsky130_fd_sc_hvl__lsbuflv2hv_1_0[3|6] en_hsxo_bias dvdd dvss dvss avdd avdd sky
 + sky130_fd_sc_hvl__lsbuflv2hv_1
 Xsky130_fd_sc_hvl__inv_2_3 sky130_fd_sc_hvl__inv_2_3/A dvss dvss avdd avdd bias_pstack_0[81]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_22 en_hgbw1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__diode_2_11 en_hgbw1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_22 en_hgbw1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_4 sky130_fd_sc_hvl__inv_2_4/A dvss dvss avdd avdd bias_pstack_0[72]/enb
 + sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_12 en_instr1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xbias_pstack_0[0] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[0]/vcasc
 + bias_pstack_0[9]/pbias avdd bias_pstack
 Xbias_pstack_0[1] avss bias_pstack_0[9]/pcasc bias_pstack_0[9]/enb idac_src_1000 bias_pstack_0[1]/vcasc
@@ -579,23 +579,22 @@ Xbias_pstack_0[100] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[101]/itail bi
 Xbias_pstack_0[101] avss bias_pstack_0[9]/pcasc avdd bias_pstack_0[101]/itail bias_pstack_0[101]/vcasc
 + bias_pstack_0[9]/pbias avdd bias_pstack
 Xsky130_fd_sc_hvl__diode_2_23 en_lp1_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
-Xsky130_fd_sc_hvl__diode_2_12 en_instr1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_5 sky130_fd_sc_hvl__inv_2_5/A dvss dvss avdd avdd bias_pstack_0[92]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_24 en_lp2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__diode_2_13 en_comp_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_24 en_lp2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_6 sky130_fd_sc_hvl__inv_2_6/A dvss dvss avdd avdd bias_pstack_0[93]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_25 en_hgbw2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__diode_2_14 en_user2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_25 en_hgbw2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_7 sky130_fd_sc_hvl__inv_2_7/A dvss dvss avdd avdd bias_pstack_0[96]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_26 en_instr2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__diode_2_15 en_lsxo_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_26 en_instr2_trim_p dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_8 sky130_fd_sc_hvl__inv_2_8/A dvss dvss avdd avdd bias_pstack_0[83]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_27 en_user1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__diode_2_16 en_hsxo_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_27 en_user1_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_9 sky130_fd_sc_hvl__inv_2_9/A dvss dvss avdd avdd bias_pstack_0[71]/enb
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__diode_2_17 en_brnout_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
@@ -613,20 +612,20 @@ Xsky130_fd_sc_hvl__inv_2_20 bias_nstack_0[93]/ena dvss dvss avdd avdd bias_pstac
 Xsky130_fd_sc_hvl__diode_2_6 en_lp2_bias dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__decap_4_18 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 Xsky130_fd_sc_hvl__decap_4_0 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
-Xsky130_fd_sc_hvl__inv_2_10 sky130_fd_sc_hvl__inv_2_10/A dvss dvss avdd avdd bias_pstack_0[98]/enb
-+ sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__inv_2_21 sky130_fd_sc_hvl__inv_2_21/A dvss dvss avdd avdd bias_pstack_0[58]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_10 sky130_fd_sc_hvl__inv_2_10/A dvss dvss avdd avdd bias_pstack_0[98]/enb
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__diode_2_7 en_comp_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__decap_4_1 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
-Xsky130_fd_sc_hvl__inv_2_11 sky130_fd_sc_hvl__inv_2_11/A dvss dvss avdd avdd bias_pstack_0[99]/enb
-+ sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__inv_2_22 sky130_fd_sc_hvl__inv_2_22/A dvss dvss avdd avdd bias_pstack_0[59]/enb
 + sky130_fd_sc_hvl__inv_2
-Xsky130_fd_sc_hvl__diode_2_8 en_user2_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
-Xsky130_fd_sc_hvl__inv_2_12 sky130_fd_sc_hvl__inv_2_12/A dvss dvss avdd avdd bias_pstack_0[89]/enb
+Xsky130_fd_sc_hvl__inv_2_11 sky130_fd_sc_hvl__inv_2_11/A dvss dvss avdd avdd bias_pstack_0[99]/enb
 + sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__diode_2_8 en_user2_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_23 sky130_fd_sc_hvl__inv_2_23/A dvss dvss avdd avdd bias_pstack_0[55]/enb
++ sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_12 sky130_fd_sc_hvl__inv_2_12/A dvss dvss avdd avdd bias_pstack_0[89]/enb
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__diode_2_9 en_hsxo_trim_n dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_2_13 sky130_fd_sc_hvl__inv_2_13/A dvss dvss avdd avdd bias_pstack_0[84]/enb
@@ -883,7 +882,7 @@ X3 c1_n646_n2480# m3_n686_n2520# sky130_fd_pr__cap_mim_m3_1 l=5 w=5
 .ends
 
 .subckt bias_generator_fe snk_test0 src_test0 ref_sel_vbg ena vbg ref_in ena_snk_test0
-+ ena_src_test0 dvdd bias_amp_0/out dvss avdd bias_amp_0/nbias bias_pstack_0[9]/pcasc
++ ena_src_test0 dvdd bias_amp_0/out dvss avdd bias_pstack_0[9]/pcasc bias_amp_0/nbias
 + avss
 Xbias_nstack_0[0] snk_test0 ena_test0_3v3 bias_amp_0/nbias avss bias_nstack_0[0]/vcasc
 + bias_nstack
@@ -1065,10 +1064,10 @@ Xbias_generator_be4_0 avdd dvss lsxo_src_50 en_hsxo_trim_p en_hsxo_bias en_brnou
 + brnout_src_200 bandgap_snk_250 bias_generator_fe_0/bias_amp_0/nbias test_src_500
 + en_src_test lp1_src_100 en_ov_bias bias_generator_fe_0/bias_amp_0/out en_hgbw2_bias
 + en_lsxo_bias instr1_src_100 en_lp2_bias en_comp_trim_n user_src_150 en_user2_trim_n
-+ hgbw2_src_100 dvdd bias_generator_fe_0/bias_pstack_0[9]/pcasc en_hsxo_trim_n en_idac_bias
++ hgbw2_src_100 dvdd en_hsxo_trim_n bias_generator_fe_0/bias_pstack_0[9]/pcasc en_idac_bias
 + en_lp1_trim_p en_instr2_bias lp2_src_100 en_snk_test ov_src_600 avss bias_generator_be4
 Xbias_generator_fe_0 bias_generator_fe_0/snk_test0 bias_generator_fe_0/src_test0 ref_sel_vbg
-+ ena vbg ref_in dvss dvss dvdd bias_generator_fe_0/bias_amp_0/out dvss avdd bias_generator_fe_0/bias_amp_0/nbias
-+ bias_generator_fe_0/bias_pstack_0[9]/pcasc avss bias_generator_fe
++ ena vbg ref_in dvss dvss dvdd bias_generator_fe_0/bias_amp_0/out dvss avdd bias_generator_fe_0/bias_pstack_0[9]/pcasc
++ bias_generator_fe_0/bias_amp_0/nbias avss bias_generator_fe
 .ends
 

@@ -126,10 +126,10 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C3WBNQ in circuit bias_nstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C3WBNC in circuit bias_nstack (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RK in circuit bias_nstack (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_QRKT8P in circuit bias_nstack (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZMKT8P in circuit bias_nstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_05v0_nvt_QRKT8A in circuit bias_nstack (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZMKT8B in circuit bias_nstack (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: bias_nstack                     |Circuit 2: bias_nstack                     
@@ -206,9 +206,9 @@ VNB                                        |VNB
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hvl__lsbuflv2hv_1 and sky130_fd_sc_hvl__lsbuflv2hv_1 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_G8LMTZ in circuit bias_pstack (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_G8LMTE in circuit bias_pstack (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_H75TTF in circuit bias_pstack (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RK in circuit bias_pstack (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_H75TTW in circuit bias_pstack (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: bias_pstack                     |Circuit 2: bias_pstack                     
@@ -340,6 +340,7 @@ Number of nets: 49                         |Number of nets: 49
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
+Resolving symmetries by net name.
 Netlists match with 7 symmetries.
 
 Subcircuit pins:
@@ -380,6 +381,7 @@ Number of nets: 309                        |Number of nets: 309
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
+Resolving symmetries by net name.
 Netlists match with 40 symmetries.
 
 Subcircuit pins:

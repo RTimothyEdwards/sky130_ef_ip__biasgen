@@ -1,4 +1,4 @@
-Netgen 1.5.273 compiled on Thu Nov 14 20:49:03 EST 2024
+Netgen 1.5.292 compiled on Sat Mar 15 21:11:52 EDT 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5

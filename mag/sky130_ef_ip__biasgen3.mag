@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1724461033
+timestamp 1747750998
 << metal1 >>
 rect 4369 8284 4490 8557
 rect 0 6185 648 6253
@@ -83,11 +83,11 @@ rect 26 4217 628 5902
 rect 26 2381 628 4066
 rect 26 622 628 2182
 use bias_generator_be3  bias_generator_be3_0
-timestamp 1724461033
+timestamp 1747750998
 transform 1 0 -38313 0 1 -418
 box 82746 0 157853 11314
 use bias_generator_fe  bias_generator_fe_0
-timestamp 1724460855
+timestamp 1747744697
 transform 1 0 -1072 0 1 0
 box 1072 0 45976 8863
 << labels >>
