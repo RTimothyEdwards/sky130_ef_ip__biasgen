@@ -1,0 +1,64 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1750255617
+<< pwell >>
+rect -217 -217 217 217
+<< mvpsubdiff >>
+rect -181 169 181 181
+rect -181 135 -73 169
+rect 73 135 181 169
+rect -181 123 181 135
+rect -181 73 -123 123
+rect -181 -73 -169 73
+rect -135 -73 -123 73
+rect 123 73 181 123
+rect -181 -123 -123 -73
+rect 123 -73 135 73
+rect 169 -73 181 73
+rect 123 -123 181 -73
+rect -181 -135 181 -123
+rect -181 -169 -73 -135
+rect 73 -169 181 -135
+rect -181 -181 181 -169
+<< mvpsubdiffcont >>
+rect -73 135 73 169
+rect -169 -73 -135 73
+rect 135 -73 169 73
+rect -73 -169 73 -135
+<< mvndiode >>
+rect -45 33 45 45
+rect -45 -33 -33 33
+rect 33 -33 45 33
+rect -45 -45 45 -33
+<< mvndiodec >>
+rect -33 -33 33 33
+<< locali >>
+rect -169 135 -73 169
+rect 73 135 169 169
+rect -169 73 -135 135
+rect 135 73 169 135
+rect -49 -33 -33 33
+rect 33 -33 49 33
+rect -169 -135 -135 -73
+rect 135 -135 169 -73
+rect -169 -169 -73 -135
+rect 73 -169 169 -135
+<< viali >>
+rect -33 -33 33 33
+<< metal1 >>
+rect -45 33 45 39
+rect -45 -33 -33 33
+rect 33 -33 45 33
+rect -45 -39 45 -33
+<< labels >>
+rlabel mvpsubdiffcont 0 -152 0 -152 0 D2
+port 1 nsew
+rlabel mvndiodec 0 0 0 0 0 D1
+port 2 nsew
+<< properties >>
+string FIXED_BBOX -152 -152 152 152
+string gencell sky130_fd_pr__diode_pw2nd_11v0
+string library sky130
+string parameters w 0.45 l 0.45 area 202.5m peri 1.8 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 1 erc 1 etc 1 ebc 1 doverlap 0 compatible {sky130_fd_pr__diode_pw2nd_05v5 sky130_fd_pr__diode_pw2nd_05v5_lvt  sky130_fd_pr__diode_pw2nd_05v5_nvt sky130_fd_pr__diode_pw2nd_11v0} full_metal 1 vias 1 viagb 0 viagt 0 viagl 0 viagr 0 doports 1
+<< end >>

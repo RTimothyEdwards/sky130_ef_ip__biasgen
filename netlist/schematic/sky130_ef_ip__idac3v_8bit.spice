@@ -1,4 +1,4 @@
-** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/sky130_ef_ip__idac3v_8bit.sch
+** sch_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/sky130_ef_ip__idac3v_8bit.sch
 .subckt sky130_ef_ip__idac3v_8bit ena ref_in vbg ref_sel_vbg dvdd dvss avdd din[7] din[6] din[5] din[4] din[3] din[2] din[1]
 + din[0] avss src_out snk_out
 *.PININFO ena:I din[7:0]:I ref_sel_vbg:I vbg:I ref_in:I src_out:B snk_out:B dvdd:B dvss:B avdd:B avss:B
@@ -10,8 +10,8 @@ x2 dvdd dvss din[7] din[6] din[5] din[4] din[3] din[2] din[1] din[0] avdd net1 n
 .ends
 
 * expanding   symbol:  bias_generator_fe.sym # of pins=15
-** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sch
+** sym_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sym
+** sch_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_fe.sch
 .subckt bias_generator_fe avdd ena vbg src_test0 avss dvdd ena_src_test0 ref_sel_vbg ref_in dvss nbias pcasc pbias snk_test0
 + ena_snk_test0
 *.PININFO ref_in:I avss:B ref_sel_vbg:I avdd:B ena_src_test0:I ena_snk_test0:I src_test0:B snk_test0:B vbg:I ena:I dvdd:B dvss:B
@@ -91,8 +91,8 @@ x8 ena_snk_test0 dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 
 
 * expanding   symbol:  bias_generator_idac_be.sym # of pins=10
-** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_idac_be.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_generator_idac_be.sch
+** sym_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_idac_be.sym
+** sch_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_generator_idac_be.sch
 .subckt bias_generator_idac_be dvdd dvss ena[7] ena[6] ena[5] ena[4] ena[3] ena[2] ena[1] ena[0] avdd pcasc pbias src_out snk_out
 + nbias avss
 *.PININFO avss:B avdd:B src_out:B ena[7:0]:I dvdd:B dvss:B pcasc:I pbias:I nbias:I snk_out:B
@@ -662,20 +662,20 @@ x13 ena[7] dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 
 
 * expanding   symbol:  bias_nstack.sym # of pins=5
-** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_nstack.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_nstack.sch
+** sym_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_nstack.sym
+** sch_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_nstack.sch
 .subckt bias_nstack itail ena vcasc nbias avss
 *.PININFO avss:B ena:I nbias:I itail:B vcasc:B
 XM3 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
 XM6 vcasc nbias net1 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=3 nf=1 m=1
 XM12 itail ena vcasc avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
-XD1 avss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
+XD1 avss ena sky130_fd_pr__diode_pw2nd_11v0 area=2.025e11 perim=1.8e6
 .ends
 
 
 * expanding   symbol:  bias_pstack.sym # of pins=7
-** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_pstack.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_pstack.sch
+** sym_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_pstack.sym
+** sch_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_pstack.sch
 .subckt bias_pstack avdd pbias pcasc vcasc enb avss itail
 *.PININFO avdd:B itail:B enb:I pcasc:I vcasc:B pbias:I avss:B
 XM13 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=3 nf=1 m=1
@@ -686,8 +686,8 @@ XD1 avss enb sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 
 
 * expanding   symbol:  bias_amp.sym # of pins=7
-** sym_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_amp.sym
-** sch_path: /home/tim/gits/sky130_ef_ip__biasgen/xschem/bias_amp.sch
+** sym_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_amp.sym
+** sch_path: /home/tim/gits/chipalooza_projects_2/dependencies/sky130_ef_ip__biasgen/xschem/bias_amp.sch
 .subckt bias_amp avdd out inn inp nbias avss ena
 *.PININFO inp:I nbias:I inn:I out:O avdd:B avss:B ena:I
 XM1 net2 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=2 nf=1 m=1
@@ -698,4 +698,3 @@ XM5 out inn vcom avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=4 nf=2 m=1
 XM6 vcom ena net2 avss sky130_fd_pr__nfet_05v0_nvt L=1 W=2 nf=1 m=1
 .ends
 
-.end

@@ -1,10 +1,12 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1747745286
+timestamp 1750255600
+<< mvpsubdiff >>
+rect 3414 57 3776 67
 << locali >>
-rect 3392 114 3448 408
-rect 3742 114 3926 408
+rect 3392 114 3448 406
+rect 3742 114 3926 406
 rect 3392 92 3926 114
 rect 3448 20 3742 92
 << metal1 >>
@@ -57,10 +59,10 @@ rect 3258 -2704 3926 -2622
 rect 3258 -2782 3358 -2704
 rect 3832 -2782 3926 -2704
 rect 3258 -2860 3926 -2782
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RK  sky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 paramcells
-timestamp 1713888873
-transform 1 0 3595 0 1 261
-box -183 -183 183 183
+use sky130_fd_pr__diode_pw2nd_11v0_QK8PWZ  XD1 paramcells
+timestamp 0
+transform 1 0 3595 0 1 248
+box -217 -217 217 217
 use sky130_fd_pr__nfet_05v0_nvt_QRKT8A  XM6 paramcells
 timestamp 1747745286
 transform 1 0 3594 0 1 -1316

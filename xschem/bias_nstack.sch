@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -96,7 +95,7 @@ C {devices/ipin.sym} -40 60 0 1 {name=p1 lab=nbias}
 C {devices/iopin.sym} -110 -280 0 0 {name=p2 lab=itail}
 C {devices/iopin.sym} -100 -110 0 0 {name=p3 lab=vcasc}
 C {sky130_fd_pr/diode.sym} 0 -60 0 0 {name=D1
-model=diode_pw2nd_05v5
+model=diode_pw2nd_11v0
 area=2.025e11
 perim=1.8e6
 spiceprefix=X

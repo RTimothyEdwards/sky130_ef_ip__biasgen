@@ -74,7 +74,7 @@ rect 2324 -3364 2330 -3132
 rect 2384 -3364 2390 -3132
 rect 2138 -3671 2144 -3439
 rect 2208 -3671 2214 -3439
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RK  sky130_fd_pr__diode_pw2nd_05v5_FT76RK_0 paramcells
+use sky130_fd_pr__diode_pw2nd_05v5_FT76RK  XD1 paramcells
 timestamp 1713888873
 transform 1 0 2357 0 1 -2856
 box -183 -183 183 183
